@@ -1,0 +1,38 @@
+brandInfo							
+	id	
+	brandlogo	
+	brandname					
+							
+							
+navigationbar							
+							
+signup							
+	id	
+	username	
+	password	
+	phone				
+							
+login							
+	id	
+	username	
+	password
+					
+							
+sidebar	
+						
+category
+							
+pricerange
+							
+							
+keyboradinfo							
+	id	
+	keyboardimage	
+	brandname	
+	type	
+	modelname	
+	price	
+	discount
+	
+							
+rating							
