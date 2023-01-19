@@ -1,0 +1,9 @@
+Git Commands 
+
+-> git clone
+-> git pull
+-> git status
+-> git add .
+-> git commit -m  "message"
+-> git status
+-> git push origin main
