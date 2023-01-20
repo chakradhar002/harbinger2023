@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        
+
+.container{
+    height: 400;
+    width: 300%;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+
+.icon {
+  padding: 10px;
+  background: #3773ae;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid rgb(73, 121, 169);
+}
+
+/* Set a style for the submit button */
+
+.buton{
+    background-color: #3773ae;
+    border-radius: 12px;
+    
+    margin-right: 410px;
+    align:center;
+}
+.container{
+    height: 300;
+    width: 100;
+}
+
+
+
+    </style>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <title>Assignment9</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="row">
+                <h1 class="pb-5 pt-3">Sign Up</h1>
+                <div class="col-md-4 align-self-center pe-5">
+
+                    <div class="input-container">
+                        <i class="fa fa-user icon"></i>
+                        <input class="input-field" type="text" placeholder="Your Name" name="usrnm">
+                      </div>
+
+                      <div class="input-container">
+                        <i class="fa fa-envelope icon"></i>
+                        <input class="input-field" type="text" placeholder="Your Email" name="email">
+                      </div>
+
+                      <div class="input-container">
+                        <i class="fa fa-lock icon"></i>
+                        <input class="input-field" type="text" placeholder="Your Password" name="usrnm">
+                      </div>
+                      <div class="input-container">
+                        <i class="fa fa-key icon"></i>
+                        <input class="input-field" type="text" placeholder="Re Enter Your Password" name="usrnm">
+                      </div>
+
+                    
+
+                    <div class="form-check pb-4">
+                        <input class="checkbox" type="checkbox" id="check">
+                        <label  for="gridCheck">
+                            I agree all statemets in <span class="text-primary">Terms of services</span>
+                        </label>
+                        <div class="buton">
+                            <button class="buton">Register</button>
+                        </div>
+                    </div>
+
+                   
+                </div>
+
+                <div class="col-md-8 text-center">
+                    <img src="college1.jpg" alt="" class="img-fluid w-75 h-75">
+                </div>
+
+            </form>
+        </div>
+         
+    </div>
+
+</body>
+
+</html>
