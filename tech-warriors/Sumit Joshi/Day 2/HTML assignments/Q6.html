@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            table,th,tr,td{
+                border:1px solid black;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            .Table{
+                border: solid black;
+                border-collapse: collapse;
+                padding-left: 10px;
+                padding-right: 25px;
+                padding-top: 3px;
+                padding-bottom: 30px;
+            }
+            body{
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="Table">
+        <table>
+            <tr>
+                <th colspan="2">Books</th>
+                <th>Qty</th>
+                <th>price</th>
+            </tr>
+            <tr>
+                <td class="data">Don't Make me Think by Steve Kurg</td>
+                <td>In Stock</td>
+                <td>1</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td class="data">Data Structures</td>
+                <td>Out of Stock</td>
+                <td>5</td>
+                <td>$100($20*5)</td>
+            </tr>
+
+            
+            <tr>
+                <td class="data">Core Java</td>
+                <td>In Stock</td>   
+                <td>2</td>
+                <td>$150(75*2)</td>
+            </tr>
+
+            
+            <tr>
+                <td class="table_data">Python</td>
+                <td>Out of Stock</td>
+                <td>7</td>
+                <td>$350(50*7)</td>
+            </tr>
+            <tr>
+                <td class="data" colspan="3">Subtotal</td>
+                <td>$610</td>
+            </tr>
+            <tr>
+                <td class="data" colspan="3">Tax</td>
+                <td>$90</td>
+            </tr>
+            <tr>
+                <td class="data" colspan="3">Total</td>
+                <td>$700</td>
+            </tr>
+
+        </table>
+        </div>
+    </body>
+</html>
