@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment 9</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+ <style>.btn{
+  padding: 8px 18px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  
+  background-color: #0063ff; 
+  color: #ffffff; 
+  border: 1px solid #0063ff;
+  border-radius:5px;
+  
+  margin-left:100px;
+  margin-top:35px;
+  box-shadow: 1px 1px 1px 1px #0063ff;
+}
+h1{font-family: Arial, Helvetica, sans-serif; margin-top:80px;margin-bottom:30px;margin-left:31.5px;}
+.terms{margin-left:50px;}
+.icon {
+  padding: 10px;
+  margin-left:30px;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+}
+.img1{display: block;
+  margin-left: auto;
+  margin-right: 150px;
+  margin-top:130px;
+}
+</style>
+</head>
+<body>
+
+<div class="container-fluid" style="margin-top: 10px;">    
+  <div class="row content">
+    <div class="col-sm-6">
+      <form action="/action_page.php">
+	  <h1>Sign Up</h1>
+        <div class="form-group">
+          <i class="fa fa-user icon"></i>
+			<input class="input-field" type="text" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <i class="fa fa-envelope icon"></i>
+			<input class="input-field" type="email" placeholder="Your Email">
+        </div>
+		
+		<div class="form-group">
+          <i class="fa fa-lock icon"></i>
+			<input class="input-field" type="password" placeholder="Password">
+        </div>
+		
+		<div class="form-group">
+          <i class="fa fa-key icon"></i>
+			<input class="input-field" type="password" placeholder="Repeat your password">
+        </div>
+		
+	
+		
+        <div class="checkbox">
+          <label class="terms"><input type="checkbox">  By creating an account you agree to our <a href="#">Terms & Privacy</a>.</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    <div class="img1"> 
+      <img style="width:40%; height:40%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1kDatdJL_bw-9OQpzVkxCEV3FtlGLevRLUA&usqp=CAU" />
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

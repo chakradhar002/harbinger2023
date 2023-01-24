@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    gap: 1rem;
+    font: 500 100%/1.5 system-ui;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.para{
+    font-family:sans-serif;
+    font-size: 14px;
+}
+.para:first-letter {
+    text-transform: capitalize;
+    color: gold;
+    font-size: 30px;
+}
+label{
+    color: goldenrod;
+    font-size: 15px;
+}
+#footer{
+    padding-left: 200%;
+}

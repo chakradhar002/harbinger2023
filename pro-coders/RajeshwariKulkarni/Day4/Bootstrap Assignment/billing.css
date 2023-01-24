@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(236, 231, 231);
+}
+
+.container-left{
+    
+    width: 10%;
+    height: 90%;
+}
+.promo-container{
+    margin-left: -5px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    width:103%;
+    
+}
+.promo-container .form-row{
+    padding: 12px;
+    
+}
+.promo-container input{
+    margin-right: 0px;
+}
+.promo-container button{
+    background-color: grey;
+    border: none;
+}
