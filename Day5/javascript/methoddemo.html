@@ -1,0 +1,30 @@
+
+<html>
+    <script> 
+        function emp(id,name,sal){
+            this.id=id;
+            this.name=name;
+            this.sal=sal;
+
+
+     this.changeSalary=changeSalary;  // calling function        
+    // this function is for changing sal
+  
+    function changeSalary(othersal){
+        this.sal=othersal;
+    }
+     
+   }
+
+   e=new emp(103,"Vimal Jaiswal",30000);  
+
+
+   document.write(e.id +" "+e.name+""+e.sal)
+  
+   e.changeSalary(4500);
+
+   document.write("<br>"+e.id +" "+e.name+""+e.sal);
+   
+    </script>
+    
+    </html>
