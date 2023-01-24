@@ -16,13 +16,14 @@
 <body style="background-color: rgb(126, 221, 248);">
     <div class="container mb-5 mt-5" >
        <main>
-        <div class="row">
+        <div class="form-row">
+            <!-- General Form -->
             <div class="col-6 bg-light">
                 <div class="container mt-5">
                     <div class="row">
                         <div class="col-12">
                             <p class="text-primary fs-5 fw-bold">
-                                General Information
+                                <h4 style="color: blueviolet;">General Information</h4>
                             </p>
                         </div>
                     </div>
@@ -43,7 +44,7 @@
                         <div class="col-6">
                             <input type="text" class="form-control" placeholder="Last Name">
                         </div>
-                    </div>
+                    </div><br/>
                     <div class="form-row">
                         <div class="col-12">
                             <select class="form-select form-control" aria-label="Position">
@@ -57,6 +58,82 @@
                     <div class="form-row">
                         <div class="col-12">
                             <input type="text" class="form-control" placeholder="Position">
+                        </div>
+                    </div><br/>
+                    <div class="form-row">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Bussines Arena">
+                        </div>
+                        <div class="col-6">
+                            <select name="employ" id="employ" class="form-select form-control">
+                                <option value="trainee">Trainee</option>
+                                <option value="jrdevloper">Jr. Developer</option>
+                                <option value="srdevloper">Sr. Developer</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="col-6" style="background-color: blueviolet;">
+                <div class="contact-container mt-5">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <p class="text-primary fs-5 fw-bold" >
+                                <h4 style="color: white!important;">Contact Information</h4>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- form -->
+                    <div class="row ml-2 mb-4">
+                        <div class="col-11">
+                            <input type="text" class="form-control" placeholder="Street + Nr">
+                        </div>
+                    </div>
+                    <div class="row ml-2  mb-4">
+                        <div class="col-11">
+                            <input type="text" class="form-control" placeholder="Additional Information">
+                        </div>
+                    </div>
+                    <div class="row ml-2  mb-4">
+                        <div class="col-4">
+                            <input type="text" class="form-control" placeholder="Zip Code">
+                        </div>
+                        <div class="col-7">
+                            <input type="text" class="form-control" placeholder="Place">
+                        </div>
+                    </div>
+                    <div class="row ml-2  mb-4">
+                        <div class="col-11">
+                            <input type="text" class="form-control" placeholder="Country">
+                        </div>
+                    </div>
+                    <div class="row ml-2  mb-4">
+                        <div class="col-4">
+                            <input type="text" class="form-control" placeholder="Code + ">
+                        </div>
+                        <div class="col-7">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="row ml-2  mb-4">
+                        <div class="col-11">
+                            <input type="text" class="form-control" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-2">
+                            <input type="checkbox" name="" id="" class="form-control" style="height: 14px;margin-left: -10px;">
+                        </div>
+                        <div class="col-8">
+                            <label for="#" style="margin-left: -38px;margin-top: -6px;">I do accept the <a href="#" style=" text-decoration:underline;color:white">Terms and Condition</a> of your site</label>
+                        </div>
+                    </div>
+                    <div class="form-row ml-4 mt-3">
+                        <div class="col-4">
+                            <button class="btn btn-primary" style="background-color: white!important;color: black; border: 1px solid white;">
+                                REGISTER
+                            </button>
                         </div>
                     </div>
                 </div>
