@@ -1,0 +1,14 @@
+.container{
+    width:95vmax;
+    background-image: url("./Images/employee.png");
+    height: 45vmax;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container .container1{
+    width: 100vmax;
+    height: 45vmax;
+    background-color:black ;
+    opacity: 0.5;
+}
