@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .overflow-hidden {
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid black;
+            overflow: hidden;
+        }
+
+        .overflow-visible {
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid black;
+            overflow: visible;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Overflow: hidden</h2>
+    <p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+    <p>Try to remove the overflow property to understand how it works.</p>
+    <div class="overflow-hidden">You can use the overflow property when you want to have better control of the layout.
+        The overflow property specifies what happens if content overflows an element's box.</div><br>
+    <h2>Overflow: visible</h2>
+    <div class="overflow-visible">You can use the overflow property when you want to have better control of the layout.
+        The overflow property specifies what happens if content overflows an element's box.</div>
+
+</body>
+
+</html>
