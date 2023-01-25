@@ -1,0 +1,53 @@
+body {
+    background-color: orange;
+}
+
+.navbar {
+    background-color: white;
+    padding: 25px;
+    margin: 10px;
+    margin-top: 30px;
+    word-spacing: 20px;
+}
+
+a:hover {
+    color: red;
+}
+
+.image1,
+.image2,
+.image3,
+.image4 {
+    height: 280px;
+    width: 280px;
+    border-bottom: 2px solid white;
+
+}
+
+.course {
+    display: flex;
+    margin: 3px;
+}
+
+.course1,
+.course2,
+.course3,
+.course4 {
+    border: solid rgb(77, 74, 74);
+    border-collapse: collapse;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.info1,
+.info2,
+.info3,
+.info4 {
+    background-color: white;
+}
+.image1{
+    width: 300px;
+}
+.image3{
+    width: 326px;
+}
