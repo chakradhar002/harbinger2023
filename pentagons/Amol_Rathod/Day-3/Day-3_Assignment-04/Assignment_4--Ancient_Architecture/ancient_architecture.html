@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main CSS file -->
+    <style>
+      .bg-first {
+        background-color: #e2d7aa;
+      }
+
+      .bg-first .link-bold {
+        font-weight: bolder;
+      }
+
+      .bg-first .nav-link:hover {
+        color: green;
+      }
+
+      .nav-color {
+        color: deeppink;
+      }
+
+      h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .img-1 {
+        width: 1000px;
+        height: 450px;
+      }
+
+      p {
+        text-align: justify;
+        padding-top: 20px;
+      }
+
+      p::first-letter {
+        font-size: large;
+        color: deeppink;
+        font-weight: bolder;
+      }
+    </style>
+
+    <title>Day 3 | Assignment 05</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Navigation Bar -->
+        <div class="col bg-first">
+          <nav class="nav justify-content-center">
+            <a
+              class="nav-link nav-color link-bold text-success active"
+              href="#"
+              aria-current="page"
+              >Home</a
+            >
+            <a class="nav-link nav-color" href="#">Services</a>
+            <a class="nav-link nav-color" href="#">Blog</a>
+            <a class="nav-link nav-color" href="#">Porfolio</a>
+            <a class="nav-link nav-color" href="#">About</a>
+            <a class="nav-link nav-color" href="#">History</a>
+            <a class="nav-link nav-color link-bold text-success" href="#"
+              >Contact</a
+            >
+          </nav>
+
+          <!-- Heading -->
+          <h1 class="text-center fst-italic py-4">Ancient Architecture</h1>
+
+          <div class="text-center">
+            <img src="pyramid.jpg" alt="" class="img-fluid img-1 text-center" />
+          </div>
+
+          <!-- Second Page cards -->
+          <div class="row px-5">
+            <div class="col-md-4 my-5">
+              <div class="col">
+                <h4>Ancient Roman Architecture</h4>
+                <h6 class="text-center">
+                  Proposed on 01.01.2017 by
+                  <span class="text-primary">Someone</span>
+                </h6>
+              </div>
+
+              <div class="info">
+                <img src="roman.jfif" class="card-img-top" alt="..." />
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                necessitatibus veniam, modi laboriosam itaque vitae saepe
+                sapiente quasi mollitia aspernatur similique, quisquam quod
+                quibusdam molestias cum voluptate, corporis eligendi? Cum,
+                iusto. Officiis aspernatur id itaque, deleniti qui perferendis
+                consequatur. Ratione ab sint possimus nostrum facere natus
+                molestiae repudiandae numquam eveniet.
+              </p>
+
+              <div class="buttons">
+                <button type="button" class="btn btn-danger">0 Comments</button>
+                <button type="button" class="btn btn-danger">View Post</button>
+              </div>
+            </div>
+
+            <div class="col-md-4 my-5">
+              <div class="col">
+                <h4>Ancient Greek Architecture</h4>
+                <h6 class="text-center">
+                  Proposed on 01.01.2017 by
+                  <span class="text-primary">Someone</span>
+                </h6>
+              </div>
+              <div class="info">
+                <img src="greek.jpg" class="card-img-top" alt="..." />
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                necessitatibus veniam, modi laboriosam itaque vitae saepe
+                sapiente quasi mollitia aspernatur similique, quisquam quod
+                quibusdam molestias cum voluptate, corporis eligendi? Cum,
+                iusto. Officiis aspernatur id itaque, deleniti qui perferendis
+                consequatur. Ratione ab sint possimus nostrum facere natus
+                molestiae repudiandae numquam eveniet.
+              </p>
+
+              <div class="buttons">
+                <button type="button" class="btn btn-danger">0 Comments</button>
+                <button type="button" class="btn btn-danger">View Post</button>
+              </div>
+            </div>
+
+            <div class="col-md-4 my-5">
+              <div class="col">
+                <h4>Ancient Indian Architecture</h4>
+                <h6 class="text-center">
+                  Proposed on 01.01.2017 by
+                  <span class="text-primary">Someone</span>
+                </h6>
+              </div>
+
+              <div class="info">
+                <img src="indian.jpg" class="card-img-top" alt="..." />
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                necessitatibus veniam, modi laboriosam itaque vitae saepe
+                sapiente quasi mollitia aspernatur similique, quisquam quod
+                quibusdam molestias cum voluptate, corporis eligendi? Cum,
+                iusto. Officiis aspernatur id itaque, deleniti qui perferendis
+                consequatur. Ratione ab sint possimus nostrum facere natus
+                molestiae repudiandae numquam eveniet.
+              </p>
+
+              <div class="buttons">
+                <button type="button" class="btn btn-danger">0 Comments</button>
+                <button type="button" class="btn btn-danger">View Post</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
