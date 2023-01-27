@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .form-group{
+            
+    margin-right: 501px;
+    margin-left: 501px;
+    text-align: center;
+    margin-top: 118px;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <form action="ass1basic.html" onsubmit="return main()">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Member number</label>
+          <input type="text" class="form-control" id="memberid" aria-describedby="emailHelp" placeholder="Enter ID">
+
+        </div>
+        <div class="form-group" style="margin-top: 10px;">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="Password1" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary" style="
+        border-left-width: 17.667;
+        border-left-width: 0px;
+        margin-left: 600px;
+        margin-top: 0px;
+    " >Submit</button>
+      </form>
+
+      <script>
+        let memid = document.getElementById("memberid")
+        let pass = document.getElementById("Password1")
+        
+
+        function checkid(){
+            var str = memid.value
+            var val  = true
+            if (str.length == 0){
+                alert("Enter Member id")
+                val = false
+                document.getElementById("memberid").focus();
+                document.getElementById("memberid").select();
+                return val
+                }
+            else{}
+            if(Number(memid.value)){
+            }
+            else{
+
+                alert("Member ID must be only Number")
+                val = false
+                document.getElementById("memberid").focus();
+                document.getElementById("memberid").select();
+                return val
+            }
+            return val
+        }
+
+        function checkpass(){
+            var val = true
+            var str = pass.value
+            if (str.length == 0){
+                alert("Enter Password !")
+                val =false
+                document.getElementById("Password1").focus();
+                document.getElementById("Password1").select();
+                return val
+                }
+            else{}
+            if(Number(str.length) > 4){
+            }
+            else{
+                alert("Password Must be longer than 4 characters")
+                val =false
+                document.getElementById("Password1").focus();
+                document.getElementById("Password1").select();
+                return val
+            }
+        return val
+        }
+
+        function main(){
+            if (checkid() && checkpass()){
+                return true
+            }
+            else{
+                return false
+            }
+            
+        }
+    
+      </script>
+    
+</body>
+</html>
