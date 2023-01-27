@@ -1,5 +1,5 @@
 .img {
-    background-image: url("Car.jpg");
+    background-image: url(".\\Images\\Car.jpg");
     height: 700px;
 }
 
