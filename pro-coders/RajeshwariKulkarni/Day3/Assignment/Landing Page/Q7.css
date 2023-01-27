@@ -208,18 +208,39 @@ body{
 
     /* container 4 */
     .container4{
-        width: 90vmax;
-        height: 60vmax;
+        height: 110%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cards{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        
     }
      .card {
+        margin-top: 30px;
         width: 20%;
-        background-color: antiquewhite;
+        height: 60%;
+        background-color: white;
         padding: 30px;
+        
     }
     .card img{
         width:70%;
         height: 40%;
+        padding: 30px;
+    }
+    .card h3,h4{
+     margin-left:23% ; 
+     
+    }
+    .card h3{
+        margin-top: -12px;  
+    }
+    .cards2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
