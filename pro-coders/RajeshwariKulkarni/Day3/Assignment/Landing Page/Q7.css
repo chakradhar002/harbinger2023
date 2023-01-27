@@ -166,4 +166,60 @@ body{
 .main .heading .form button:hover{
     background-color:#2d3136;
 }
+.container3{
+    background-color:#2d3136;
+    height: 30vmax;
+    width: 100vmax;
+}
+.container3 .line1  .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    width: 30%;
+}
+.container3 .info i {
+    margin-top: 6%;
+    padding: 17%; 
+}
+.container3 .i-style{
+    background-color: orangered;
+    width: 10%;
+    height: 3%;
+    margin-left: 35px;
+    margin-top: 3%;
+    border-radius:150px ;
+}
+/* .container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;} */
+    .container3 .line2 .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+        width: 30%;
+        margin-left: 50%;
+    }
+    .line2 .info{
+        margin-top: -9%;
+    }
 
+    /* container 4 */
+    .container4{
+        width: 90vmax;
+        height: 60vmax;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+     .card {
+        width: 20%;
+        background-color: antiquewhite;
+        padding: 30px;
+    }
+    .card img{
+        width:70%;
+        height: 40%;
+    }
