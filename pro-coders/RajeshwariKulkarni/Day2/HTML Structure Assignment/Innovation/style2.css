@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 40%;
+    height: 30%;
+}
+p{
+    margin-top: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+button , a{
+    text-decoration: none;
+    border: none;
+    margin-left: 32%;
+    height: 40px;
+    background-color: rgb(79, 177, 205);
+    color: white;
+    width: 70px;
+    text-align: center;
+    font-weight: 200;
+    font-size: medium;
+}

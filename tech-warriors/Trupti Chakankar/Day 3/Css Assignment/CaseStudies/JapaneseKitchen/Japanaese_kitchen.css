@@ -1,0 +1,74 @@
+body{
+    background-image: url("wood.jpg");
+    font-family: 14px 'Lato',sans-serif;
+}
+.container {
+    width: 80%;
+    background-color: white;
+    margin-left: 10%;
+    height: auto;
+  }
+.container h1{
+    text-align:end;
+}
+header{
+    width: auto;
+    height:160px;
+    background-color: gray;
+}
+nav{
+    padding-bottom: 0%;
+}
+ul{
+     list-style-type: none;
+}
+li a:hover{
+    color: black;
+}
+li{
+    display: inline-block;
+    padding: 1px 7px 1px 2px;
+}
+li a{
+    color: white;
+    padding: 10px;
+}
+hr{
+    border: 1px solid black;
+}
+.inner,
+  .element {
+    display: flex;
+    margin-top: 2%;
+  }
+  .element2 {
+    width: 40%;
+    margin-right: 10%;
+    box-shadow: h-offset v-offset blur spread color;
+  }
+  .element1 {
+    width: 60%;
+    border-right: 0.1px solid black;
+  }
+  
+  .inner-container {
+    margin-left: 5%;
+  }
+  
+  img {
+    width: 40%;
+  }
+  .e1 {
+    margin-left: 4%;
+  }
+  .recipes {
+    border-bottom: 2px solid red;
+  }
+  .p {
+    color: red;
+    margin-left: 10%;
+  }
+  h2 {
+    text-align: center;
+  }
+  
