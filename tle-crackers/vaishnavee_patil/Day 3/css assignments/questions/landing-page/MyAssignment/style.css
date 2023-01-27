@@ -1,0 +1,85 @@
+.navbar{
+    text-align: end;
+    word-spacing: 15px;
+    padding-right: 20px;
+    padding-top: 2px;
+   
+	
+
+}
+.navbar a{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: bolder;
+    font-size: larger;
+    background-color: grey;
+}
+.main{
+    background-image: linear-gradient(
+        rgba(60, 63, 73, 0),
+        rgba(60, 63, 73, 0.95)
+      ),url("./images/office.jpg");
+      background-size: cover;
+      padding: 20px;
+      height: 700px;
+    
+
+}
+.center{
+
+    background-color: rgba(0, 255, 255, 0);
+    color: white;
+    width: 450px;
+    margin-left: 500px;
+    margin-top: 250px;
+    display: flex;
+    font-weight: bolder;
+    font-size: 26px;
+    justify-content: space-between;
+    height: 10%;
+}
+.center-footer{
+    display: flex;
+    background: transparent;
+    width: 1480px;
+    margin-top: 300px;
+    height: 100px;
+}
+.center-footer-1{
+    font-size: 16px;
+    color: aliceblue;
+    display: block;
+    width: 350px;
+    padding: 20px;
+}
+.footer{
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    width: 1400px;
+    /* margin-left: 100px;     */
+}
+.footer-1{
+width: 300px;
+padding-left: 200px;
+padding-right: 20px;
+padding-top: 125px;
+
+}
+.footer-2{
+   
+    display: inline-flex;
+    width: 300px;
+padding: 100px;
+height: 300px;
+text-align: center;
+margin-left: 15px;
+}
+.footer-img{
+
+    display: inline-flexbox;
+    width: 100px;
+    margin-left: 100px; 
+    padding-left: 100px; 
+    padding-top: 50px;
+    color: blue;
+}
