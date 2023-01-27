@@ -1,0 +1,91 @@
+body {
+    width: 960px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fcfcfc;
+    background: #355664;
+    }
+    h1,
+    h2,
+    h3 {
+    font-family: forte, Arial, sans-serif;
+    }
+    .your_logo {
+    size: 50px;
+    padding: 10px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    .article_photoshoot {
+    letter-spacing: 15px;
+    size: 50px;
+    padding: 10px 0 0;
+    text-align: center;
+    border-bottom: 3px solid #416371;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    h3 {
+    text-align: right;
+    size: 30px;
+    font-weight: normal;
+    margin: 0 0 10px;
+    }
+    .para {
+    line-height: 20px;
+    padding-bottom: 5px;
+    width: 300px;
+    color: white;
+    float: left;
+    }
+    /*.para1 {
+        line-height: 20px;
+        padding-bottom: 5px;
+        width: 300px;
+        color: white;
+        float: left;
+        }*/
+    img {
+    width: 500px;
+    height: 300px;
+    border: none;
+    float: right;
+    margin-left: 15px;
+    }
+    .nav {
+    background: #355664;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+    .aa {
+    margin: 5px 2px 5px;
+    size: 30px;
+    padding: 7px 10px 4px;
+    word-spacing: 30px;
+    }
+    .photoshoot {
+    color: #7cb3e9;
+    }
+    .sweet_tab {
+    color: #8ec45b;
+    }
+    .navigationmenu {
+    color: #ffffff;
+    }
+    article {
+    height: 390px;
+    background: #213e4a;
+    padding: 20px;
+    margin: 0 0 10px;
+    margin-left: 40px;
+    }
+    footer {
+    border-top: 3px solid #142830;
+    margin-left: 40px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    size: 20px;
+    }
