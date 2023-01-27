@@ -3,12 +3,12 @@ body {
     font-family: 'Arial', sans-serif;
     color: #fcfcfc;
     background-color: #355664;
-    
+
 }
 
 .container {
     margin: 15px 30px;
-    
+
 }
 
 h1 {
@@ -70,8 +70,11 @@ h2 {
     width: 500px;
     margin-left: 15px;
 }
-img{
-    width: 500px; height: 300px; border: none;
+
+img {
+    width: 500px;
+    height: 300px;
+    border: none;
 }
 
 .article_content {
@@ -81,8 +84,8 @@ img{
     Margin: 0 0 10px;
 }
 
-footer{
-    border-top: 3px solid  #142830;
+footer {
+    border-top: 3px solid #142830;
     padding-top: 15px;
     margin-bottom: 30px;
     text-align: center;
