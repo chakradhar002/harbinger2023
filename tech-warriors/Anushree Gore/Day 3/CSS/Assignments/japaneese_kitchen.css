@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./wood_bg.jpg");
+}
+.container{
+    height: 100%;
+    width: 70%;
+    margin-left: 14%; 
+    background-color: whitesmoke;
+}
+.container header{
+    background-color: rgb(128, 128, 128);
+}
+.container h1{
+    text-align: right;
+    padding: 20px;
+    font-weight: bold;
+}
+.container nav{
+    text-align: left;
+    font-size: 18px;
+    word-spacing: 25px;
+    border: 2px solid black;
+    padding: 10px;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: solid;
+    font-weight: bold;
+}
+a:hover{
+    color: black;
+}
+.content{
+    display: flex;
+    margin-top: 2%;
+}
+.inner-container{
+    border: 1px solid lightslategray;
+    padding: 10px;
+    margin-left: 5%;
+    width: 60%;
+}
+.article{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+img{
+    width: 28%;
+    height: 20%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+.text h2,h4,p{
+    text-align: right;
+    padding: 5px;
+
+}
+.inner-container2{
+    border: 1px solid lightslategray;
+    padding: 10px;
+    width: 40%;
+    margin-right: 5%;
+}
+.inner-container2 h2{
+    text-align: center;
+    margin-top: 4%;
+    font-weight: bold;
+}
+.recipe{
+    border-bottom: 1px solid silver;    
+}
+.recipe p{
+    text-align: start;
+    font-size: 15px;
+    padding: 22px;
+}
+footer{
+    background-color: rgb(128, 128, 128);
+    color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
