@@ -1,0 +1,102 @@
+.container {
+	background: url(https://www.supercars.net/blog/wp-content/uploads/2020/09/wallpaperflare.com_wallpaper-1-1.jpg);
+	background-size: cover;
+	height: 700px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "lato", sans-serif;
+	font-size: 14px;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 80px;
+	font-family: "Lato", sans-serif;
+	margin: 0;
+	padding: 80px 0 0 20px;
+	font-Weight: 900;
+	color: #ffd3c3;
+}
+
+nav {
+	margin: 20px;
+	float: right;
+
+}
+
+li {
+	margin: 0;
+	padding: 7px;
+	height: 20px;
+	line-height: 20px;
+}
+
+li {
+	float: left;
+	list-style-type: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: #ffe5e5;
+	padding: 5px 7px 10px 7px;
+	font-size: 1em;
+	font-weight: bold;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b38575;
+}
+
+.inner_content {
+
+	display: flex;
+	justify-content: start;
+	align-items: center;
+
+}
+
+.content {
+	padding-left: 25px;
+	padding-right: 25px;
+	text-align: Justify;
+	margin-bottom: 20px;
+}
+
+.article_image {
+	margin-right: 20px;
+}
+
+.article_paragraph {
+	font-size: 18px;
+	color: #333333;
+	margin: 0px;
+	padding: 20px;
+}
+
+.article_paragraph::first-letter {
+	font-size: 32px;
+	color: #b38575;
+	font-style: bold;
+	text-transform: uppercase;
+}
+
+.article_heading {
+	font-weight: 900;
+	color: #b38575;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
