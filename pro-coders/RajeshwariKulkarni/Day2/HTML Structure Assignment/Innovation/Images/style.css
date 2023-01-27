@@ -1,8 +1,12 @@
-body{
-    
-}
+
 .container{
-    background-image: url("");
+    background-image: url("../Images/coWorkingSpace2.jpg");
     width: 100vmax;
     height: 100vmax;
+}
+.blur{
+    background-color: rgb(255, 255, 86);
+    width: 100vmax;
+    height: 100vmax;
+    opacity: 0;
 }
