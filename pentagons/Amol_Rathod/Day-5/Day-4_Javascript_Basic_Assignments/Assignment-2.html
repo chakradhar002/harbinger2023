@@ -1,5 +1,4 @@
-<!-- Write a JavaScript program that displays the position of the
-first occurrence of "World" in the variable txt. -->
+<!-- Write a JavaScript program that converts the text to upper case. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,16 +17,20 @@ first occurrence of "World" in the variable txt. -->
 
     <!-- Main CSS file -->
 
-    <title>Day 5 | Basic Assignment 1</title>
+    <title>Day 5 | Basic Assignment 2</title>
   </head>
 
   <body>
     <div class="container">
       <div class="row">
-        <div class="col">
-          <h1 class="text-primary">Day 5 | Basic Assignment 1</h1>
+        <div class="col text-center">
+          <h4 class="text-primary my-5">Day 5 | Basic Assignment 2</h4>
 
-          <h2 id="show"></h2>
+          <p class="py-3 upper">harbinger group</p>
+
+          <p id="show"></p>
+
+          <button class="btn btn-outline-info" id="element">UpperCase</button>
         </div>
       </div>
     </div>
@@ -40,9 +43,14 @@ first occurrence of "World" in the variable txt. -->
   </body>
 
   <script>
-    const word = "Hello world, the world is full of joy.";
+    const element = document.querySelector("#element");
 
-    document.getElementById("show").innerHTML =
-      'The index of word "world" : ' + word.indexOf("world");
+    const show = document.querySelector("#show");
+
+    const res = document.querySelector(".upper");
+
+    element.addEventListener("click", () => {
+      show.innerHTML = res.textContent.toUpperCase();
+    });
   </script>
 </html>
