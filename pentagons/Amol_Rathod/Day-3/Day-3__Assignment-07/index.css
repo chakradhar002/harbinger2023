@@ -1,0 +1,105 @@
+body {
+  font: 14px "Roboto", sans-serif;
+  margin: 0;
+}
+.landing-first-section {
+  background-image: linear-gradient(
+      rgba(66, 68, 74, 0.95),
+      rgba(85, 88, 100, 0.95)
+    ),
+    url("/landingImage.jpg");
+  padding: 20px;
+  height: 700px;
+}
+.navigation-main {
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  height: 10%;
+}
+.nav-right-div {
+  display: flex;
+  gap: 20px;
+}
+.nav-right-div a:hover {
+  color: deeppink;
+  transition: all 0.3 ease-in-out;
+}
+.right-navigation a,
+.left-navigation {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+.heading-first {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.middle-section {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 500px;
+}
+.heading-1 {
+  font-size: 25px;
+}
+.footer-main {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.nav-footer-box {
+  width: 24%;
+}
+.footer-main-section-info {
+  margin-top: 40px;
+}
+.bottom-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  height: 500px;
+}
+.bottom-page-first,
+.bottom-page-second,
+.bottom-page-right-image {
+  max-width: 20%;
+}
+.bottom-page-first {
+  text-align: right;
+}
+.bottom-page-first-text {
+  font-size: 25px;
+  font-weight: 700;
+}
+.bottom-page-first-author {
+  margin-top: 50px;
+}
+.bottom-page-last {
+  height: 1px;
+  opacity: 0.7;
+  margin: 20px 0;
+  background-color: #3c3f49;
+}
+.bottom-page-second-heading {
+  font-size: 18px;
+  font-weight: 700;
+}
+.bottom-page-right-image-img {
+  width: 100%;
+}
+.orange-hover {
+  position: absolute;
+  height: 500px;
+  background-color: #fa692e;
+  width: 25%;
+  opacity: 0.7;
+  right: 0;
+}
