@@ -1,0 +1,44 @@
+.container {
+	background: url(https://wallpaperaccess.com/full/1393241.jpg);
+	background-size: cover;
+	height: 700px;
+}
+
+.container {
+
+    border: 1px solid black;
+    opacity: 0.8;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.topnav{
+  margin-top: 35px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+
+  color: black;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav a.split {
+  float: right;
+
+  color: white;
+}

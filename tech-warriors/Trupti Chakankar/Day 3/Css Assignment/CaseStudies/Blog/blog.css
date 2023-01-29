@@ -1,0 +1,52 @@
+body{
+    background-color: none;
+    font-style: 'lato','sans-seif' ;
+}
+header{
+    background-image: url("kitchen.jpg");
+    background-size: cover;
+    height: 100px;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    width: 100%;
+}
+.column{
+    height: 100%;
+    width: 70%;
+   /* justify-content: right;
+    */
+    padding-left: 80px;
+}
+.column1{
+    width: 30%;
+    padding: 30px;
+}
+.column img{
+    display: flex;
+    width: 600px;
+    height: 330px;
+}
+.column1 img{
+    width: 300px;
+    height: 200px;
+}
+button{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: red;
+    border-color: red;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}

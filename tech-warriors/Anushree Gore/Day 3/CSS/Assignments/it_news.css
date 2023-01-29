@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color: azure;
+}
+.container{
+    margin-top: 2%;
+    width: 100%;
+}
+.container h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.content{
+    border: 1px solid lightgray;
+    display: flex;
+    /* flex-direction: column; */
+    width: 100%;
+}
+.content img{
+    padding: 10px;
+    justify-content: flex-start;
+    margin-left: 5%;
+    width: 20%;
+    height: 10%;
+}
+.inner-container{
+    padding: 20px;  
+    margin-left: 8%;
+}
+.inner-container h3, p{
+    margin-top: 3%;
+    text-align: start;
+    font-size: 18px;
+}

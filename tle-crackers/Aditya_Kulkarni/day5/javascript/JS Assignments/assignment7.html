@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      alert(`Today's Date : ${new Date().toLocaleString()}`)
+      let user = prompt("Enter name", "default")
+      if (user) {
+        alert(`Hello ${user}`)
+      }
+      let num1 = parseInt(prompt("Enter first number"))
+      let num2 = parseInt(prompt("Enter second number"))
+
+      if (num1 && num2) {
+        alert(`Sum is ${num1 + num2}`)
+      }
+    </script>
+  </body>
+</html>

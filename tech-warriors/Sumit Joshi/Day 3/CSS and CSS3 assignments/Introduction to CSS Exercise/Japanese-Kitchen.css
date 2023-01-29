@@ -1,0 +1,86 @@
+body {
+  background-image: url("./Images/kitchen1.jpg");
+}
+.home {
+  color: black;
+  font: bold;
+}
+nav {
+  height: 35px;
+  margin-top: 27px;
+  text-align: left;
+}
+
+header {
+  background-image: url("./images/kitchen3.jpg");
+  height: 95px;
+  -ms-flex-item-align: center;
+}
+
+.container {
+  width: 80%;
+  background-color:rgb(157, 157, 193);
+  margin-left: 10%;
+}
+
+ul {
+  flex-direction: row;
+  display: flex;
+  margin-top: 0.5%;
+}
+
+li {
+  padding: 5px 5px;
+  padding-left: 2%;
+  color: black;
+
+  list-style: none;
+  text-decoration: solid;
+  text-size-adjust: 30px;
+}
+
+.header-img {
+  width: 80px;
+  margin-top: 10%;
+}
+
+.inner,
+.element {
+  display: flex;
+  margin-top: 2%;
+}
+.element2 {
+  width: 40%;
+  margin-right: 10%;
+  box-shadow: h-offset v-offset blur spread color;
+}
+.element1 {
+  width: 60%;
+  border-right: 0.1px solid black;
+}
+
+.inner-container {
+  margin-left: 5%;
+}
+
+img {
+  width: 40%;
+}
+.e1 {
+  margin-left: 4%;
+}
+.recipes {
+  border-bottom: 2px solid rgb(232, 88, 134);
+}
+.p {
+  color: rgb(159, 7, 88);
+  margin-left: 10%;
+}
+h2 {
+  text-align: center;
+  margin-top: 4%;
+}
+footer {
+  text-align: center;
+  background-color: silver;
+}

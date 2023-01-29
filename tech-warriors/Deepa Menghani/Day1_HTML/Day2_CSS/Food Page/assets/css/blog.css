@@ -1,0 +1,21 @@
+#hero{
+    background-image: url("../images/food_banner1.png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 350px;
+    
+}
+
+::after, ::before {
+    box-sizing: border-box;
+    
+}
+
+#hero, h1{
+    color: white;
+    text-align: left;
+   
+    /* text-justify: content;
+    position: relative; */
+    
+}

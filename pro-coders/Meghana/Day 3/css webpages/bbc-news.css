@@ -1,0 +1,28 @@
+.news{
+    display: flex;
+}
+img{
+    height: 250px;
+    width: 250px;
+}
+img:hover{
+    -webkit-filter: grayscale(70%); 
+    filter: grayscale(70%);
+}
+#education{
+    width: 310px;
+}
+#science{
+    width: 290px;
+}
+.news{
+    border: 1px solid black;
+    margin: 50px;
+}
+.business,.sport,.education,.science{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+h4{
+    text-align: center;
+}
