@@ -5,10 +5,10 @@ write a javascript prg FizzBuzz Algorithms
 write a javascript prg Speed Limits
 write a javascript prg Odd Even Number Loop
 write a javascript prg Count Truthy Falsy Values
-write a javascript prg Object String Properties Key
-write a javascript prg Netsted Loop Star Pattern
-write a javascript prg Marks Average Grade
-write a javascript prg Random Bingo Card
+8.write a javascript prg Object String Properties Key
+9.write a javascript prg Netsted Loop Star Pattern
+10.write a javascript prg Marks Average Grade
+11.write a javascript prg Random Bingo Card
 write a javascript prg Show Prime Numbers
 write a javascript prg Sum Of Arguments
 write a javascript prg Sum Of Arguments Array
