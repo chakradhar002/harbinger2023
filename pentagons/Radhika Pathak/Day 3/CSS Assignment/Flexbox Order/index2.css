@@ -1,30 +1,25 @@
 .left,
 .right,
 .center {
-    margin-top: -20px;
-    text-align: center;
+margin-top: -20px;
+text-align: center;
 }
-
 .container {
-    margin-top: -22px;
-    margin-bottom: -22px;
+margin-top: -22px;
+margin-bottom: -22px;
 }
-
 .left {
-    background-color: rgb(49, 182, 235);
+background-color: rgb(49, 182, 235);
 }
-
 .right {
-    height: 40px;
-    background-color: rgb(227, 12, 180);
+height: 40px;
+background-color: rgb(227, 12, 180);
 }
-
 .center {
-    height: 40px;
-    background-color: rgba(227, 255, 71, 0.929);
+height: 40px;
+background-color: rgba(227, 255, 71, 0.929);
 }
-
 .footer {
-    text-align: center;
-    background-color: lawngreen;
+text-align: center;
+background-color: lawngreen;
 }
