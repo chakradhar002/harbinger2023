@@ -19,7 +19,13 @@
       form.addEventListener("submit", (e) => {
         e.preventDefault()
         let number = num.value
-        console.log(number)
+        let pattern = /[^0-9]/g
+        let ans = pattern.test(number)
+        if (!ans) {
+          alert("Validated")
+        } else {
+          alert("Not Validated")
+        }
       })
     </script>
   </body>
