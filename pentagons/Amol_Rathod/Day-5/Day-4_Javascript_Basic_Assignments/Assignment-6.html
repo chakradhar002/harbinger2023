@@ -1,0 +1,95 @@
+<!-- Create a HTML page with 4 hyperlinks named white, red, blue and
+pink.The background colour of the HTML page will change based on the
+link which is clicked. Write a javascript function to implement it. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Day 5 | Basic Assignment 6</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-primary text-center my-5">
+            Day 5 | Basic Assignment 6
+          </h4>
+
+          <div class="nav justify-content-center">
+            <a
+              class="me-4 text-decoration-none text-primary"
+              onclick="backgroundWhite()"
+              id="white"
+              href="#"
+              >White</a
+            >
+            <a
+              class="me-4 text-decoration-none text-danger"
+              onclick="backgroundRed()"
+              id="red"
+              href="#"
+              >Red</a
+            >
+            <a
+              class="me-4 text-decoration-none text-info"
+              onclick="backgroundBlue()"
+              id="blue"
+              href="#"
+              >Blue</a
+            >
+            <a
+              class="me-4 text-decoration-none text-warning"
+              onclick="backgroundPink()"
+              id="pink"
+              href="#"
+              >Pink</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script type="text/javascript">
+    let pink = document.getElementById("pink");
+
+    let blue = document.getElementById("blue");
+
+    let white = document.getElementById("white");
+
+    function backgroundWhite() {
+      document.body.style.backgroundColor = "white";
+    }
+
+    function backgroundRed() {
+      document.body.style.backgroundColor = "red";
+    }
+
+    function backgroundBlue() {
+      document.body.style.backgroundColor = "blue";
+    }
+
+    function backgroundPink() {
+      document.body.style.backgroundColor = "pink";
+    }
+  </script>
+</html>
