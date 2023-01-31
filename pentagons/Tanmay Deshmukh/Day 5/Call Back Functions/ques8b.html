@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var arr = [1,2,3,4,5,6,7,8,9]
+        var arr2 =[]
+        function removeEvenNumbers  (arr,callback){
+            for (let index = 0; index < arr.length; index++) {
+                if (callback(arr[index])){
+                    arr2.push(arr[index])
+                }
+                
+            }
+            console.log(arr2)
+        } 
+
+
+        function isodd(num){
+            if (num % 2 == 0){
+                return false
+            }
+            else{
+                return true
+            }
+        }
+
+        removeEvenNumbers   (arr,isodd )
+    </script>
+    
+</body>
+</html>

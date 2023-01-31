@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var arr = ["JavaScript", "is", "a", "high-level,", "interpreted", "programming", "language", "that", "conforms", "to", "the", "ECMAScript", "specification"]
+
+        function removeShortWords (arr,callback){
+            for (let index = 0; index < arr.length; index++) {
+                if (callback(arr[index])){
+                    console.log(arr[index])
+                }
+                
+            }
+        } 
+
+
+        function islong(str1){
+            if (str1.length >= 4){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+
+        removeShortWords (arr,islong )
+    </script>
+    
+</body>
+</html>
