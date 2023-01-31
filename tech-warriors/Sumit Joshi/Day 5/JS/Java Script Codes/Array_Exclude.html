@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Array Excludes value to new array</h1>
+    <script>
+        function Array_Exclude(array, elemToExclude) {
+            console.log('ArrayToExclude :', array);
+            console.log('Elements to Exclude :', elemToExclude);
+            let newArray = []
+            for (let item of array) {
+                if (!elemToExclude.includes(item)) {
+                    newArray.push(item)
+                }
+            }
+            console.log('NewArray :', newArray);
+        }
+
+        var array1 = [1, 2, 3, 2, 4]
+
+        var array2 = [34, 56, 32, 12, 34, 56]
+
+        Array_Exclude(array1, [2]);
+        console.log('*****************************');
+        Array_Exclude(array2, [34, 56])
+
+    </script>
+</body>
+
+</html>
