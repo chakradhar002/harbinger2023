@@ -7,10 +7,15 @@
         <h1>Maximum From Array</h1>
         <script>
             function maxFromArray(array){
-                Math.max(array)
+                if(array.length === 0){
+                    return "Array is empty"
+                }
+                else{
+                return Math.max(...array)
             }
-            var array1 = [1,2,4,5,6]
-            
+        }
+            var array1 = [100,305,173,259,419]
+            console.log("Max number from array: ",maxFromArray(array1))
         </script>
     </body>
 </html>
