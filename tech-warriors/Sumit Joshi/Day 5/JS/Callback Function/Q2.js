@@ -9,5 +9,5 @@ function BooleanCallback(boolean,callback){
 function hello(){
     console.log(`""`)
 }
-BooleanCallback(true,hello)
+BooleanCallback(0,hello)
 
