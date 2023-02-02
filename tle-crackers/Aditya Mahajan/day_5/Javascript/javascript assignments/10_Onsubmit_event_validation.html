@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_onsubmit event</title>
+</head>
+
+<body>
+    <h2>10_validation functions and modify the onSubmit event Handler
+        in the form</h2>
+    <form name="myForm" action="#" onsubmit="validate()">
+        <label>Member Number  </label>
+        <input type="text" name="number"><br><br>
+        <label>Member Password</label>
+        <input type="password" name="pwd"><br><br>
+        <input type="submit" value="click">
+    </form>
+</body>
+<script>
+    function validate() {
+        let number = parseInt(document.myForm.number.value);
+        let pwd = document.myForm.pwd.value;
+        if (number === "") {
+            alert("number must be entered");
+        }
+        else if (!Number.isInteger(number)) {
+            alert("Must be a number");
+        }
+
+        else if(pwd===""){
+            alert("Password must be entered");
+        }
+        else if(pwd.length < 4){
+            alert("Password must be longer than 4 digits");
+        }
+
+    }
+</script>
+
+</html>

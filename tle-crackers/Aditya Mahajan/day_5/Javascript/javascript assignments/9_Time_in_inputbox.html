@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9_display time dynamically</title>
+</head>
+
+<body>
+    <h2>9_display time dynamically</h2>
+    <input type="text" id="date">
+    <script>
+        let time = document.getElementById('date');
+        setInterval(() => {
+            let dt = new Date()
+            time.value = `${dt.getHours()} : ${dt.getMinutes()} : ${dt.getSeconds()}`
+        }, 1000)
+    </script>
+</body>
+
+</html>

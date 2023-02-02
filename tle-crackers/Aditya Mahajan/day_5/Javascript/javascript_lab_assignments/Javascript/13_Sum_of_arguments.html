@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-sum of arguments</title>
+</head>
+
+<body>
+    <h2>Sum of arguments passed to a function</h2>
+</body>
+<script>
+    console.log("13-sum-of-arguments");
+    function Sum_of_args() {
+        console.log(arguments);
+        let sum = 0;
+        for (let i = 0; i < arguments.length; i++) {
+            sum += arguments[i];
+        }
+        console.log(sum);
+    }
+    Sum_of_args(1, 2, 3, 4, 5);  // calling function
+</script>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19_Check array occurances</title>
+</head>
+
+<body>
+    <h2>19_Check array occurances</h2>
+</body>
+<script>
+    console.log("19-check-array-occurances");
+    function check_occurance(element) {
+        const arr = [1,1,2,3,4,3,2,1,1,5,6,6,5];
+        const counts = {};
+
+        for (const num of arr) {
+            counts[num] = counts[num] ? counts[num] + 1 : 1;
+        }
+        console.log(`Occurance of ${element} is => ` + counts[element]);
+    }
+    check_occurance(1);
+</script>
+
+</html>
