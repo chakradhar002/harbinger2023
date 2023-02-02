@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+    <input type="text" id="phone">
+    <button id="submit">Submit</button>
+    </form>
+    <script>
+        let form = document.getElementById("form")
+        form.onsubmit=function(e){
+            var phone = document.getElementById("phone").value
+            console.log(phone)    
+            //This part is to check the format of the given input by user if it is in format
+            //it will give alert as number is in format.
+            //if not in format it will give alert as not in format       
+            if(phone.length===12){
+                if(phone.substring(3, 4) === '-' && phone.substring(7, 8) === '-'){
+                    alert("Number is In format")
+                    return
+                }
+                if(phone.substring(3, 4) === '.' && phone.substring(7, 8) === '.'){
+                    alert("Number is In format")
+                    return
+                }
+                if(phone.substring(3, 4) === ' ' && phone.substring(7, 8) === ' '){
+                    alert("Number is In format")
+                    return
+                }
+        }
+        else{
+            alert("Number is Not in format")
+        }
+        
+    }
+    </script>
+</body>
+</html>
