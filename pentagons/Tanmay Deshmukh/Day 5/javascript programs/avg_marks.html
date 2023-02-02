@@ -30,7 +30,7 @@
         <input type="text" class="form-control" id="no3" >
         <label for="formGroupExampleInput">Subject4 Makrs</label>
         <input type="text" class="form-control" id="no4" >
-        <button style="margin: 5px;" type="button" class="btn btn-primary" id ="butt1" onclick="calculate()">Draw</button>
+        <button style="margin: 5px;" type="button" class="btn btn-primary" id ="butt1" onclick="calculate()">Find Grade</button>
         <p id="para1"></p>
       </div>
     <script>
@@ -43,11 +43,25 @@
 
         function calculate(){
             var sum1 = Number(num1.value) + Number(num2.value) + Number(num3.value) +Number(num4.value)
-            para.innerHTML = "Avarage of marks is :- " + sum1 /4
+            para.innerHTML = findgrade( (sum1 /400) *100)
 
             
             }
 
+        function findgrade(num){
+            if(num >= 0 && num <= 70){
+                return "Grade D"
+            }
+            if(num >= 71 && num <= 80){
+                return "Grade C"
+            }
+            if(num >= 81 && num <= 90){
+                return "Grade B"
+            }
+            if(num >= 91 && num <= 100){
+                return "Grade A"
+            }
+        }
         
 
 

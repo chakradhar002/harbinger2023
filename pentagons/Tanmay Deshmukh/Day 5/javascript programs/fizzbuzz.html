@@ -22,10 +22,10 @@
 <body>
 
     <div class="form-group">
-        <label for="formGroupExampleInput">Number Range</label>
+        <label for="formGroupExampleInput">Enter NUMBER</label>
         <input type="text" class="form-control" id="no1" >
-        <button style="margin: 5px;" type="button" class="btn btn-primary" id ="butt1" onclick="calculate()">Draw</button>
-        <p id="para1" style="background-color: aqua;"></p>
+        <button style="margin: 5px;" type="button" class="btn btn-primary" id ="butt1" onclick="calculate()">FizzBuzz</button>
+        <p id="para1"></p>
       </div>
     <script>
         const num1 = document.getElementById("no1")
@@ -33,31 +33,18 @@
         const para  =document.getElementById("para1")
 
         function calculate(){
-            let n = num1.value
-                let string = "1<br>";
-                for (let i = 2; i <= n; i++) {
-                    var val = true
-                    for (let j = 2; j < i ; j++) {
-                        if (i % j == 0){
-                            val =false
-                            break
-                        }
-                    }
-                    if (val == true) {
-                        string += i;
-                        string += "<br>"
-                    } 
-                    
-                    
-                
-
-                }
-                para.innerHTML = string;
-
-            
+            if(Number(num1.value)){
+            if (num1.value % 15 == 0)  para.innerHTML = "FizzBuzz";
+            else if (num1.value % 3 == 0) para.innerHTML = "Fizz";
+            else if (num1.value % 5 == 0) para.innerHTML = "Buzz";
+            else{
+                para.innerHTML = num1.value;
             }
-
-        
+        }
+        else{
+            para.innerHTML = "Enter a number"
+        }
+        }
 
 
     </script>

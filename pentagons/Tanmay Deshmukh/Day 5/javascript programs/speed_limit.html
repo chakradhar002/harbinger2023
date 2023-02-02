@@ -33,13 +33,13 @@
         const para  =document.getElementById("para1")
 
         function calculate(){
-            if (num1.value > 40) {
-                alert("you are over speeding reduce speed below 40")
-                para.innerHTML = "Over speeding"
+            if (num1.value <= 70) {
+                alert("Good Safe Driving")
+                para.innerHTML = "Good Safe Driving"
                 
             }
             else{
-                para.innerHTML = "Speed is under control"
+                para.innerHTML = "Licese Suspended"
             }
 
         }
