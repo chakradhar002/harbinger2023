@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a function which calculates the sum of multiples of 3 and 5 for given limit.</h1>
+</body>
+</html>
+<script>
+    console.log("Write a function which calculates the sum of multiples of 3 and 5 for given limit.");
+    function sumof_multiple_3and_5(limit)
+    {
+        let sum = 0;
+        for(let i=0;i<=limit;i++)
+        {
+            if(i%3==0 || i%5==0)
+            {
+                sum = sum+i;
+            }
+        }
+        console.log(sum);
+    }
+    sumof_multiple_3and_5(10);
+</script>
