@@ -1,0 +1,61 @@
+body {
+	background-color: #0b0d14;
+}
+
+.Main {
+	border: 1px solid white;
+	margin-top: 80px;
+	margin-left: 160px;
+	margin-right: 160px;
+	margin-bottom: 80px;
+}
+
+.Main2 {
+	margin: 90px;
+}
+
+.middle-first-heading {
+	text-align: center;
+	color: white;
+}
+
+.about {
+	margin-left: 250px;
+	margin-right: 250px;
+	text-align: center;
+	color: white;
+}
+
+.row {
+	margin-top: 20px;
+	margin-left: 250px;
+	display: flex;
+}
+
+.button {
+	margin-left: 30px;
+}
+
+.subscribe {
+
+	background-color: rgb(255, 106, 0);
+	color: white;
+	padding: 7px 25px;
+	border-radius: 20px;
+	border: none;
+}
+
+.subscribe:hover {
+	background-color: black;
+
+}
+
+.form-control {
+	background-color: #3c3f49;
+	border: none;
+	border-bottom: 4px solid rgb(255, 106, 0);
+}
+
+p {
+	text-align: justify;
+}
