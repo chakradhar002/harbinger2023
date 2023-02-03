@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // FILTER
+        const words = ['acbdhdsbc','scacaduac','dcn','idn'];
+        const result = words.filter(word => word.length > 6);
+
+        console.log(result)
+
+        //SORT
+
+        let students = [
+    {
+        firstName: 'ABC',
+        lastName: 'XYZ',
+        age: 20,
+    },
+
+    {
+        firstName: 'AFS',
+        lastName: 'SDS',
+        age: 19,
+
+    },
+
+    {
+        firstName: 'SDF',
+        lastName: 'ASDF',
+        age: 22,
+
+    }
+];
+
+console.log(students.sort((a, b) => {
+    return a.age - b.age;}))
+
+
+    //MAP
+
+    const numbers = [4, 9, 16, 25];
+    const newArr = numbers.map(Math.sqrt)
+
+    console.log(newArr)
+
+    </script>
+</body>
+</html>
