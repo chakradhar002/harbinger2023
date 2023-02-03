@@ -9,13 +9,20 @@
     <h1>FizzBuzz</h1>
     <script>
         function FizzBuzz(num) {
+            //if the number is multiple of both 5 & 3 will return FizzBuzz
 
             if ((num % 3 === 0) && (num % 5 === 0)) {
                 return ("FizzBuzz");
             }
+
+            //if the number is multiple of only 3 will return Fizz
+
             if (num % 3 === 0) {
                 return ("Fizz");
             }
+
+            //if the number is multiple of only 5 will return Buzz
+
             if (num % 5 === 0) {
                 return ("Buzz");
             }

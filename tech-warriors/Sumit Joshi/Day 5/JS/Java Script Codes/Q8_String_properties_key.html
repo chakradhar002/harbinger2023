@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Object String Properties Key</h1>
+    <script>
+        //This function will return only those properties have string type
+        function String_properties(object) {
+            for (let key in object) {
+                if (typeof (object[key]) === 'string') {
+                    console.log(key, ':', object[key])
+                }
+            }
+        }
+
+        const object1 = {
+            name: 'Sumit',
+            age: 23,
+            Add: 'Pune',
+            pin: 411057
+        }
+
+        String_properties(object1)
+    </script>
+</body>
+
+</html>
