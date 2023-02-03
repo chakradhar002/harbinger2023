@@ -35,9 +35,24 @@
                 return 
             }
 
-            let mobileSubString = mobile.value.split("-")
+            let mobileSubString = null;
+
+            if(mobile.value.includes("-")){
+                mobileSubString = mobile.value.split("-")
+            }else if (mobile.value.includes(".")){
+                mobileSubString = mobile.value.split(".")
+            }else if(mobile.value.includes(" ")){
+                mobileSubString = mobile.value.split(" ")
+            }
+
+            if(mobileSubString === null){
+                alert("Wrong Format")
+                return
+            }
+
+
             if(mobileSubString.length !== 3){
-                alert("Wrong Format , Incorrect Dashes !")
+                alert("Wrong Format , Incorrect Format !")
                 return
             }
 
@@ -61,7 +76,7 @@
 
         function checkIfAlpha(string){
             for(i of string){
-                if(i !== '-'){
+                if(i !== '-' && i!=='.' && i!=" "){
                     if(isNaN(parseInt(i))){
                         return false
                     }
