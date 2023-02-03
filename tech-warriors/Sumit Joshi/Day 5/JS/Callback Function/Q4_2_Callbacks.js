@@ -1,3 +1,7 @@
+//Function AddMul tales 1 number abd 2 callbacks
+//first it will return addition and after that it will 
+//multipy that addition and returns the value of num2
+
 function AddMul(num,callbacka1,callback2){
     let num1 = 0;
     let num2 = 0;

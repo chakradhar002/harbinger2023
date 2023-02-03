@@ -1,5 +1,8 @@
 console.log("Part a")
 
+// function called myMap that takes in an array and a callback as arguments. 
+//It returns a new array with the callback applied to each element in the array.
+
 array1 = [3, 5, 6]
 
 function threeMult(num) {
@@ -19,6 +22,9 @@ function myMap(array, callback) {
 console.log(myMap(array1, threeMult))
 
 console.log("Part b")
+
+//function allCaps that takes in an array as an argument, and uses the myMap function
+// to return all the elements capitalized.
 
 array2 = ["The", "internet", "is", "not", "a", "big", "truck.", "It's", "a", "series", "of", "tubes"]
 
