@@ -1,0 +1,11 @@
+table,
+tr {
+	border: 1px solid rgb(144, 137, 137);
+	border-collapse: collapse;
+	text-align: center;
+}
+
+th,
+tr {
+	background-color: rgb(244, 244, 77);
+}
