@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Pattern Validation</title>
+</head>
+<body>
+    <h1>Phone Pattern Validation</h1>
+    <form action="#" onsubmit="return formValidate()">
+        <label for="phoneNumber">Phone Number</label>
+        <!-- <input type="tel" id="phoneNumber" pattern="[0-9]{3}-[0-9]{4}"><br/> -->
+        <input type="text" id="phoneNumber">
+        <button id="btn">Validate</button>
+        <hr/>   
+        <p>
+            Patters to write phone number : <br/><br/>
+            XXX-XXX-XXXX<br/><br/>
+            XXX.XXX.XXXX<br/><br/>
+            XXX XXX XXXX <br/>
+           
+        </p>
+    </form>
+    <!-- Javascript File -->
+    <script src="phonePattern.js"></script>
+</body>
+</html>
