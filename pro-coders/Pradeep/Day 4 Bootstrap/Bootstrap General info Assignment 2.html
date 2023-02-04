@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project build CSS -->
+    <link rel="stylesheet" href="billing.css">
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <title> Bootstrap Assignment 2 </title>
+</head>
+
+<body style="background-color: rgb(135, 221, 201);">
+    <div class="container mb-5 mt-5" >
+        <div class="row">
+            <div class="col-sm-6" style="border:2px solid rgb(54, 36, 36); padding: 15px; background-color: rgb(237, 218, 186);">
+                <form>
+                    <div class="form-group">
+                        <label for="position"> Title </label>
+                        <select class="form-control" id="Title">
+                          <option>Mr.</option>
+                          <option>Ms.</option>
+                          <option>Mrs.</option>
+                        </select>
+                    </div>
+                <div class="form-row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+                    </div>
+                </div>
+                </div>
+                    <div class="form-group">
+                      <label for="position">Position</label>
+                      <select class="form-control" id="position">
+                        <option>Manager</option>
+                        <option>Employee</option>
+                        <option>Intern</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="post">Post</label>
+                      <input type="text" class="form-control" id="post" placeholder="Enter post">
+                    </div>
+                <div class="form-row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="businessArea">Business Area</label>
+                      <input type="text" class="form-control" id="businessArea" placeholder="Enter business area">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="employee">Employee</label>
+                      <select class="form-control" id="employee">
+                        <option> Jr. Developer </option>
+                        <option> Sr. Developer </option>
+                      </select>
+                    </div>
+                </div>
+                </div>
+                <!--   <button type="submit" class="btn btn-primary">Submit</button> -->
+                  </form>
+                  
+            </div>
+
+            <div class="col-sm-6" style="border:2px solid rgb(54, 36, 36); padding: 15px; background-color: rgb(39, 39, 186);color: white;">
+                <form>
+                    <div class="form-group">
+                      <label for="streetNo">Street No</label>
+                      <input type="text" class="form-control" id="streetNo" placeholder="Street no">
+                    </div>
+                    <div class="form-group">
+                      <label for="additionalInfo">Additional Info</label>
+                      <input type="text" class="form-control" id="additionalInfo" placeholder="Additional info">
+                    </div>
+                  <div class="form-row">
+                  <div class="col-md-4">
+                  <div class="form-group">
+                      <label for="zipCode">Zip Code</label>
+                      <input type="number" class="form-control" id="zipCode" placeholder="ZIP">
+                    </div>
+                    </div>
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="place">Place</label>
+                      <input type="text" class="form-control" id="place" placeholder="Place">
+                    </div>
+                  </div>
+                  </div>
+
+                    <div class="form-group">
+                      <label for="country">Country</label>
+                      <select class="form-control" id="country">
+                        <option>Select a country</option>
+                        <option>Country 1</option>
+                        <option>Country 2</option>
+                        <option>Country 3</option>
+                      </select>
+                    </div>
+                  <div class="form-row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <label for="code">Code</label>
+                      <input type="number" class="form-control" id="code" placeholder="Code">
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="phoneNumber">Phone Number</label>
+                      <input type="number" class="form-control" id="phoneNumber" placeholder="Phone no">
+                    </div>
+                  </div>
+                  </div>
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Your email">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="acceptTerms">
+                      <label class="form-check-label" for="acceptTerms">I accept the terms and conditions</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                  </form>
+                  
+            </div>
+            
+        </div>
+
+
+</body>
