@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function calculateSum() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let sum = num1 + num2;
+        alert("The sum of " + num1 + " and " + num2 + " is " + sum);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button onclick="calculateSum()">Calculate</button>
+  </body>
+</html>
