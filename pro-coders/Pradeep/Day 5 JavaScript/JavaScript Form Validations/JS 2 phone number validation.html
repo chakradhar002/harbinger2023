@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function my_function()
+        {
+           // alert("func called");
+            var phone_num = document.getElementById("ph_num").value;
+           
+            if(phone_num == "")
+            {
+                alert("Phone number must not be empty ");
+            }
+            else
+            {
+                var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+                if(phone_num.match(phoneno))
+                {
+                    alert("Form submitted ");
+                }
+                else
+                {
+                    alert("Phone number not formatted ");
+                }
+            }
+                
+        }
+    </script>
+</head>
+
+<body>
+
+    <form onsubmit="my_function();">
+        <label for="phone_number"> 
+            Enter Phone Number in following formats :- <br>
+            XXX-XXX-XXXX <br>
+            XXX.XXX.XXXX <br>
+            XXX XXX XXXX <br>
+        </label>
+        <input type="text" name="phone_number" id="ph_num">
+        <br>
+        <input type="submit" value="Submit Form">
+    </form>
+   
+</body>

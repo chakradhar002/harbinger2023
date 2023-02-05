@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function clickToAdd()
+        {
+            alert("hi");
+            var number1 = document.getElementById("num1").value;
+            var number2 = document.getElementById("num2").value;
+            number1 = Number(number1);
+            number2 = Number(number2);
+            var number3 = number1 + number2;
+            alert("addition : " + number3);
+        }
+
+    </script>
+</head>
+
+<body>
+    number 1 :- <input type="number" id = "num1"> <br>
+    number 2 :- <input type="number" id = "num2"> <br>
+    <button onclick="clickToAdd();"> ADD </button>
+</body>
