@@ -78,7 +78,10 @@ numbers. -->
       let first = prompt("Enter first number : ");
       let second = prompt("Enter second number : ");
 
-      alert(`Sum = ${first + second} `);
+      first = Number(first);
+      second = Number(second);
+
+      alert(`Sum of ${first} and ${second} = ${first + second} `);
     });
   </script>
 </html>
