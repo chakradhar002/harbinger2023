@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uper Case</title>
+</head>
+
+<body>
+    <h1>Upper Case</h1>
+    <form action="">
+        <label for="#">Enter Text</label>
+        <input type="text" id="text1">
+        <br /><br /><br />
+        <button id="btn">Convert To Upper Case</button>
+        
+    </form>
+    <!-- Javascript File -->
+    <script>
+        document.getElementById("btn").addEventListener("click", (e) => {
+            // document.write("heoolo")
+            var text1 = document.getElementById("text1").value;
+            
+            document.write(text1.toUpperCase())
+
+        })
+    </script>
+    <!-- <script src="upperCase.js"></script> -->
+</body>
+
+</html>
