@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q18| Array Get Max Largest Number</title>
+    </head>
+    <body>
+        <script>
+       const MaxinArray = (array) => {
+            if(!array || array.length === 0){
+                return 0
+            }
+            let max = array[0]
+
+            for (let v of array){
+                if(v > max ){
+                    max = v
+                }
+            }
+            return max
+            }
+            console.log(MaxinArray([2,90,34, 5]))
+        </script>
+    </body>
+</html>

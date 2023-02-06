@@ -1,0 +1,30 @@
+<!-- Write a JavaScript program which will
+a. give an alert message of today’s date.
+b. prompt the user to give their name and gives an alert message
+‘Hello’ and username.
+c. prompt the user to give 2 numbers and alerts the sum of those 2
+numbers. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q7</title>
+  </head>
+  <body>
+    <script>
+      alert(`Today's Date : ${new Date().toLocaleString()}`)
+      let user = prompt("Enter name", "default")
+      if (user) {
+        alert(`Konnichiwa ${user}`)
+      }
+      let num1 = parseInt(prompt("Enter first number"))
+      let num2 = parseInt(prompt("Enter second number"))
+
+      if (num1 && num2) {
+        alert(`Sum is ${num1 + num2}`)
+      }
+    </script>
+  </body>
+</html>

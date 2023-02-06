@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q17| Array Count Search Occurances </title>
+    </head>
+    <body>
+        <script>
+            const CountSearchoccurence = (array  , value) => {
+            let result  = 0
+            for (let val of array) {
+                if(value === val){
+                    result++
+                }
+            }
+            return result
+        }
+console.log(CountSearchoccurence([25 , 0 , 23, 25, 21, 25, ] , 23))
+console.log(CountSearchoccurence([25 , 0 , 23, 25, 21, 25, ] , 24))
+console.log(CountSearchoccurence([25 , 0 , 23, 25, 21, 25, ] , 25))
+        </script>
+    </body>
+</html>

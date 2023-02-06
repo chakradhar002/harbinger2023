@@ -1,0 +1,19 @@
+
+<html>
+    <script>
+    async function getData() {
+      // using await means the resolved value of the Promise is returned!
+      const response = await fetch('example_1.json').then(
+        (response) => response.json(),
+      ); // .then still works when it makes sense!
+
+       // do stuff with `response` and `otherResponse`
+      console.log({ response});
+    }
+
+    getData();
+
+
+
+    </script>
+    </html>
