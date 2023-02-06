@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log('landscape-portrait');
+
+function isLandscape(width, height){
+  return (width > height);
+}
+
+let checkWidthHeight1 = isLandscape(800, 600);
+console.log('Landscape:',checkWidthHeight1);
+
+let checkWidthHeight2 = isLandscape(600, 800);
+console.log('Landscape:',checkWidthHeight2);
+
+let checkWidthHeight3 = isLandscape(1024, 768);
+console.log('Landscape:',checkWidthHeight3);
+</script>
+</body>
+</html>
