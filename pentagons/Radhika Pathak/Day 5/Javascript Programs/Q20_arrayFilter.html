@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Filter</title>
+</head>
+
+<body>
+    <h2>Filter the array with ranking:</h2>
+    <script type="text/javascript">
+        
+        const Student = [
+            { name: 'Radhika', year: 2019, ranking: 4 },
+            { name: 'Shruti', year: 2019, ranking: 5 },
+            { name: 'Amit', year: 2018, ranking: 4 },
+            { name: 'Saurabh', year: 2019, ranking: 7 },
+            { name: 'Sagar', year: 2017, ranking: 3 },
+        ]
+
+        document.write('Higest Rank Holders:',
+                Student
+                .filter(student => student.year === 2019 && student.ranking >= 5)
+                .sort((n1, n2) => n1.ranking - n2.ranking)
+                .reverse()
+                .map(student => student.name)
+        );
+    </script>
+</body>
+
+</html>

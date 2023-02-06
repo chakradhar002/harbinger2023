@@ -8,4 +8,4 @@ function repeat(){
     console.log("I am being called")
 }
 
-repeatation(repeat,5)
+repeatation(repeat,4)
