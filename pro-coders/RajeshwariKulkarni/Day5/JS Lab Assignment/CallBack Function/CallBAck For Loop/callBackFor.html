@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back For loop</title>
+</head>
+<body>
+    <h1>Call Back : For Loop</h1>
+    <hr/>
+    <!-- javascript -->
+    <script>
+        function display(message,number)
+        {
+            for(var i = 1;i<=number;i++)
+            {
+                console.log(i+"  :  "+message+"<br/>")
+                document.write(i+"  :  "+message+"<br/>")
+            }
+        }
+        function loopMessage()
+        {
+            display("Hello Folks..!!",4)
+        }
+        //calling function
+        loopMessage()
+    </script>
+</body>
+</html>

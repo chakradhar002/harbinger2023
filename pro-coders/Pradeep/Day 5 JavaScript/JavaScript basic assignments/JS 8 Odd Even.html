@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function check()
+        {
+            var num = prompt("enter any number");
+            num = Number(num);
+            var para = document.getElementById("p1");
+            if(num % 2 == 0)
+            {
+                alert("hii");
+                para.innerHTML = "Number is even";
+            }
+            else
+            {
+                para.innerHTML = "Nimber is odd";
+            }
+        }
+        
+
+    </script>
+</head>
+
+<body onload="check()"> 
+   
+    <p id="p1">  </p>
+   
+</body>

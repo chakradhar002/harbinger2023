@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q1</title>
+    </head>
+    <body>
+        <form id="empidform">
+            <input type="text" id="empid">
+            <input type="submit">
+        </form>
+        <script>
+        let form = document.getElementById("empidform")
+        let emp = document.getElementById("empid")
+
+        form.addEventListener("submit" , (e) =>{
+            e.preventDefault()
+            let empid = emp.value
+
+            let pattern = /[0-9]{3}/
+
+            if(!pattern.test(empid)){
+                alert("Enter only digits as well as only 3 digits")
+                return
+            }
+
+            alert("Valid Employee ID")
+
+        })
+        </script>
+    </body>
+</html>

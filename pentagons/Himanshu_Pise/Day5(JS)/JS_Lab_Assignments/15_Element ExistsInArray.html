@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q15|Element Existsin Array</title>
+    </head>
+    <body>
+        <script>
+          const ElementExistsinArray =  ( element , array ) => {
+    for (el of array ){
+        if(el === element) return true
+    }
+    return false
+}
+console.log("Array: [3,4,5]" +"\nElement to be search: 3 \n"+ElementExistsinArray(3 , [3, 4 , 5]))
+console.log("Array: [3,4,5]" +"\nElement to be search: 1 \n"+ElementExistsinArray(1 , [3, 4 , 5]))
+console.log("Array: [3,4,5]" +"\nElement to be search: 5 \n "+ElementExistsinArray(5 , [3, 4 , 5]))
+        </script>
+    </body>
+</html>

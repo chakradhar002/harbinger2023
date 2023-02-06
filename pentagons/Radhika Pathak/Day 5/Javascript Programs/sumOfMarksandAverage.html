@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total Marks & Average</title>
+</head>
+
+<body>
+    <h2>Total Marks & Average in a given array:</h2>
+    <script>
+        
+        function calculate_average(array)
+        {
+            let total=0;
+            for(let element of array)
+            {
+                total+=element;
+            }
+            document.write("Total Marks:",total);
+            let average = (total / array.length)
+            document.write("<br>Average:",average);
+            if (average>0 && average<=70) {
+                document.write("<br>Grade:D Grade");
+            }
+            if (average>= 71 && average<=79) {
+                document.write("<br>Grade:Grade:C Grade");
+            }
+            if (average>= 81 && average<=89) {
+                document.write("<br>Grade:B Grade");
+            }
+             if (average>= 91 && average<=100) {
+                document.write("<br>Grade:A Grade");
+            }
+        }
+        var array1 = [67,90,89,78,80,91];
+       
+        calculate_average(array1);
+        
+    </script>
+</body>

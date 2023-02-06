@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function phnnumber(){
+            var phnno = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/;
+            var inputtxt=document.getElementById("inputtxt")
+            if(inputtxt.value.match(phnno)){
+                return true;
+            }
+            else{
+                alert("Number must be in xxxx-xxx-xxx format.")
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="myform" method="post" onsubmit="return phnnumber();">
+        Phone Number : <input type="text" name="inputtxt" id="inputtxt"><br>
+        
+
+        <input type="submit" value="Send">
+</body>
+</html>

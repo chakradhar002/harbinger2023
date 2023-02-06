@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q3</title>
+    </head>
+    <body>
+        <form id="phoneForm">
+            <input type="tel" id="phone">
+            <input type="submit">
+        </form>
+        <script>
+        let form = document.getElementById("phoneForm")
+        let phoneElement = document.getElementById("phone")
+        form.addEventListener("submit" , e=>{
+            e.preventDefault()
+            let phone = phoneElement.value
+            //regex exp for phone no.
+            let phonePattern = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/
+            if(!phone.match(phonePattern)){
+                alert("phone should not be empty and be of pattern provided")
+                return
+            }
+            alert("Valid Phone")
+        })
+        </script>
+    </body>
+</html>
