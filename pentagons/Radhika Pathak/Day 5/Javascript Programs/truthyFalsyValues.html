@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truthy Falsy</title>
+    
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    var check = [false,0,undefined,null,NaN,""];
+    var arr = [false,0,undefined,"Apple",89,93,"Mango","","Banana"];
+    var count_truthy= 0;
+    var count_falsy= 0;
+    function calculate(arr){
+            for (let index = 0; index < arr.length; index++) {
+                if(check.includes(arr[index])){
+                    count_falsy+=1;
+                }
+                else
+                {
+                    count_truthy+=1;
+                }
+                
+            }
+            document.write("Array :",arr);
+            document.write("<br>Count of Falsy Values:",count_falsy);
+            document.write("<br>Count of Truthy Values:",count_truthy);
+            
+        }
+        calculate(arr);
+</script>
+</html>

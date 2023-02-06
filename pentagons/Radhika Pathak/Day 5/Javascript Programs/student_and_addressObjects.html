@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student & Address</title>
+</head>
+
+<body>
+    <h2>Create an object of student and address:</h2>
+    <script type="text/javascript">
+        const Students = {
+            name: 'Radhika',
+            age: 21,
+            rank: 5,
+            country: 'India',
+           
+        }
+
+        const Address = {
+            area: 'Kothrud',
+            city: 'Pune',
+            pinCode: 411050,
+            state: 'MH',
+            country: 'India',
+        }
+
+        function displayObjectDetails(obj) {
+            for (let key in obj) {
+                document.write('<br>',key, ' : ', obj[key]);
+            }
+        }
+
+        displayObjectDetails(Students);
+       
+        displayObjectDetails(Address);
+    </script>
+</body>
+
+</html>

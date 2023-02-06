@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+</head>
+<body>
+    <form id="pwdform">
+        <input type="password" id="password">
+        <input type="submit">
+    </form>
+    <script>
+        let form = document.getElementById("pwdform")
+        let passwordElement = document.getElementById("password")
+        
+        form.addEventListener("submit" , e=>{
+            e.preventDefault()
+            let password = passwordElement.value
+            let pattern = /^[A-Za-z0-9]{4,32}$/
+            
+            if(!pattern.test(password)){
+                alert("password should not be empty and of 4 digits")
+                return 
+            }
+
+            alert("password validated")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>23_Check Object Equality</title>
+</head>
+
+<body>
+    <h2>23_Check Object Equality</h2>
+</body>
+<script>
+    console.log("23-check-object-equality");
+
+    const object_1 = {
+        name: 'Aditya',
+        age: 22,
+        rank: 2,
+        country: 'India',
+    }
+    const object_2 = {
+        name: 'Aditya',
+        age: 22,
+        rank: 2,
+        country: 'India',
+    }
+    
+    function isEqual(obj1, obj2) {          // check for the object contents
+        return JSON.stringify(object_1) === JSON.stringify(object_2);
+    }
+    function isSame(obj1, obj2) {           // checks for the address
+        return obj1 === obj2;
+    }
+    object_3 = object_1;        // assigning object_1 to new object_3
+    console.log('isEqual : ', isEqual(object_1, object_2));
+    console.log('isSame  :', isSame(object_1, object_2));
+    console.log('isSame  :', isSame(object_1, object_3));
+
+
+</script>
+
+</html>

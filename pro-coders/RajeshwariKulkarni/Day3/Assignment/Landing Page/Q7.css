@@ -166,4 +166,81 @@ body{
 .main .heading .form button:hover{
     background-color:#2d3136;
 }
+.container3{
+    background-color:#2d3136;
+    height: 30vmax;
+    width: 100vmax;
+}
+.container3 .line1  .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    width: 30%;
+}
+.container3 .info i {
+    margin-top: 6%;
+    padding: 17%; 
+}
+.container3 .i-style{
+    background-color: orangered;
+    width: 10%;
+    height: 3%;
+    margin-left: 35px;
+    margin-top: 3%;
+    border-radius:150px ;
+}
+/* .container3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;} */
+    .container3 .line2 .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+        width: 30%;
+        margin-left: 50%;
+    }
+    .line2 .info{
+        margin-top: -9%;
+    }
 
+    /* container 4 */
+    .container4{
+        height: 110%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+     .card {
+        margin-top: 30px;
+        width: 20%;
+        height: 60%;
+        background-color: white;
+        padding: 30px;
+        
+    }
+    .card img{
+        width:70%;
+        height: 40%;
+        padding: 30px;
+    }
+    .card h3,h4{
+     margin-left:23% ; 
+     
+    }
+    .card h3{
+        margin-top: -12px;  
+    }
+    .cards2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }

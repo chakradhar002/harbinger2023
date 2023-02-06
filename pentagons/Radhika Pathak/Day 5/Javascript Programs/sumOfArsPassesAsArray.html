@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Argument</title>
+</head>
+
+<body>
+    <h2>Calculate Sum of Argument passed as an array:</h2>
+    <script type="text/javascript">
+        function sumOfArguments(...items) {
+            
+            if (items.length === 1 && Array.isArray(items[0])) {
+                // reset item as a new array 
+                items = [...items[0]]
+                document.write('<br>Items to add:', items);
+                return items.reduce((n1, n2) => n1 + n2);
+            }
+        }
+        document.write('<br>Sum:', sumOfArguments([1,2,3,4,5,10]));
+    </script>
+</body>
+
+</html>

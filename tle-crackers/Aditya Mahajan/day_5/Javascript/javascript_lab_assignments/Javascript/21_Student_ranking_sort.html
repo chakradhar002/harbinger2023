@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>21_Sort students by ranks</title>
+</head>
+
+<body>
+    <h2>Sort student by ranks</h2>
+</body>
+<script>
+    console.log("21_Sort-students-by-ranks")
+    const studentsArray = [
+        { name: 'vishal', year: 2019, ranking: 3 },
+        { name: 'sumit', year: 2019, ranking: 2 },
+        { name: 'pratik', year: 2019, ranking: 1 },
+        { name: 'sourabh', year: 2019, ranking: 6 },
+        { name: 'omkar', year: 2017, ranking: 7 },
+    ]
+
+    console.log('Sorted by highest rank => ',
+        studentsArray
+            .filter(student => student.year === 2019 && student.ranking >= 1)
+            .sort((n1, n2) => n1.ranking - n2.ranking)
+            .map(student => student.name)
+    );
+
+</script>
+
+</html>

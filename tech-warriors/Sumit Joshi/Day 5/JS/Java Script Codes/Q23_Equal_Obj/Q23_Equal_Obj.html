@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Checking Object are equal or not</h1>
+        <script>
+            var object1 = {
+                name:'Leo Messi',
+                age:34,
+                club:'PSG'
+            }
+            var object2 = {
+                name:'Cristiano',
+                age:37,
+                club:'Al-nassar'
+            }
+            var object3 = object2
+
+
+            //This function will check the equality of an object's properties
+            function isEqual(obj1,obj2){
+                return obj1.name === obj2.name &&
+                obj1.age === obj2.age &&
+                obj1.club === obj2.club
+            }
+
+            //it will check the two objects are same or not
+            function isSame(obj1,obj2){
+                return obj1 === obj2
+            }
+            console.log(object1);
+            console.log('-----------------------------');
+            console.log(object2);
+            console.log('-----------------------------');
+            console.log(object3);
+            console.log('-----------------------------');
+            console.log('isEqual: ',isEqual(object2,object3));
+            console.log('-----------------------------');
+            console.log('isSame :',isSame(object1,object2));
+            console.log('isSame :',isSame(object2,object3));
+
+        </script>
+    </body>
+</html>

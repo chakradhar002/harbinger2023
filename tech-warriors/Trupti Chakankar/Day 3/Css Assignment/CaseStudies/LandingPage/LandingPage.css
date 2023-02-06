@@ -1,0 +1,99 @@
+﻿.landing-head-div {
+  background-image: linear-gradient(
+      rgb(122 122 113 / 95%),
+      rgba(84, 95, 132, 0.95)
+    ),
+    url("image1.jpeg");
+  padding: 20px;
+  height: 700px;
+}
+.nav-main-div {
+  display: flex;
+  font-weight: 600;
+  justify-content: space-between;
+  height: 10%;
+}
+.nav-right-div {
+  display: flex;
+  gap: 20px;
+}
+.nav-right-div a:hover {
+  color: #dfbbad;
+}
+.nav-right-div a,
+.nav-left-div {
+  color: #fff;
+  text-decoration: none;
+}
+.nav-middle-div {
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-box {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  max-width: 500px;
+}
+.nav-heading {
+  font-size: 25px;
+}
+.nav-footer-div {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.nav-footer-box {
+  width: 24%;
+}
+.nav-footer-text {
+  margin-top: 40px;
+}
+.landing-middle-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  height: 500px;
+}
+.middle-first,
+.middle-second,
+.middle-third {
+  max-width: 20%;
+}
+.middle-first {
+  text-align: right;
+}
+.middle-first-text {
+  font-size: 25px;
+  font-weight: 700;
+}
+.middle-first-author {
+  margin-top: 50px;
+}
+.divider {
+  height: 1px;
+  opacity: 0.7;
+  margin: 20px 0;
+  background-color: #3c3f49;
+}
+.middle-second-heading {
+  font-size: 18px;
+  font-weight: 700;
+}
+.middle-third-img {
+  width: 100%;
+}
+.orange-hover {
+  position: absolute;
+  height: 500px;
+  background-color: #fa692e;
+  width: 25%;
+  opacity: 0.7;
+  right: 0;
+}

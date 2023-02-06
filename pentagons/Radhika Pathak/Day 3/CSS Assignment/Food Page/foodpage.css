@@ -1,0 +1,13 @@
+.blog {
+  background: url("bg.jpeg");
+  background-position: left;
+  background-size: cover;
+  }
+  p {
+  text-align: justify;
+  }
+  .burger
+  {
+  height: 300px;
+  width:650px;
+  }

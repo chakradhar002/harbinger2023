@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Project build CSS -->
+    <link rel="stylesheet" href="billing.css">
+    <!-- Bootstrap Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <title>Biiling Assignment</title>
+</head>
+
+<body>
+
+  <div clas="container">
+    <div class="row">
+
+    <div class="col-sm-7" style="border:0px solid rgb(54, 36, 36)">
+
+    <form action="submit-billing-info.php" method="post">
+        
+        <h3> Billing Information </h3>
+        <h6> *created by Pradeep Prajapati* </h6>
+        <div class="form-row">
+          <div class="col-md-6">
+        
+          <label for="state">First Name </label>
+          <input type="text" class="form-control" id="state" name="state">
+          
+        </div>
+
+        <div class="col-md-6">
+          <label for="zip">Last Name</label>
+          <input type="text" class="form-control" id="zip" name="zip">
+        </div>
+        </div>
+
+        <div class="form-group">
+          <label for="fullName">User Name:</label>
+          <input type="text" class="form-control" id="fullName" name="fullName">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <input type="text" class="form-control" id="address" name="address">
+        </div>
+        <div class="form-group">
+          <label for="address">Address 2 (Optional)</label>
+          <input type="text" class="form-control" id="address" name="address">
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-4">
+              <label for="#">Country</label>
+              <select name="country" id="country" class="form-control">
+                  <option value="India"> India </option>
+                  <option value="USA"> USA </option>
+                  <option value="Canada"> Canada </option>
+                  <option value="France"> France </option>
+              </select>
+          </div>
+          <div class="col-md-4">
+              <label for="#">State</label>
+              <select name="state" id="state" class="form-control">
+                  <option value="MadhyaPradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra"> Maharashtra </option>
+                  <option value="UtterPradesh"> Utter Pradesh </option>
+                  <option value="Bihar"> Bihar </option>
+              </select>
+          </div>
+          <div class="col-md-4">
+              <label for="#">Zip</label>
+              <input type="text" class="form-control">
+          </div>
+        </div>
+        <hr>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+          <label class="form-check-label"> Shipping addres is same as my billind address</label> 
+          <br>
+          <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something" checked>
+          <label class="form-check-label"> save this Information for next time </label>
+        </div>
+        
+
+      <hr>
+
+        <div class="form-group">
+          <label for="paymentMethod">Choose Payment Method:</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="paymentOption" id="creditCard" value="creditCard">
+            <label class="form-check-label" for="creditCard">
+              Credit Card
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="paymentOption" id="paypal" value="paypal">
+            <label class="form-check-label" for="paypal">
+              PayPal
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="paymentOption" id="bankTransfer" value="bankTransfer">
+            <label class="form-check-label" for="bankTransfer">
+              Bank Transfer
+            </label>
+          </div>
+        </div>
+
+
+        
+        <div class="form-row">
+          <div class="col-md-6">
+        
+          <label for="state">Name on Card:</label>
+          <input type="text" class="form-control" id="state" name="state">
+          <p> Full name as displayed on card </p>
+        </div>
+
+        <div class="col-md-6">
+          <label for="zip">Card Number</label>
+          <input type="text" class="form-control" id="zip" name="zip">
+        </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-6">
+        
+          <label for="state">Expiration</label>
+          <input type="text" class="form-control" id="state" name="state">
+        </div>
+
+        <div class="col-md-6">
+          <label for="zip">CVV</label>
+          <input type="text" class="form-control" id="zip" name="zip">
+        </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-sm btn-block"> Contineue to cart </button>
+        <br>
+
+      </form>
+
+      </div>
+
+      <div class="col-sm-4" style="border:0px solid rgb(61, 40, 40)">
+        <div class="form-row">
+          <div class="col">
+              <div class="container-right">
+                  <label for="#"><h3 style="color: rgb(7, 211, 85);">Your Cart</h3></label>
+                  <span class="badge bg-primary rounded-pill" style="padding: 9px; background-color: grey!important; margin-left: 140px;">3</span>
+              </div>
+          </div>
+      </div>
+      <div class="small-container">
+        <div class="form-row" style="border: 1px solid grey;">
+            <div class="col-md-7">
+                <label for="#">Product name</label><br/>
+                <label for="#"style="font-size:small;">item des</label>
+            </div>
+            <div class="col-md-4">
+                <label for="#">$120</label>
+            </div>
+        </div>
+        <div class="form-row" style="border: 1px solid grey;">
+            <div class="col-md-7">
+                <label for="#">Second Product name</label> <br>
+                <label for="#"style="font-size:small;">item des</label>
+            </div>
+            <div class="col-md-4">
+                <label for="#">$80</label>
+            </div>
+        </div>
+         <div class="form-row" style="border: 1px solid grey;">
+            <div class="col-md-7">
+                <label for="#">Third Product name</label> <br>
+                <label for="#"style="font-size:small;">item des</label>
+            </div>
+            <div class="col-md-4">
+                <label for="#">$50</label>
+            </div>
+        </div>
+        <!-- Promo code -->
+        <div class="form-row" style="border: 1px solid grey;">
+            <div class="col-md-7">
+                <label for="#" style="color:rgba(12, 141, 12, 0.92);">Promo Code</label><br/>
+                <label for="#" style="color:rgba(20, 128, 20, 0.92);">item des</label>
+            </div>
+            <div class="col-md-4">
+                <label for="#" style="color:rgba(36, 200, 36, 0.92);">-$50</label>
+            </div>
+        </div>
+        <!-- Total -->
+        <div class="form-row" style="border: 1px solid grey;padding: 5px;">
+            <div class="col-md-7">
+                <label for="#">Total(USD)</label>
+                <label for="#"style="font-size:small;">item des</label>
+            </div>
+            <div class="col-md-4">
+                <label for="#">$200</label>
+            </div>
+        </div>
+        <!-- Search Promo Code -->
+        <div class="promo-container" style="border: 1px solid black; padding: 10px;">
+            <div class="form-row">
+                <div class="col-sm-8 d-flex">
+                    <input type="text" class="form-control">
+                </div>
+                <button class="btn btn-primary ">Reedem</button>
+            </div>
+        </div>
+    </div>
+
+
+        
+
+        
+      </div>
+    </div>
+  </div>
+
+
+</body>

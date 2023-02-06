@@ -1,0 +1,69 @@
+<!-- Write a JavaScript program which will have one textbox to get
+input as string and after giving input when you leave the input
+textbox, a function is triggered which transforms the input text
+to uppercase. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Day 5 | Basic Assignment 5</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-primary text-center my-5">
+            Day 5 | Basic Assignment 5
+          </h4>
+
+          <div class="mb-3 w-50 m-auto">
+            <input
+              type="text"
+              class="form-control mb-4"
+              name=""
+              id="text1"
+              aria-describedby="helpId"
+              placeholder="Enter the text and take your mouse out"
+            />
+
+            <p class="text-center" id="output"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script>
+    let btn = document.getElementById("btn");
+
+    let str = document.getElementById("text1");
+    let res = document.getElementById("output");
+
+    str.addEventListener("mouseout", () => {
+      res.innerHTML = str.value.toUpperCase();
+    });
+
+    str.addEventListener("mouseover", () => {
+      res.innerHTML = "";
+    });
+  </script>
+</html>

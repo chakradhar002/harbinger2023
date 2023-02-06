@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-prime-numbers</title>
+</head>
+
+<body>
+    <h2>Prime numbers in a certain range on console</h2>
+</body>
+<script>
+    console.log("12-prime-numbers");
+    function print_primeNumbers(starting_point, ending_point) {
+        for (let i = starting_point; i < ending_point; i++) {
+            let flag = 0;
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    flag = 1;
+                    break;
+                }
+            }
+            if (i > 1 && flag == 0) {
+                console.log(i);
+            }
+        }
+    }
+    print_primeNumbers(1, 20); // calling the function
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Exclude</title>
+</head>
+
+<body>
+    <h2>Exclude Existing element:</h2>
+    <script type="text/javascript">
+        function excludes(array, elementsToExcluded) {
+            document.write('<br>array: ', array);
+            document.write('<br>elementsToExcluded: ', elementsToExcluded);
+            const excludedArray = [];
+            for (let curElement of array) {
+                if (!elementsToExcluded.includes(curElement)) {
+                    excludedArray.push(curElement)
+                }
+            }
+            return excludedArray;
+        }
+
+        const versionArray = [1, 2, 3,5, 7, 2,20,3];
+        const newVesionArray = (excludes(versionArray, [3]));
+        document.write('<br>newVesionArray: ', newVesionArray);
+
+        const ageArray = [21, 25, 22, 25, 30, 25, 30];
+        const newAgeArray = (excludes(ageArray, [25, 30]));
+        document.write('<br>newAgeArray: ', newAgeArray);
+    </script>
+</body>
+
+</html>
