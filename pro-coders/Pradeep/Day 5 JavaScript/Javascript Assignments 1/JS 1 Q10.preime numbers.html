@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+    function PrimeTillRange(min,max)
+    {
+        console.log("prime number b/w", min, "and", max, "are : ");
+        for(let i=min;i<=max;i++)
+        {
+            let flag=0;
+            for (let j=2;j<i;j++)
+            {
+                if(i%j==0)
+                {
+                    flag=1;
+                    break;
+                }
+            }
+            if(i>1 && flag==0){
+                console.log(i);
+            }
+        }
+    }
+    PrimeTillRange(10,200);
+
+
+
+    </script>
+    <title>Grade</title>
+</head> 
+<body>
+    <p>Grade</p>
+</body>
+</html>

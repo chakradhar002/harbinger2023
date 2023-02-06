@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function Check_speed(speed)
+        {
+            var limit = 30;
+            if(speed <= limit)
+            {
+                console.log(" good to go, ty!");
+            }
+            else
+            {
+                let difference = speed - limit;
+                let points = Math.floor(difference / 5);
+
+                if(points < 10)
+                {
+                console.log("Speed Limit Crossed By Penalty Point " + points);
+                }
+                else
+                {
+                console.log("Speed limit exeded!! your licence suspended.");
+                }
+            }
+
+        }
+        
+        
+        Check_speed(15);
+        Check_speed(28);
+        Check_speed(31);
+        Check_speed(40);
+        Check_speed(150);
+
+    </script>
+    <title>LandScape</title>
+</head>
+<body>
+    <p>this is body</p>
+</body>
+</html>
