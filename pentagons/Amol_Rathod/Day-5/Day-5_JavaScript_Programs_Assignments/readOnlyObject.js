@@ -1,12 +1,11 @@
 const createReadOnlyObject = (object) => Object.freeze(object);
 
 let obj = {
-  name: "Aditya",
+  name: "Aishwarya",
   age: 22,
+  pincode: 434343,
 };
 
 obj = createReadOnlyObject(obj);
-
-obj.name = "Amol";
 
 console.log(obj);
