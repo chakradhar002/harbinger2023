@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('10-netsted-loop-star-pattern');
+
+function showPattern(totalRowsPatternCount) {
+  for (let i = 1; i <= totalRowsPatternCount; i++) {
+    // console.log(curRow);
+    let patternDesign = '';
+    for (let j = 0; j< i; j++) {
+      patternDesign += '*'
+    }
+    console.log(patternDesign);
+  }
+}
+
+showPattern(5);
+    
+    </script>
+</body>
+</html>

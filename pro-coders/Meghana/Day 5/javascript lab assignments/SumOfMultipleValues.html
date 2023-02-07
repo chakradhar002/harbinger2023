@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('example of sumofmultiple values');
+        let sum=0;
+        function myfunction(number){
+            for(i=0;i<=number;i++)
+            {
+                if(i%3===0 || i%5===0){
+                sum +=i;}
+            }
+            console.log('the sum of multiple values of 3&5 upto 10 digit is',sum);
+        }
+        
+        myfunction(10);
+    </script>
+</body>
+</html>
