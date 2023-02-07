@@ -1,12 +1,12 @@
-const createReadOnlyObject = object => Object.freeze(object)
+const createReadOnlyObject = (object) => Object.freeze(object);
 
 let obj = {
-    name : 'Aditya' , 
-    age : 22 
-}
+  name: "Aditya",
+  age: 22,
+};
 
-obj = createReadOnlyObject(obj)
+obj = createReadOnlyObject(obj);
 
-obj.name = 'Amol'
+obj.name = "Amol";
 
-console.log(obj)
+console.log(obj);

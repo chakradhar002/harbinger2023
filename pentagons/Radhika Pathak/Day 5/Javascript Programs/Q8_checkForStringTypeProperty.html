@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for string type property</title>
+</head>
+
+<body>
+    <h2>Check for string type property:</h2>
+    <script type="text/javascript">
+        function StringProperties(curObj) {
+            for (let key in curObj) {
+                // console.log('key/prop:', key);
+                if (typeof (curObj[key]) === 'string') {
+                    document.write('<br>',key, ':', curObj[key]);
+                }
+            }
+        }
+
+        const student = {
+            name: 'Radhika',
+            age: 21,
+            height: 5.6,
+            country: 'India',
+            designation: 'Trainee'
+        }
+
+        StringProperties(student);
+        const Technology = {
+            name: 'JavaScipt',
+            version: 6,
+            purpose: 'Scripting language for Web',
+            developer: 'Netscape Corporation'
+        }
+
+        StringProperties(Technology);
+        
+    </script>
+</body>
+
+</html>

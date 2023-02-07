@@ -6,7 +6,6 @@ const checkLandscape = (width , height) =>{
     }
 }
 
-
 console.log(checkLandscape(200 , 400))
 console.log(checkLandscape(100 , 400))
 console.log(checkLandscape(500 , 400))

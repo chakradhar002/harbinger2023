@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+
+<body>
+</body>
+<script type="text/javascript">
+    let number_of_rows=prompt("Enter number of rows to print a pattern");
+    let string = "";
+    for (let start = 1; start <= number_of_rows; start++) {
+        for (let j = 0; j < start; j++) {
+            string += "*";
+        }
+        string += "<br>";
+    }
+    document.write(string);
+</script>
+</html>
