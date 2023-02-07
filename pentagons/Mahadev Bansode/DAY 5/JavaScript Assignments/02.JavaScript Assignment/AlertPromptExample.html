@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function displayAlert() {
+        alert(Date()); // display current date
+      }
+      function displayPrompt() {
+        alert(Date()); // display current date
+      }
+      function displayPrompt() {
+        var name = prompt("Enter Your Name:");
+        if (name == null || name == "") {
+          document.getElementById("msg").innerHTML =
+            "You did not entert anything. Please enter your name again";
+        } else {
+          alert("Hello " + name);
+        }
+      }
+      function displayPromptAdd() {
+        let a = parseInt(prompt("Enter first number"));
+        let b = parseInt(prompt("Enter second number"));
+        alert(a + b);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Demo: alert()</h1>
+    <button onclick="displayAlert()">Display Messages</button>
+    <h1>Demo: prompt()</h1>
+    <button onclick="displayPrompt()">Click to enter your name</button>
+    <h1>Demo: prompt() : sum of two number</h1>
+    <button onclick="displayPromptAdd()">Click to find addition</button>
+  </body>
+</html>
