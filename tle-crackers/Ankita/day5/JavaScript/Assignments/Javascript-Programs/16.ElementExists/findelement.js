@@ -1,6 +1,6 @@
 function findElement(array,ele){
     for(let i=0;i<array.length;i++){
-        if(ele === array[i])
+        if(array.includes(ele))
         return true
     }
     return false;
