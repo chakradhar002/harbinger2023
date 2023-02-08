@@ -1,5 +1,5 @@
 function greeting(dummy,callback){
-    var name="Mike Ross";
+    var name="Mike Ross " + dummy;
     callback(name);
 }
 
