@@ -20,6 +20,12 @@
         e.preventDefault()
         let number = num.value
         let pattern = /[^0-9]/g
+
+        if(number === "") {
+          alert("Enter value")
+          return 
+        }
+
         let ans = pattern.test(number)
         if (!ans) {
           alert("Validated")

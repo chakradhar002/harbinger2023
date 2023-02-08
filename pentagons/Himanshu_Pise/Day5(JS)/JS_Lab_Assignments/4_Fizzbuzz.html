@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q4|FizzBuzz</title>
+    </head>
+    <body>
+        <script>
+    let i = prompt("Enter any Number: ");
+        function fizzbuzz(i){
+            for(var i ; i < 101; i++){
+                if (i%5 == 0){
+                    return "Buzz";
+                 } else if (i % 3 == 0){
+                     return "Fizz";}
+                else if (i%3||i%5 == 0){
+                     return "FizzBuzz";}
+                else if (i % 3 != 0 || i % 5 != 0){
+                    return "Given Input/value";}
+                else {
+                return "NaN-Not a number,please input a number";}
+            }
+        }
+    console.log(fizzbuzz(i));
+        </script>
+    </body>
+</html>

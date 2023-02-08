@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form id="mobform">
+        <input type="tel" id="mobile" /><br><br>
+        <input type="submit" />
+    </form>
+    <script>
+        "use-strict"
+        let mobile = document.getElementById("mobile")
+        let form = document.getElementById("mobform")
+
+        form.addEventListener("submit" , e=>{
+            e.preventDefault()
+
+            if(!checkIfAlpha(mobile.value)){
+                alert("Mobile should only contain dashes and numbers")
+                return
+            }
+
+            if(mobile.value === ""){
+                alert("Empty Mobile Field")
+                return
+            }
+
+            if(mobile.value.length !== 12){
+                alert("Mobile length should be 10 numbers long")
+                return 
+            }
+
+            let mobileSubString = null;
+
+            if(mobile.value.includes("-")){
+                mobileSubString = mobile.value.split("-")
+            }else if (mobile.value.includes(".")){
+                mobileSubString = mobile.value.split(".")
+            }else if(mobile.value.includes(" ")){
+                mobileSubString = mobile.value.split(" ")
+            }
+            if(mobileSubString === null){
+                alert("Wrong Format")
+                return
+            }
+            if(mobileSubString.length !== 3){
+                alert("Wrong Format , Incorrect Format !")
+                return
+            }
+            if(mobileSubString[0].length !==4){
+                alert("Incorrect Format |XXXX| - XXX - XXX ")
+                return
+            }
+            if(mobileSubString[1].length !==3){
+                alert("Incorrect Format XXXX - |XXX| - XXX ")
+                return    
+            } 
+            if(mobileSubString[2].length !==3){
+                alert("Incorrect Format XXXX - XXX - |XXX| ")
+                return    
+            }
+
+            alert("Valid Mobile")
+        })
+
+        function checkIfAlpha(string){
+            for(i of string){
+                if(i !== '-' && i!=='.' && i!=" "){
+                    if(isNaN(parseInt(i))){
+                        return false
+                    }
+                }
+            }
+            return true
+        }
+    </script>
+</body>
+</html>

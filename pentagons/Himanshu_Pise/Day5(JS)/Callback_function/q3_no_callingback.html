@@ -1,0 +1,23 @@
+<!-- Write a function that takes in a callback and a number. It should call the callback that many times. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3|Calling no. of time callback</title>
+</head>
+<body>
+    <script>
+function callingCallback(callback , number){
+    for (let i = 0 ; i<number; i++){
+        callback();
+    }
+}
+function callback(){
+    console.log("I am Being Called 😀")
+}
+callingCallback(callback , 6)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!-- Write a function that takes in a callback and a boolean. If the boolean is true, call the callback, otherwise log "Ignoring the callback" to the console -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2|Boolean Callback</title>
+</head>
+<body>
+    <script>
+const callingCallback  = (callback , val) => {
+    if(val){
+        callback()
+    }else {
+        console.log(`Ignoring the callback!`)
+    }
+}
+function callbackFunction(){
+    console.log("Hello ✌")
+}
+callingCallback(callbackFunction , true)
+callingCallback(callbackFunction , false)
+    </script>
+</body>
+</html>

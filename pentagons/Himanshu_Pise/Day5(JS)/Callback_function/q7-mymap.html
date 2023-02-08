@@ -1,0 +1,27 @@
+<!-- a. Write a function called myMap that takes in an array and a callback as arguments. It should return a new array with the callback applied to each element in the array.
+b. Create a function allCaps that takes in an array as an argument, and uses the myMap function to return all the elements capitalized. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q7</title>
+</head>
+<body>
+    <script>
+        const myMap = (array , callback) => {
+        let result = []
+        for (el of array){
+            result.push(callback(el))
+        }
+        return result;
+    }
+ const allCaps = array => myMap(array , el => el.toUpperCase())
+
+ console.log(myMap([3, 5, 6] , e => e *3))
+ console.log(allCaps(["The", "internet", "is", "not", "a", "big", "truck"]))
+    </script>
+</body>
+</html>

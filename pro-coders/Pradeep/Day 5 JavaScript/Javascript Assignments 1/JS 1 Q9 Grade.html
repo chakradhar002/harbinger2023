@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+    function Calculate_Grades()
+    {
+        const marks = [68,66,90,94,86,55];
+        let sum = 0;
+        for (let i = 0; i < marks.length; i++) {
+        sum += marks[i];
+        }
+        let avg = sum/marks.length;
+        console.log("Average Marks : " ,avg);
+        if(avg < 70)
+        {
+            console.log("Grade : D ");
+        }
+        if(avg > 71 && avg < 80)
+        {
+            console.log("Grade : C ");
+        }
+        if(avg > 81 && avg < 90)
+        {
+            console.log("Grade : B ");
+        }
+        if(avg > 91 && avg <= 100)
+        {
+            console.log("Grade : A ");
+        }
+        
+    }
+    Calculate_Grades();
+
+    </script>
+    <title>Grade</title>
+</head> 
+<body>
+    <p>Grade</p>
+</body>
+</html>

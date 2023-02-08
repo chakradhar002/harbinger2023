@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //Show Todays Date
+        function show_now(){
+            var date = new Date();
+            alert(date)
+        }
+        show_now();
+
+        //Prompt hello with usrename 
+        function user_name(){
+            let username = prompt("Enter User Name :");
+
+            if(username != null){
+                alert("Hello!! "+username);
+            }
+        }
+        user_name();
+
+        //Add two Number
+        function add(){
+            let num1 = parseInt(prompt("Enter Number 1 :"));
+            let num2 = parseInt(prompt("Enter Number 2 :"));
+
+            if((num1 != null) && (num2 != null)){
+                alert("Addition of Number1 and Number2 : "num1+num2);
+            }
+        }
+        add();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

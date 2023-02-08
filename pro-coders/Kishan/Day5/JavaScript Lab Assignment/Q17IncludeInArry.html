@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Include In Array</title>
+</head>
+<body>
+    <script>
+        function checkInclude(element,array) {
+            for (el of array )
+            {
+                if(el === element) 
+                    return true
+            }
+            return false
+        }
+        console.log(checkInclude(2 , [1,2,3,4]))
+        console.log(checkInclude(5 , [1,2,3,4]))
+        console.log(checkInclude(7 , [1,2,3,4]))
+    </script>
+</body>
+</html>

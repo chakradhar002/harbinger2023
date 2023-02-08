@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head><title>Q1|Callback Hello</title></head>
+<script>
+function call() { console.log("Hello! Callback") }
+function Main(myCallback) {
+  console.log("Hello  main ")
+  myCallback();
+}
+Main(call);
+</script>
+</body>
+</html>

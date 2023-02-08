@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q5|SpeedLimit</title>
+    </head>
+    <body>
+        <script>
+    let num = prompt("Enter Speed : ");
+
+    function SpeedLimit(num){
+            if (num <= 70) {
+                console.log("Good Safe Driving")
+            }
+            else{
+                if(num >70){
+                let difference = num - 70
+                let points = Math.floor(difference / 5)
+
+                if(points < 10){
+                    return `Speed Limit Crossed By Penalty Point ${points}`
+                }else {
+                    return  `Licence Suspended`
+                }
+            }
+            }
+        }
+
+    console.log(SpeedLimit(num));
+
+        </script>
+    </body>
+</html>
