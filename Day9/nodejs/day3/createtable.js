@@ -1,18 +1,19 @@
-var mysql = require('mysql2');
+var mysql = require('mysql');
 
 var con = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
   password: 'root',
+  database: "myherbinger"
   
 });
 
 con.connect(function(err) {
   if (err) throw err;
   console.log("Connected!");
-  con.query("CREATE DATABASE myherbinger1", function (err, result) {
+  con.query("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))", function (err, result) {
     if (err) throw err;
-    console.log("Database created");
+    console.log("table created");
   });
 });
