@@ -1,15 +1,18 @@
+const router =  require('../empcontroller/emplcontroller')
+var connection  = require('../db/mysqldb');
 
 
-var router =  require('../empcontroller/emplcontroller')
+const getEmployeeList = (req, res) => {
+   
+       connection.query('SELECT * FROM customers',(err, result)=> {
+        if (err) throw err;
+        res.status(200).json(result);
+    });
+    
+  };
 
 
 
-getEmployeeList('/getlistemployee',function(req,res){
 
 
-
-
-})
-
-
- module.children = {getEmployeeList};
+ module.exports = {getEmployeeList};
