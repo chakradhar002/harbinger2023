@@ -1,4 +1,4 @@
-const empcontroller = require('../ecommerceproject/empcontroller/emplcontroller')
+const empcontroller = require('../ecommerceproject')
 const express = require('express')
 const bodyParser = require('body-parser')
 
