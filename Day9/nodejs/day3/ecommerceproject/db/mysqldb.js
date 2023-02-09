@@ -10,6 +10,6 @@ connection.connect(function(error){
      console.log(error);
    }else{
      console.log('Connected!:)');
-   }
+   }  
  });  
 module.exports = connection; 
