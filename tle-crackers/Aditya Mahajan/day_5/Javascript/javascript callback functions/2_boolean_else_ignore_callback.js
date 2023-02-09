@@ -3,7 +3,7 @@
  * @param {void} callback 
  * @param {boolean} call_back 
  */
-const callback_call = (callback, call_back) => {
+var callback_call = (callback, call_back) => {
     if (call_back) {
         callback();
     } else {
