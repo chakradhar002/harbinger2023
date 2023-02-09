@@ -9,6 +9,8 @@ const getEmployeeList = (req, res) => {
         res.status(200).json(result);
 
     });
+
+	console.log("hello")
     
   };
 
