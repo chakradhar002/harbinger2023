@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current time</title>
+</head>
+<body>
+    <h2>This page displays current time:</h2>
+    <input type="text" id="time"/>
+
+    <script>
+        let time = document.getElementById("time")
+        setInterval(() => {
+          let date = new Date()
+          time.value = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`
+        }, 1000)
+      </script>
+</body>
+</html>

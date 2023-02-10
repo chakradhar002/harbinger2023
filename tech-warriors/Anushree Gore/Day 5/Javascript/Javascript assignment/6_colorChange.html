@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlink color change</title>
+</head>
+<body>
+    <div>
+        <h2>Change Webpage Background To:</h2>
+        <button type="button" onclick="changeBodyBg('white');">White</button>
+        <button type="button" onclick="changeBodyBg('red');">Red</button>
+        <button type="button" onclick="changeBodyBg('blue');">Blue</button>
+        <button type="button" onclick="changeBodyBg('pink');">Pink</button>
+    </div>
+
+    <script>
+        // Function to change webpage background color
+        function changeBodyBg(color){
+            document.body.style.background = color;
+        }
+    </script>
+</body>
+</html>
