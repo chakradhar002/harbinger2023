@@ -10,7 +10,7 @@ connection.connect(err => {
     if(err) {
         console.log(err)
     }else {
-        const query = `create table customers`
+        const query = `create database harbinger`
         connection.query(query , (err , res) => {
             if(err) {
                 console.log(err)

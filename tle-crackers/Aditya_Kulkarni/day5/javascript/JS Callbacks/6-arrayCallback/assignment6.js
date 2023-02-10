@@ -1,8 +1,24 @@
+
+/**
+ * array of elements of type<T> such t:any
+ * @param {*} array 
+ * 
+ * callback which is to be called 
+ * @param {*} callback 
+ */
+
 const forEachElem = (array , callback) =>{
     array.forEach(e =>{
         callback(e)
     })
 }
+
+/**
+ * 
+ * @param {
+ * 
+ *} array 
+ */
 
 const logEachElem = (array) =>{
     forEachElem(array , console.log)
