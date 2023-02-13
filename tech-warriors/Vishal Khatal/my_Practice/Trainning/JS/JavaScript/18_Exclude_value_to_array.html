@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Create a method named "exclude" which cuts/excludes value from existing array
+        and push to new array </h1>
+</body>
+</html>
+<script>
+console.log("Create a method named exclude which cuts/excludes value from existing arrayand push to new array");
+    function exclude_to_new_array(n)
+    {
+        let arr = [1,2,3,4,5,6,7,9,1];
+        console.log(arr);
+        let removed = arr.splice(n,1);
+        console.log(removed);
+        console.log("New array without '"+removed+"' Element "+arr);
+    }
+    exclude_to_new_array(1);
+</script>
