@@ -1,4 +1,4 @@
-const router =  require('../empcontroller/emplcontroller')
+const router =  require('../empcontroller')
 var connection  = require('../db/mysqldb');
 
 
