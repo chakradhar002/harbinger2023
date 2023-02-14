@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Speed Limit</h1>
+    <script>
+        //assigned speedlimit
+        const speedlimit = 70
+        //assigned 5 km per penalty
+        const kmperpenalty = 5
+
+        //This function will check the currentspeed and accoedingly return message to user 
+        //if speed is greater than 70 it will goes in else part 
+        //then it will calculate the prnalty point.
+
+        function SpeedCheck(currentSpeed) {
+            if (currentSpeed < 70) {
+                return "Good Safe Driving";
+            }
+            else {
+                let penalty_point = Math.floor((currentSpeed - speedlimit) / kmperpenalty) //example if currentspeed is 80 then penalty point is
+                                                                                           //(80-70)/5 = 2
+                if (penalty_point < 10) {
+                    return 'Speed limit is crossed by penalty point :' + penalty_point;
+                }
+                else {
+                    return "License Suspended";
+                }
+            }
+        }
+        console.log(SpeedCheck(67))
+        console.log(SpeedCheck(87))
+        console.log(SpeedCheck(40))
+        console.log(SpeedCheck(120))
+    </script>
+</body>
+
+</html>

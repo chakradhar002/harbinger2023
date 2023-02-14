@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Sum of Array arguments</h1>
+    <script>
+        function addition(array) {
+            console.log("Current items/values to add :", array.length);
+            var sum = array.reduce(function (a, b) {
+                return a + b
+            })
+            console.log("Sum of arguments: ", sum);
+        }
+        array=[1, 2, 3, 4, 5, 6, 7, 8]
+        addition(array)
+    </script>
+</body>
+
+</html>
