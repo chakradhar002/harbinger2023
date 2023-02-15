@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time Date</title>
+</head>
+
+<body>
+    <h1>Current Time Date</h1>
+    <button id="time">Current Time</button>
+    <script>
+       document.getElementById("time").addEventListener("click",(e)=>{
+        var currDate = new Date();
+        var datetime = "Current Date And Time is : " + currDate.getDate() + "/"
+            + (currDate.getMonth() + 1) + "/"
+            + currDate.getFullYear() + " @ "
+            + currDate.getHours() + ":"
+            + currDate.getMinutes() + ":"
+            + currDate.getSeconds();
+
+            document.write(datetime)
+            
+       })
+    </script>
+</body>
+
+</html>
