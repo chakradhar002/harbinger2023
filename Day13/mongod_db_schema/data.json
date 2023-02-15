@@ -1,21 +1,64 @@
 
 
+db.restaurant.insertMany(
 {
   "address": {
-     "building": "1007",
-     "coord": [ -73.856077, 40.848447 ],
-     "street": "Morris Park Ave",
-     "zipcode": "10462"
+     "building": "1008",
+     "coord": [ -53.989898, 90.765890 ],
+     "street": "Jordan Restaurant",
+     "zipcode": "12932"
   },
-  "borough": "Bronx",
+  "borough": "Cheese",
   "cuisine": "Bakery",
   "grades": [
-     { "date": { "$date": 1393804800000 }, "grade": "A", "score": 2 },
-     { "date": { "$date": 1378857600000 }, "grade": "A", "score": 6 },
-     { "date": { "$date": 1358985600000 }, "grade": "A", "score": 10 },
-     { "date": { "$date": 1322006400000 }, "grade": "A", "score": 9 },
-     { "date": { "$date": 1299715200000 }, "grade": "B", "score": 14 }
+     { "date": { "$date": 1423804800000 }, "grade": "A", "score": 20 },
+     { "date": { "$date": 1527857600000 }, "grade": "A", "score": 60 },
+     { "date": { "$date": 1567985600000 }, "grade": "B", "score": 10 },
+     { "date": { "$date": 1589006400000 }, "grade": "A", "score": 9 },
+     { "date": { "$date": 1623715200000 }, "grade": "B", "score": 14 }
   ],
-  "name": "Morris Park Bake Shop",
-  "restaurant_id": "30075445"
+  "name": "Jordan Cheese Shop",
+  "restaurant_id": "34980934"
+},
+
+{
+  "address": {
+     "building": "1009",
+     "coord": [ -23.989898, 20.765890 ],
+     "street": "Chris Restaurant",
+     "zipcode": "23452"
+  },
+  "borough": "Pizza",
+  "cuisine": "",
+  "grades": [
+     { "date": { "$date": 1523804800000 }, "grade": "A", "score": 20 },
+     { "date": { "$date": 1627857600000 }, "grade": "A", "score": 60 },
+     { "date": { "$date": 1667985600000 }, "grade": "B", "score": 10 },
+     { "date": { "$date": 1789006400000 }, "grade": "A", "score": 9 },
+     { "date": { "$date": 1723715200000 }, "grade": "A", "score": 90 }
+  ],
+  "name": "Pizza Shop",
+  "restaurant_id": "89980934"
+},
+
+{
+  "address": {
+     "building": "1010",
+     "coord": [ -95.754168, 20.765890 ],
+     "street": "Chris Restaurant",
+     "zipcode": "23452"
+  },
+  "borough": "",
+  "cuisine": "Fast Food",
+  "grades": [
+     { "date": { "$date": 1523804800000 }, "grade": "A", "score": 20 },
+     { "date": { "$date": 1627857600000 }, "grade": "A", "score": 60 },
+     { "date": { "$date": 1667985600000 }, "grade": "B", "score": 10 },
+     { "date": { "$date": 1789006400000 }, "grade": "A", "score": 9 },
+     { "date": { "$date": 1723715200000 }, "grade": "A", "score": 90 }
+  ],
+  "name": "Pizza Shop",
+  "restaurant_id": "89980934"
 }
+
+)
