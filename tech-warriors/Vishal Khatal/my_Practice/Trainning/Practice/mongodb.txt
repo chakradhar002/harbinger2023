@@ -1,0 +1,5 @@
+getProductById findbyid
+getAllProductlist find
+createProductById 
+updateProductById findbyidandupdate
+deleteProductById findbyid_and_delete

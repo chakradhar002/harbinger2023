@@ -1,0 +1,39 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  display: inline-flex;
+  width: 100%;
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+@-ms-viewport {
+  justify-content: center;
+}
+.row {
+  display: grid;
+  position: relative;
+}
+.second {
+  padding: 0 130px;
+}
+.third {
+  padding: 0 260px;
+}
+img {
+  width: 250px;
+  height: 150px;
+  padding-right: 15px;
+}
+p {
+  font-size: 14px;
+}
+p::first-letter {
+  color: gold;
+  font-size: 24px;
+}
+h3 {
+  margin: 0;
+  color: goldenrod;
+  padding-left: 15px;
+}

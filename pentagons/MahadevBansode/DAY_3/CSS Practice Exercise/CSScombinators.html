@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>General Sibling Selector</title>
+      <style>
+         body {
+         text-align: center;
+         }
+         h1 ~ p {
+         color: blue;
+         font-size: 25px;
+         font-weight: bold;
+         text-align: center;
+         }
+         div {
+         font-size: 32px;
+         }
+      </style>
+   </head>
+   <body>
+      <h1>General sibling selector (~) property</h1>
+      <p>It is the first paragraph element which will get effected.</p>
+      <div>
+         It is the div element
+         <p>It is the paragraph under the div element</p>
+      </div>
+      <p>It is the paragraph element after the div</p>
+      <p>It is the paragraph element which will also get affected</p>
+   </body>
+</html>

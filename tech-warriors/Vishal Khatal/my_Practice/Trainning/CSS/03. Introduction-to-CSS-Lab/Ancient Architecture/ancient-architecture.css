@@ -1,0 +1,35 @@
+body{
+font-family: Roboto, sans-serif; background-color: #e2d7aa;color: #000000;size: 16px;Width: 1200px; margin: auto;
+}
+img #large{Width: 1000px; 
+    Height: 450px;
+}
+.Image-container { Height: 450px; Margin-Top: 65px; display: flex;flex-direction: row;justify-content: center;flex-wrap: nowrap;
+}
+h1{
+    size:60px;
+    margin: auto;
+    margin-top:65px ;font-family:‘Indie Flower’,cursive
+}
+.Navigation {Margin: 30px; 
+}
+a
+{
+    size: 28px;color: #000000;
+}
+#end,#start{ 
+color: #0a2d4a; 
+font-weight: Bold; 
+}
+img #small{Width: 350px; Height: 200px; Margin Bottom: 20px; 
+}
+p::first-letter{size: 500px;
+}
+.Hyperlink{
+Background: url(images/bg2.jpg);color: #ffffff; Padding: 10px; Margin-top: 10px; 
+}
+footer{Margin: 0px; Padding: 10px 0 10px 0; 
+}
+.a{height: fit-content;width: fit-content;
+    padding-left: 1%;
+}

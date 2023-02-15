@@ -1,0 +1,20 @@
+Mapping
+There is auto mapping using sequelize in nodejs
+we need to map an main account to other account like account to employee acount to bank accounts
+
+
+
+
+
+
+
+
+
+
+
+cascading deleting
+here we cannot delete related accounts because they all are related to each other 
+we can delete only from bottom to top
+
+indexing only for perticular condition and other than primary key 
+which is regualar or more used

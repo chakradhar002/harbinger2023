@@ -1,0 +1,18 @@
+JAVA-Script
+Important things
+Event handling
+exception handling
+object
+promise
+call back function
+
+
+java
+arraylist
+queue
+map-hash map and concept hash map
+stack
+set
+ array in javascript practice
+ try catch,finally,throwp
+ promise(pending,fulfill,reject)
