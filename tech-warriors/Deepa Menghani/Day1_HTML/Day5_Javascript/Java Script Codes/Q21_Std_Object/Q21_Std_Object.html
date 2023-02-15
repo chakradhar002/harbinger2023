@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Object for Student and Address</h1>
+        <script>
+            var std = {
+                name:"Leo Messi",
+                age:34,
+                rank:3,
+                Country:"Spain" 
+            }
+            var Address = {
+                street:"Red road",
+                city:"Barcelona",
+                pincode:413203
+            }
+
+            //this function will take object as a argument and displays to condsole
+            function Details(obj){
+                for(let key in obj){
+                    console.log(key,' : ',obj[key])
+                }
+            }
+            Details(std)
+            console.log('*****************');
+            Details(Address)
+        </script>
+    </body>
+</html>

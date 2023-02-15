@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <a href="#" id="gray" onclick="ChangeBG(gray)">gray</a><br>
+        <a href="#" id="red" onclick="ChangeBG(red)">red</a><br>
+        <a href="#" id="blue" onclick="ChangeBG(blue)">blue</a><br>
+        <a href="#" id="pink" onclick="ChangeBG(pink)">pink</a>
+        <script>
+           document.getElementById("gray").onclick = function(){
+                document.body.style.backgroundColor = "gray"           
+           }
+           document.getElementById("red").onclick = function(){
+                document.body.style.backgroundColor = "red"           
+           }
+           document.getElementById("blue").onclick = function(){
+                document.body.style.backgroundColor = "blue"           
+           }
+           document.getElementById("pink").onclick = function(){
+                document.body.style.backgroundColor = "pink"           
+           }
+        </script>
+    </body>
+</html>

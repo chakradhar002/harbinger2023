@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Prime Numbers</h1>
+        <script>
+            //This function takes the limit as a argumet and returns that much prime numbers
+            function prime_numbers(limit){
+            for(let num = 2; num<=limit; num++){
+                let isPrime = true
+                for(let div = 2 ; div < num ; div++){
+                    if(num % div === 0){
+                        isPrime = false
+                        break
+                    }
+                }
+                if(isPrime){
+                    console.log("Prime Number :" ,num);
+                }
+            }
+        }
+        prime_numbers(20)
+        </script>
+    </body>
+</html>
