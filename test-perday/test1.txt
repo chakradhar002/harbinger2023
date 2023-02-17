@@ -10,7 +10,7 @@ Customers able to sign-up to the application
 customers able to search for available between source and destination on customer specified dates
 
 CREATE TABLE flight_database.`Address` (
-	`street` varchar(45) DEFAULT NULL,
+	`street` varchar(45) DEFAULT NUstaLL,
     `unit` int(10) DEFAULT NULL,
     `id` int(10) NOT NULL AUTO_INCREMENT,
     `city` varchar(45) DEFAULT NULL,
