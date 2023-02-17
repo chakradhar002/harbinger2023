@@ -1,0 +1,21 @@
+Notes 
+develop API
+api need return type
+create a skeleton
+api in nodeJS
+
+
+HTML(demo)
+paragraph
+color
+css
+image
+href
+favicon
+table
+table padding
+lists
+
+always refere documentation
+java doc
+debug,

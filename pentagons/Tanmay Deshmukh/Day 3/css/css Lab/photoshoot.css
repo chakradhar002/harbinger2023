@@ -1,0 +1,35 @@
+body{
+padding: auto;
+    background-color:#355664;
+}
+.container{
+    background-color: #8bbcd2;
+  
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+li{
+    list-style: none;
+    margin: auto;
+    font-size: 18px;
+}
+header{
+    border-bottom: solid black 2px;
+}
+.content{
+    display: flex;
+    padding: 10px;
+}
+.para{
+    width: 50%;
+    margin: 10px;
+}
+.img{
+    width: 50%;
+}
+img{
+    width: 98%;
+    height: 90%;
+}

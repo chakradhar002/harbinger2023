@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form action="" id="f1" onsubmit="fun()">
+        Enter First Number :<input type="number" name="input1">
+        Enter Second Number :<input type="number" name="input2" id="2">
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
+<script>
+    function fun()
+    {
+        let n1 = parseInt(document.forms["f1"]["input1"].value);
+        let n2 = parseInt(document.forms["f1"]["input2"].value);
+        let sum = n1+n2;
+        alert(sum); 
+    }
+</script>

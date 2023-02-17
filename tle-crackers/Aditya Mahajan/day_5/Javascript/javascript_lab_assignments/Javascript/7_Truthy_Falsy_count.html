@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-truthy-falsy-values-count</title>
+</head>
+
+<body>
+    <h2>7 truthy falsy values</h2>
+</body>
+<script>
+    console.log("7-truthy-falsy-values-count");
+    function check_truthy_falsy() {
+        const array_1 = [false, 0, undefined, null, NaN, "", "Tata", "Mahindra", "Skoda"];
+        let truthy = 0;
+        let falsy = 0;
+        for (let i in array_1) {
+            if (!array_1[i]) {
+                falsy++;
+            }
+            else {
+                truthy++;
+            }
+        }
+        console.log(`Total values count in array => ${array_1.length}`);
+        console.log(`Truthy values count         => ${truthy}`);
+        console.log(`Falsy values count          => ${falsy}`);
+    }
+    check_truthy_falsy();   // calling function
+</script>
+
+</html>

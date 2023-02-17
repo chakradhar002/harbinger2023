@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Grade on Average marks</h1>
+    <script>
+        //First this function will calculate the total of marks given in array
+        //after that it will calculate average of all marks and 
+        //it will return the grade accordingly
+        function calcAverage(array) {
+            let total = 0
+            for (let value of array) {
+                total += value
+            }
+            let avg = (total / array.length)
+            console.log(`Average: ${avg}`);
+            if (avg <= 70) {
+                return 'D Grade'
+            }
+            if (avg < 80) {
+                return 'C Grade'
+            }
+            if (avg < 90) {
+                return 'B Grade'
+            } if (avg <= 100) {
+                return 'A Grade'
+            }
+        }
+        var array = [80, 67, 97, 77]
+        var array2 = [45, 65, 70, 39]
+        console.log(calcAverage(array));
+        console.log(calcAverage(array2));
+    </script>
+</body>
+
+</html>

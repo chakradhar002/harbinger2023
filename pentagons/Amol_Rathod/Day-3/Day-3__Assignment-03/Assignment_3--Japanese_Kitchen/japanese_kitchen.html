@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Assignment 3 | Day 3 | Japanese Kitchen</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .second-container {
+        border-top: 2px solid maroon;
+        border-bottom: 2px solid maroon;
+      }
+
+      .navigation img {
+        width: 80px;
+      }
+
+      .nav-link {
+        color: white;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .nav-link:hover {
+        color: deeppink;
+      }
+
+      .aside h4 {
+        color: deeppink;
+      }
+
+      .aside p {
+        color: rgb(250, 109, 187);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Logo iamge and Brand Name -->
+    <div class="container-fluid bg-secondary">
+      <div class="navigation border-primary py-2">
+        <div class="row">
+          <div class="col-6">
+            <img src="sack.png" alt="" class="img-fluid rounded-circle" />
+          </div>
+
+          <div class="col-6 text-end align-self-center">
+            <h1 class="text-dark fs-2">Yoko's Kitchen</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="container-fluid bg-secondary second-container">
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-sm bg-secondary">
+            <button
+              class="navbar-toggler d-lg-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapsibleNavId"
+              aria-controls="collapsibleNavId"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"
+                ><i class="fa-solid fa-bars text-danger"></i
+              ></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item me-3">
+                  <a class="nav-link active" href="#">home</a>
+                </li>
+
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">classes</a>
+                </li>
+
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">catering</a>
+                </li>
+
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">about</a>
+                </li>
+
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Japanese Cooking Courses -->
+    <div class="container-fluid main-page">
+      <div class="row pt-3">
+        <div class="col-sm-10 border-2 border-end border-secondary">
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img src="japanese1.jpg" alt="" class="img-fluid w-75 h-75" />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <h3 class="text-dark">Japanese Vegetarian</h3>
+
+              <h6 class="text-warning">Five week course in Landon</h6>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Ipsam, culpa.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <img src="japanese2.jpg" alt="" class="img-fluid w-75 h-75" />
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <h3 class="text-dark">Sauces Masterclass</h3>
+
+              <h6 class="text-warning">One day workshop</h6>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Ipsam, culpa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2 px-4">
+          <div class="aside">
+            <h4 class="mb-4">Popular Receipes</h4>
+
+            <p class="pb-2 border-bottom border-danger">
+              Yakitori (grilled chicken)
+            </p>
+
+            <p class="pb-2 border-bottom border-danger">
+              Tsukune (minced chicken paties)
+            </p>
+
+            <p class="pb-2 border-bottom border-danger">
+              Okonomiyaki (savory pancakes)
+            </p>
+
+            <p class="pb-2 border-bottom border-danger">
+              Mizutki (chicken stew)
+            </p>
+
+            <p class="pb-2 border-bottom border-danger">Sushi</p>
+
+            <p class="pb-2 border-bottom border-danger">Tempura</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-secondary pt-3">
+          <p class="text-center text-white">&copy; 2023 Yoko's Kitchen</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

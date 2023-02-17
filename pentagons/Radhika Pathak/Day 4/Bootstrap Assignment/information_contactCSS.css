@@ -1,0 +1,13 @@
+.form-title-dropdown{
+    padding-right: 50%;
+    text-decoration: none;
+}
+
+.contact-infomation input::placeholder{
+    color: rgb(175, 123, 123);
+}
+
+body{
+    background-color: rgb(95, 185, 5);
+}
+

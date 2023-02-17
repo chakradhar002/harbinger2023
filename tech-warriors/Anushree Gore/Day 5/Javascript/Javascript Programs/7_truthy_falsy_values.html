@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth false values</title>
+</head>
+<body>
+    <h2>Truth false values Program</h2>        
+    <script>
+        function check_truthy_falsy() {
+        const array = [false, 0, undefined, null, NaN, "", "Mango", "Kiwi", "Litchi"];
+        let truthy = 0;
+        let falsy = 0;
+        for (let i in array) {
+            if (!array[i]) {
+                falsy++;
+            }
+            else {
+                truthy++;
+            }
+        }
+        console.log(`Truthy values count         => ${truthy}`);
+        console.log(`Falsy values count          => ${falsy}`);
+    }
+    check_truthy_falsy();
+    </script>
+</body>
+</html>

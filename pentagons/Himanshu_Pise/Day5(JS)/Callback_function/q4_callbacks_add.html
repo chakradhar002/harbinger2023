@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4|number and two callbacks</title>
+</head>
+<body>
+    <script>
+function AddMul(num,callback1,callback2){
+            return callback2(callback1(num))
+            }
+        function add(num){
+            return num+3
+        }
+        function Mul(num){
+            return num *2
+        }
+        console.log(AddMul(4 , add , Mul))
+    </script>
+</body>
+</html>

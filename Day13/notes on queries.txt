@@ -1,0 +1,140 @@
+create collection
+db.createCollection("myherbinger2023")
+---------------------------------------------
+insert record 
+db.myherbinger2023.insertOne({
+  title: "Post Title 1",
+  body: "Body of post.",
+  category: "aNews",
+  likes: 1,
+  tags: ["news", "events"],
+  date: Date()
+})
+
+--------------------------------------------
+insert many records
+
+db.myherbinger2023.insertMany([  
+  {
+    title: "Post Title 2",
+    product: "kldjfldjflj.",
+    category: "criket",
+    likes: 2,
+    tags: ["news", "events"],
+    date1: Date(),
+	date: Date()
+  },
+  {
+    title: "Post Title 3",
+    body: "Body of post.",
+    category: "hnology",
+    likes: 3,
+    tags: ["news", "events"],
+    date: Date()
+  },
+  {
+    title: "Post Title 4",
+    body: "Body of post.",
+    category: "foottball",
+    likes: 4,
+    tags: ["news", "events"],
+    date: Date()
+  }
+])
+
+---------------------------------------------------
+To select data from a collection in MongoDB, we can use the find() method.
+
+db.myherbinger2023.find()
+-------------------------------------------
+To select data from a collection in MongoDB, we can use the findOne() method for single record
+ db.myherbinger2023.findone()
+ 
+ ---------------------------------
+ update the record
+ db.myherbinger2023.updateOne( { title: "Post Title 1" }, { $set: { likes: 20 } } 
+ 
+ 
+ ----------------------------------------------
+ aggregate method 
+ 
+ db.myherbinger2023.aggregate(
+    [ { $group : { _id : "$category" } } ]
+	
+
+)
+
+----------------------------
+limit the number of record
+
+b.myherbinger2023.aggregate([ { $limit: 3 } ])
+---------------------------------------------
+project
+
+db.myherbinger2023.aggregate([
+  {
+    $project: {
+      "title": 2,
+      "body": 2,
+      "category": 2
+    }
+  },
+  {
+    $limit: 
+  }
+])
+--------------------------sort-----
+
+db.myherbinger2023.aggregate([ 
+  { 
+    $sort: { "title": 1 } 
+  },
+  {
+    $project: {
+      "title": 1
+      
+    }
+  },
+  {
+    $limit: 3
+  }
+])
+
+-----------------------
+db.myherbinger2023.insertMany([  
+  {
+    title: "ANEW",
+    product: "kldjfldjflj.",
+    category: "criket",
+    likes: 2,
+    tags: ["news", "events"],
+    date1: Date(),
+	date: Date()
+  },
+  {
+    title: "ENEWS 3",
+    body: "Body of post.",
+    category: "hnology",
+    likes: 3,
+    tags: ["news", "events"],
+    date: Date()
+  },
+  {
+    title: "ZNEWS",
+    body: "Body of post.",
+    category: "foottball",
+    likes: 4,
+    tags: ["news", "events"],
+    date: Date()
+  }
+])
+
+-------------------$match---------
+db.myherbinger2023.aggregate([ 
+  { $match : { title : "Title 4" } },
+  { $limit: 2 },
+  { $project: {
+    "title": 1,
+   
+  }}
+])

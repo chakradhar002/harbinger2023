@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function Mouse_out()
+        {
+            var str = document.getElementById("text_box").value;
+            str = str.toUpperCase();
+            document.getElementById("text_box").value = str;
+        }
+
+    </script>
+</head>
+
+<body>
+   
+    <p> Enter any string </p>
+    <input type="text" id="text_box" onmouseleave="Mouse_out();">
+</body>

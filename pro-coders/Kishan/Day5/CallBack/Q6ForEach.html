@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function forEachElem(array , callback){
+            array.forEach(e =>{
+                callback(e)
+            })
+        }
+
+        function logEachElem(array){
+            forEachElem(array , console.log)
+        }
+
+        function logTypes(element){
+            console.log(`${element} has type of ${typeof element}`)
+        }
+
+        function logArrayTypes(array){
+            forEachElem(array , logTypes)
+        }
+
+        function callback(element){
+            console.log(`$ ${element}`)
+        }
+
+        forEachElem([1, 2, 3, 4] , callback)
+        logEachElem([1, 2, 3, 4])
+        logArrayTypes( [1,"Hi", true, {color: "green"}] )
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- Js program to get max value from two variables -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q2|Max NUMBER</title>
+    </head>
+    <body>
+        <script>
+// let a = prompt("Enter the first variable: ");
+// let b = prompt("Enter the second variable: ");
+function max_townums_range(x, y){
+if( (x >= 40) && (x <= 60) ){
+if(x === y){
+return "Numbers are the same";
+}else if (x > y){
+return x;
+}else{
+return y;
+}
+}else{
+return "Numbers don't fit in range";
+}
+}
+console.log('Max No. :'+ max_townums_range(45, 60));
+console.log('Max No. :'+ max_townums_range(55, 40));
+console.log('Max No. :'+ max_townums_range(45, 80));
+        </script>
+    </body>
+</html>

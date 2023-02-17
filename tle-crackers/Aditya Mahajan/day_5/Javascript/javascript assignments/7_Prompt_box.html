@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7_user input in prompt box</title>
+</head>
+
+<body>
+    <h2>7_user input in prompt box</h2>
+</body>
+<script>
+    const date = new Date();
+    const today_date = date.toDateString();
+    alert("Today's date is " + today_date);
+    let username = prompt("Please enter your name:", "");
+    alert("Hello! " + username)
+
+    let number1 = prompt("Enter your 1st Number");
+    let number2 = prompt("Enter your 2nd Number");
+    let result = parseInt(number1) + parseInt(number2);
+    alert(result);
+</script>
+
+</html>

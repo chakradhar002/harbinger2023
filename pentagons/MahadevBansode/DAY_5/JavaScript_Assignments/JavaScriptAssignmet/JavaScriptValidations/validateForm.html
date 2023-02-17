@@ -1,0 +1,36 @@
+<html>
+<body>
+<script>  
+function validateform(){  
+    var userid = (document.myform.name).value;  
+    var password=document.myform.password.value;  
+
+    if ( userid=="" || userid==null){  
+        alert("userid can't be blank");  
+        document.getElementById("uid").focus();
+        return false;  
+    }
+    else
+        if(!Number.isInteger(Number(userid))){
+            alert("userid should be integer");
+            document.getElementById("uid").focus();  
+            return false;
+        }
+    else
+        if(password.length<4){  
+            alert("Password must be at least 4 characters long.");  
+            document.getElementById("pass").focus();
+            return false;  
+        }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+userid: <input type="text" id="uid" name="name"><br/>  
+Password: <input type="password" id="pass" name="password"><br/>  
+<input type="submit" value="register">  
+</form>  
+</body>
+</html>
+
+ 

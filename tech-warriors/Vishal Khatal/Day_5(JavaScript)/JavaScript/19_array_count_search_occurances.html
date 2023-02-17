@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array count search occurances</h1>
+</body>
+</html>
+<script>
+    console.log("Array count search occurances");
+    function search_occurances()
+    {
+        const arr = [5, 5, 5, 2, 2, 2, 2, 2, 9, 4];
+        const counts = {};
+
+        for (const i of arr) {
+            counts[i] = counts[i] ? counts[i] + 1 : 1;
+        }
+
+        console.log(counts[5]);
+    }
+    search_occurances();
+</script>

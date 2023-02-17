@@ -1,0 +1,22 @@
+1write a javascript prg  swapping variables
+2write a javascript prg max number
+3write a javascript prg Landscape Portrait
+4write a javascript prg FizzBuzz Algorithms
+5write a javascript prg Speed Limits
+6write a javascript prg Odd Even Number Loop
+7write a javascript prg Count Truthy Falsy Values
+8.write a javascript prg Object String Properties Key
+9.write a javascript prg Netsted Loop Star Pattern
+10.write a javascript prg Marks Average Grade
+11.write a javascript prg Random Bingo Card
+12write a javascript prg Show Prime Numbers
+13write a javascript prg Sum Of Arguments
+14write a javascript prg Sum Of Arguments Array
+15write a javascript prg Create Array From Argument Range
+16write a javascript prg Array Includes Element Exists
+17write a javascript prg Array Excludes Value To New Array
+18write a javascript prg Array Count Search Occurances
+19write a javascript prg Array Get Max Largest Number
+20write a javascript prg Array Filter Sort Map
+21write a javascript prg Object Create Students and Address Object
+22write a javascript prg Object Create Object Factory Constructor Function

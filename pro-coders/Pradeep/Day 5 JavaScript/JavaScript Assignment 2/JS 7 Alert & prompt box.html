@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function show_date() // A1 Q1
+        {
+            var today = new Date().toLocaleDateString();
+            alert("today's date is : " + today);
+            
+        }
+        
+        function Prompt_name() // A! Q2
+        {
+            var name = prompt("Enter Your Name");
+            alert("Hello! " + name);
+           // console.log(txt.toUpperCase());
+        }
+
+        function Prompt_add()
+        {
+            var number1 = prompt("Enter 1st Number");
+            var number2 = prompt("Enter second Number");
+            var number3 = Number(number1) + Number(number2);
+            alert("Addition is : " + number3);
+        }
+        
+        
+        
+    </script>
+</head>
+<body>
+    <h3> click on buttons to run all assignment qustions. </h3> <br>
+    <button onclick="show_date();"> JS Q7.a</button> Today's date <br>
+    <button onclick="Prompt_name();"> JS Q7.b</button> Prompt name <br>
+    <button onclick="Prompt_add();"> JS Q7.c</button> Add two numbers.
+
+</body>

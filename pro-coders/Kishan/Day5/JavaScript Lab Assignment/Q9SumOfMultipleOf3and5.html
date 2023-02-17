@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9SumOfMultipleOf3and5</title>
+</head>
+<body>
+    <script>
+        function sum(number){
+        let sum = 0
+        for (let i = 0 ; i <= number ; i++){
+         if(i % 3 === 0){
+            sum += i
+         }
+
+        if(i % 5 === 0){
+            sum+= i
+        }
+    }
+   console.log('SumOfMultiple of ',number,' is',sum)
+}
+sum(10)
+    </script>
+</body>
+</html>

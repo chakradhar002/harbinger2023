@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two CallBack With number</title>
+</head>
+<body>
+    <script>
+        function callingTwoFun (number , callback1 , callback2){
+            return callback2(callback1(number))
+        }
+        function function1(number){
+            return number+3
+        }
+        function function2(number){
+            return number*2
+        }
+        console.log(callingTwoFun(4 , function1 , function2))
+    </script>
+</body>
+</html>

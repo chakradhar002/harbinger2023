@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Star pattern
+    </h1>
+    <script>
+        //star pattern With one for loop
+        for (var star = 1; star <= 5; star++) {
+            console.log("*".repeat(star));
+        }
+
+        //Star pattern With two loops
+        let string = "";
+        for (let row = 1; row <= 5; row++) {
+            for (let column = 0; column < row; column++) {
+                string += "*";
+            }
+            string += "\n";
+        }
+        console.log(string);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Truthy Falsy value</h1>
+    <script>
+        array = [false,1,0, undefined, null, '', NaN, 1,true,1]  //in JS [false,0,undefined,null,'',Nan] these are the falsy value
+
+        //this function will return the count of tuthy values only
+        
+        function checkCount(array) {
+            let count = 0
+            for (let ele of array) {
+                if (!ele) {
+                    count++
+                }
+            }
+            return count
+        }
+        console.log('Count :',checkCount(array))
+    </script>
+</body>
+
+</html>

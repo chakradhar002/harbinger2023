@@ -1,0 +1,82 @@
+body{
+width: 960px;
+font-family: Arial, sans-serif; 
+Color: #fcfcfc; 
+align-items:center ;
+}
+.heading{
+    text-transform: uppercase;
+    font-family:cursive;
+    font-size: x-large;
+    font-style: oblique;
+    font-weight: 30px;
+    margin-left: 44%;
+    margin-top: 3%;
+}
+.heading img{
+    margin-top: -20px;
+    width: 78%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+nav ul li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+    color: rgb(40, 113, 89);
+    font-size: large;
+    font-family: cursive;
+    font-weight: 1000;
+}
+a:hover{
+    border: 2px solid rgb(31, 128, 95);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom-color: rgb(31, 128, 95);
+}
+main{
+    background-color: rgb(30, 93, 72);
+    height: 60%;
+    width: 90%;
+    margin-left: 18%;
+    border-radius: 23px;
+}
+main .main-content{
+    display: flex;
+    flex-direction: row;
+}
+main h3{
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: 1000;
+    color: white;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-left: 27%;
+}
+.main-content .content{
+    width: 60%;
+    margin-left: 4%;
+    margin-right: -38%;
+}
+.images{
+    background-color: rgb(8, 144, 98);
+    width: 70%;
+    height: 260px;
+    border-radius: 20px;
+    margin-left: 45%;
+    margin-right: 30px;
+}
+.images img{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 27px;
+    border-radius: 4%;
+    
+}

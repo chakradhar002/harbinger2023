@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Phone Number</title>
+</head>
+<body>
+    <h1> Phone Number Validation</h1><br />
+    <!-- form to validate the Phone Number - password -->
+    <form action="#" onsubmit="validate()" id="formValidate">
+
+        <label for="password1" style="padding:17px">Phone Number</label>
+        <input type="text" id="password1"><br/><br>
+        
+
+        <button id="btn" style="margin-left:8%" >Validate</button>
+        <button id="btn" style="margin-left:3%">Cancel</button><br/><br/><br/>
+
+        <!-- <label for="warrning" style="color:red">(Note :Password should be minimum 6 ,Contain Uppercase and Lowercase)</label> -->
+        <br /><br />
+    </form>
+
+    <!-- Javascript File -->
+    <script>
+        document.getElementById("formValidate").addEventListener("submit",(e)=>{
+            
+            var password1 = document.getElementById("password1").value;
+            
+            var passPattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+
+            if(password1.match(passPattern))
+            {
+                document.write("Phone NUmber Correct")
+            }
+            else{
+                alert("Invalid Phone NUmber")
+            }
+        })
+    </script>
+</body>
+</html>

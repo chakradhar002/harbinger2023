@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>QUESTION 4</title>
+
+    <style>
+        .form-group{
+            
+    margin-right: 501px;
+    margin-left: 501px;
+    text-align: center;
+    margin-top: 118px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-group">
+        <label for="formGroupExampleInput">Enter NUMBER</label>
+        <input type="text" class="form-control" id="no1" >
+        <button style="margin: 5px;" type="button" class="btn btn-primary" id ="butt1" onclick="calculate()">FizzBuzz</button>
+        <p id="para1"></p>
+      </div>
+    <script>
+        const num1 = document.getElementById("no1")
+        const butt = document.getElementById("butt1")
+        const para  =document.getElementById("para1")
+
+        function calculate(){
+            if(Number(num1.value)){
+            if (num1.value % 15 == 0)  para.innerHTML = "FizzBuzz";
+            else if (num1.value % 3 == 0) para.innerHTML = "Fizz";
+            else if (num1.value % 5 == 0) para.innerHTML = "Buzz";
+            else{
+                para.innerHTML = num1.value;
+            }
+        }
+        else{
+            para.innerHTML = "Enter a number"
+        }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+img{
+    height: 250px;
+    width: 300px;
+    border: 1px solid black;    
+    margin-right:5px ;
+}
+.news{
+    display: flex;
+    margin: 50px;
+}
+.heading{
+    font-size: xx-large;
+    color: rgb(7, 99, 99);
+}
+body{
+    margin: 30px;
+}

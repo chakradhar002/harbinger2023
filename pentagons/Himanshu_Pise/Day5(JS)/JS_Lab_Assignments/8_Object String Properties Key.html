@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q8|Object String Properties Key</title>
+    </head>
+    <body>
+        <script>
+          const printStringProperty = object => {
+         let entries = Object.entries(object)
+         entries.forEach(entry => {
+        if(typeof entry[1] === "string"){
+            console.log(`${entry[0]} : ${entry[1]}`)
+        }
+    })
+}
+printStringProperty({
+    name : 'Himanshu' ,
+    age : 21 ,
+    country : 'India'
+})
+        </script>
+    </body>
+</html>

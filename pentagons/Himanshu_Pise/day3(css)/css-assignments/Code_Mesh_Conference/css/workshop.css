@@ -1,0 +1,46 @@
+body {
+  background-color: #3c3f49;
+  font: 14px "Roboto", sans-serif;
+  margin: 0;
+}
+.Main {
+  border: 1px solid white;
+  margin-top: 80px;
+  margin-left: 160px;
+  margin-right: 160px;
+  margin-bottom: 80px;
+}
+.Main2 {
+  margin: 90px;
+}
+.middle-first-heading {
+  text-align: center;
+  color: white;
+}
+.about {
+  margin-left: 250px;
+  margin-right: 250px;
+  text-align: center;
+  color: white;
+}
+.row {
+  margin-top: 20px;
+  margin-left: 250px;
+  display: flex;
+}
+.button {
+  margin-left: 30px;
+}
+.subscribe {
+  border-radius: 10px;
+  background-color: rgb(5, 0, 103);
+  color: white;
+}
+.subscribe:hover {
+  background-color: #3c3f49;
+}
+.form-control {
+  background-color: #3c3f49;
+  border-color: #3c3f49;
+  border-bottom: 4px solid rgb(5, 0, 103);
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5_input text to UPPERCASE</title>
+</head>
+
+<body>
+    <h2>5_input text to UPPERCASE</h2>
+    <form name="myForm">
+        <input type="text" name="input" onmouseout="convert()" />
+    </form>
+</body>
+<script>
+    function convert() {
+        let input = document.myForm.input.value;
+        result = input.toUpperCase();
+        document.getElementsByName('input')[0].value = result;
+    }
+</script>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>BizzFizz4</title>
+   </head>
+   <body>
+      <input type="number" id="myNumber" >
+      <button onclick="myFunction()">Check</button>
+      <script>
+         function myFunction(){
+          var number = document.getElementById("myNumber").value;
+          if(parseInt(number) === NaN){
+          alert("NaN - please enter a number")
+          return
+         }else {
+          if(number % 3 && number % 5){
+              console.log("FizzBuzz")
+          }else if(number % 3 ){
+              console.log("Fizz")
+          }else if (number % 5){
+              console.log("Buzz")
+          }else {
+              console.log(number)
+          }
+         }
+         }
+      </script>
+   </body>
+</html>

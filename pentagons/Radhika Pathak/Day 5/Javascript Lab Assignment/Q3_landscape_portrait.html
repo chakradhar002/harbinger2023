@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape Portrait</title>
+</head>
+
+<body>
+    <h2>Landscape Portrait</h2>
+</body>
+<script type="text/javascript">
+    function isLandscape(width, height) {
+        return (width > height);
+    }
+
+    let checkWidthHeight1 = isLandscape(800, 600);
+    document.write('<br>Landscape:', checkWidthHeight1);
+
+    let checkWidthHeight2 = isLandscape(700, 800);
+    document.write('<br>Landscape:', checkWidthHeight2);
+
+    let checkWidthHeight3 = isLandscape(1090, 896);
+    document.write('<br>Landscape:', checkWidthHeight3);
+</script>
+
+</html>

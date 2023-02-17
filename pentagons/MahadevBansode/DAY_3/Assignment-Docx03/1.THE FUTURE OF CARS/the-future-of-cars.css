@@ -1,0 +1,13 @@
+body {
+  background-image: url("concept-car-of-the-future-from-bugatti-pofo4g1t.jpeg");
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+a {
+  color: silver;
+  padding: 5px;
+}
+a:hover {
+  color: goldenrod;
+}

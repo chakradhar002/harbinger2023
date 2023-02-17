@@ -1,0 +1,46 @@
+body{
+    background-color: wheat;
+}
+.header img{
+    width:100%;
+    
+}
+.content{
+    background-color: black;
+    opacity: 0.7;
+    margin-top: -60%;
+    width: 100vmax;
+    height: 59vmax;
+}
+.head{
+    background-color:black;
+}
+.head h1{
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 490%;
+}
+.content2{
+    margin-left: 36%;
+}
+.content2 h3{
+    color: yellow;
+    font-size: xx-large;
+}
+.content2 button{
+    height: 40px;
+    background-color: yellow;
+    border: none;
+    margin-left: 15%;
+}
+button:hover{
+    background-color: yellowgreen;
+    cursor:pointer;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-weight: 300;
+    font-size: medium;
+}

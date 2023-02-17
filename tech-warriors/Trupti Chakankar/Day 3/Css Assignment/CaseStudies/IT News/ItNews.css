@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    height: 350px;
+    width:1000px;
+   
+}
+.row{
+    flex-direction: row;
+    margin: 20px;
+}
+img{
+    float: left;
+    margin-right: 20px;
+    height: 250px;
+    width: 300px;
+    border: 1px solid gray;
+}
+body{
+    align-items: center;
+    margin-left: 50px;
+}
+h2,a{
+    color:skyblue
+}
+

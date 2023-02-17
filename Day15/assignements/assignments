@@ -1,0 +1,57 @@
+task using functions
+
+Create an array of strings.
+
+Create an addTask function:
+It receives a string as a parameter  called task.
+It adds the task to the array.
+It prints a message indicating the insertion.
+It returns the number of elements in the list and prints that number in the console as well.
+
+Create a listAllTasks function:
+It iterates over all the tasks in the list.
+It prints each list item in the console.
+
+Create a deleteTask function:
+It receives a string as a parameter called task.
+It removes that string from the array.
+It returns the number of elements in the list after the deletion.
+ 
+
+Interface  using (todointerface.ts)
+
+Array of strings.
+
+addTask function:
+It receives a string as a parameter
+It returns a number.
+
+listAllTasks function:
+It has no parameters.
+It doesn't return anything.
+
+deleteTask function:
+It receives a string as a parameter
+It returns a number
+
+
+Class (main.ts)
+
+Create a class that implements the Interface:
+Remember that you need to import the interface before you use it.
+Implement all the properties and functions indicated in the interface:
+Create an array of strings.
+
+Create an addTask function:
+It receives a string as a parameter.
+It prints the same message as iteration 1.
+It returns the number of elements in the list and prints this number to the console as well.
+
+Create a listAllTasks function:
+It prints in console all the tasks of the list.
+It doesn't return anything.
+
+Create a deleteTask function:
+It receives a string as a parameter.
+It prints the same message as iteration 1.
+It returns the number of elements in the list and prints the number in the console also.

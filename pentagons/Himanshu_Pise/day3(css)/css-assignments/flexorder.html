@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex order</title>
+    </head>
+    <style>
+    .header{
+        height: 100px;
+        text-align: center;
+        background-color: tomato;
+    }
+    .info{
+        height: 100px;
+        background-color: deepskyblue;
+        text-align: left;
+    }
+    .footer{
+        height: 100px;
+        text-align: center;
+        text-align: center;
+        background-color: lightgreen;
+
+    }
+    .aside-bars{
+        display: flex;
+
+    }
+    .aside1{
+        width: 50%;
+        background-color: gold;
+    }
+    .aside2{
+        width: 50%;
+        background-color: hotpink;
+    }
+ 	@media all and  (max-width: 800px){
+        .aside-bars{
+            display: flex;
+            flex-direction: column;
+        }
+        .aside1, .aside2{
+            width: 100%;
+        }
+    }
+	@media all and (min-width: 600px){
+	.aside-1 { flex: 1.0; }
+    .main   {  flex: 3 0;order: 2;  }
+	.aside-1 { order: 1;flex-direction: row-reverse; }
+	.aside-2 { order: 3;flex-direction: row-reverse; }
+	/* .footer  { order: 4; } */
+}
+    @media all and (min-width: 700px) {
+        .aside-1,.aside-2{order:1;flex-direction: row; flex: 100%;float: left;}
+        .main{order:2;flex-direction: column;float: inherit;}
+        .footer{order:3;flex-direction: column;float: inline-end;}
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
+    <div class="info">
+        <h2>Info</h2>
+        <p>Phasellus fermentum malesuada phasellus netus dictum aenean placerat egestas amet. Ornare taciti semper dolor tristique morbi. Sem leo tincidunt aliquet semper eu lectus scelerisque quis. Sagittis vivamus mollis nisi mollis enim fermentum laoreet.</p>
+    </div>
+    <div class="aside-bars">
+        <div class="aside1">
+            <h3>Aside 1</h3>
+        </div>
+        <div class="aside2">
+            <h3>Aside 2</h3>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+</body>
+</html>

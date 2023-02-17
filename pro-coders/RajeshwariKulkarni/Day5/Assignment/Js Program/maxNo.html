@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max from Two Numbers</title>
+    <script>
+        
+        function clickbtn()
+        {
+            var no1 = document.getElementById("num1").value;
+            var no2 = document.getElementById("num2").value;  
+            var ans1 = document.getElementById("answer1");
+            var ans2 = document.getElementById("answer2");
+
+            console.log(no1);
+            console.log(no2);
+
+            if(no1 > no2)
+            {
+                ans1.innerHTML = "First Number "+no1+"is Greater Numbmer  ";
+            }
+            else{
+                ans1.innerHTML = "Second Number "+no2+" is Greater Number ";
+            }
+            
+        }
+
+    </script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-6">
+            <label for="1st no">Enter Number</label>
+            <input type="text" id="num1">
+        </div><br/>
+        <div class="col-6">
+            <label for="2nd no">Enter Number</label>
+            <input type="text" id="num2">
+        </div>
+    </div><br/>
+    <button onclick="clickbtn()">Max Numbers</button><br/><br/>
+    <label id="answer1"></label><br/><br>
+    <label id="answer2"></label>
+</body>
+</html>

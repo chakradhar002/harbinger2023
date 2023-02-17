@@ -1,0 +1,145 @@
+<!-- Write validation functions and modify the onSubmit event Handler
+in the form code to validate the following form fields:
+1. Phone Number
+• Must be entered
+• Must be in below format
+ XXX-XXX-XXXX
+ XXX.XXX.XXXX
+ XXX XXX XXXX  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main CSS file -->
+
+    <title>Day 5 | JavaScript Validations</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-primary text-center my-5">
+            Day 5 | JavaScript Validations
+          </h1>
+
+          <div class="w-50 my-4 m-auto">
+            <input
+              type="tel"
+              autofocus
+              class="form-control"
+              name=""
+              id="phone"
+              aria-describedby="helpId"
+              placeholder="Enter your phone number"
+            />
+          </div>
+
+          <div class="w-50 my-4 m-auto text-center">
+            <button
+              type="button"
+              onclick="validation()"
+              id="submit"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script>
+    let phone = document.querySelector("#phone");
+
+    let phoneForDash = phone;
+    let phoneForPeriod = phone;
+
+    function validation() {
+      if (!checkForDSP(phone.value)) {
+        alert(`Phone number must contains '-' or '.' or ' ' or digits`);
+        return;
+      }
+
+      if (phone.value == "") {
+        alert("Please enter the your phone number");
+        return;
+      }
+
+      if (phone.value.length !== 12) {
+        alert("Phone number must be of 10 digits");
+        return;
+      }
+
+      let phoneCheck = null;
+      //   Checking for dashes, periods and whitespaces
+      if (phone.value.includes("-")) {
+        phoneCheck = phone.value.split("-");
+      } else if (phone.value.includes(".")) {
+        phoneCheck = phone.value.split(".");
+      } else if (phone.value.includes(" ")) {
+        phoneCheck = phone.value.split(" ");
+      }
+
+      if (phoneCheck.length != 3) {
+        alert("Incorrect format");
+      }
+
+      if (phoneCheck[0].length != 3) {
+        alert("Incorrect format");
+        return;
+      }
+
+      if (phoneCheck[1].length != 3) {
+        alert("Incorrect format");
+        return;
+      }
+
+      if (phoneCheck[2].length != 4) {
+        alert("Incorrect format");
+        return;
+      }
+
+      alert("Validation successful");
+    }
+
+    // Check for dashes , spaces and period
+    function checkForDSP(phoneNumber) {
+      for (let i of phoneNumber) {
+        if (i != "-" && i != " " && i != ".") {
+          if (isNaN(parseInt(i))) {
+            return false;
+          }
+        }
+      }
+      return true;
+    }
+
+    // Check for number :
+    function checkForNumber(phoneNumber) {
+      if (isNaN(phoneNumber)) {
+        alert(`Please enter numbers only.`);
+        return;
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Exist</title>
+</head>
+
+<body>
+    <h2>Check whether element exist or not:</h2>
+    <script type="text/javascript">
+        function includes(arrayToSearch, elementToSearch) 
+        {
+            document.write('<br>Array: ', arrayToSearch);
+            document.write('<br>Element To Search: ', elementToSearch);
+            for (let curElement of arrayToSearch) {
+                if (curElement === elementToSearch) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        const myarray = [1,2,3,4,5,3];
+        document.write("<br>",includes(myarray, 2));
+        console.log('---------');
+        const Array2 = [10,20,30,40,50];
+        document.write("<br>",includes(Array2, 80));
+    </script>
+</body>
+
+</html>

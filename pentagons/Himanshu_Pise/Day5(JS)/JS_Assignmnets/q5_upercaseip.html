@@ -1,0 +1,32 @@
+<!-- Write a JavaScript program which will have one textbox to get
+input as string and after giving input when you leave the input
+textbox, a function is triggered which transforms the input text
+to uppercase. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q5|UpperCase after giving i/p</title>
+
+    </head>
+    <body>
+        <div class="form-group">
+            <label for="formGroupExampleInput">ENTER TEXT</label>
+            <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                onchange="Upper()"
+            >
+        </div>
+        <script>
+        const text1 = document.getElementById("formGroupExampleInput")
+        function Upper(){
+        var txt = text1.value;
+        text1.value = txt.toLocaleUpperCase();
+        }
+        </script>
+    </body>
+</html>
