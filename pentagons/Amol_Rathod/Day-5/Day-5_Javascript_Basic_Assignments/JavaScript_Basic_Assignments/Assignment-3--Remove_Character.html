@@ -27,11 +27,13 @@ characters from a string. -->
         <div class="col text-center">
           <h4 class="text-primary my-5">Day 5 | Basic Assignment 3</h4>
 
-          <p class="py-3 upper">harbinger group</p>
+          <p class="py-3 word">harbinger group</p>
 
-          <p id="show"></p>
+          <p id="showResultAfterSliceMethod"></p>
 
-          <button class="btn btn-outline-info" id="element">Slice Here</button>
+          <button class="btn btn-outline-info" id="sliceHereButton">
+            Slice From Character 3 to 5
+          </button>
         </div>
       </div>
     </div>
@@ -44,14 +46,16 @@ characters from a string. -->
   </body>
 
   <script>
-    const element = document.querySelector("#element");
+    const sliceButton = document.querySelector("#sliceHereButton");
 
-    const show = document.querySelector("#show");
+    const showResultAfterSliceMethod = document.querySelector(
+      "#showResultAfterSliceMethod"
+    );
 
-    const res = document.querySelector(".upper");
+    const res = document.querySelector(".word");
 
-    element.addEventListener("click", () => {
-      show.innerHTML = res.textContent.slice(3, 5);
+    sliceButton.addEventListener("click", () => {
+      showResultAfterSliceMethod.innerHTML = res.textContent.slice(3, 5);
     });
   </script>
 </html>

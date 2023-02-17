@@ -35,7 +35,7 @@ has to alert the sum. -->
               type="number"
               class="form-control mb-4"
               name=""
-              id="num1"
+              id="number1"
               aria-describedby="helpId"
               placeholder="Enter first number"
             />
@@ -44,7 +44,7 @@ has to alert the sum. -->
               type="number"
               class="form-control mb-4"
               name=""
-              id="num2"
+              id="number2"
               aria-describedby="helpId"
               placeholder="Enter second number"
             />
@@ -68,13 +68,13 @@ has to alert the sum. -->
     let btn = document.getElementById("btn");
 
     btn.addEventListener("click", () => {
-      let num1 = document.getElementById("num1").value;
-      let num2 = document.getElementById("num2").value;
+      let number1 = document.getElementById("number1").value;
+      let number2 = document.getElementById("number2").value;
 
-      num1 = parseInt(num1);
-      num2 = parseInt(num2);
+      number1 = parseInt(number1);
+      number2 = parseInt(number2);
 
-      alert(`${num1} + ${num2} = ${num1 + num2}`);
+      alert(`${number1} + ${number2} = ${number1 + number2}`);
     });
   </script>
 </html>
