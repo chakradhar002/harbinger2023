@@ -26,11 +26,11 @@
         <div class="col text-center">
           <h4 class="text-primary my-5">Day 5 | Basic Assignment 2</h4>
 
-          <p class="py-3 upper">harbinger group</p>
+          <p class="py-3 upperCase">harbinger group</p>
 
-          <p id="show"></p>
+          <p id="showResult"></p>
 
-          <button class="btn btn-outline-info" id="element">UpperCase</button>
+          <button class="btn btn-outline-info" id="uppercase">UpperCase</button>
         </div>
       </div>
     </div>
@@ -43,14 +43,14 @@
   </body>
 
   <script>
-    const element = document.querySelector("#element");
+    const wordToBeConvertedIntoUppercase = document.querySelector("#uppercase");
 
-    const show = document.querySelector("#show");
+    const resultParagraph = document.querySelector("#showResult");
 
-    const res = document.querySelector(".upper");
+    const result = document.querySelector(".upperCase");
 
-    element.addEventListener("click", () => {
-      show.innerHTML = res.textContent.toUpperCase();
+    wordToBeConvertedIntoUppercase.addEventListener("click", () => {
+      resultParagraph.innerHTML = result.textContent.toUpperCase();
     });
   </script>
 </html>
