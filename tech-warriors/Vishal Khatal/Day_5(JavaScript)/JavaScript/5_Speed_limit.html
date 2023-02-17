@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>write a javascript prg Speed Limits</h1>
+</body>
+</html>
+<script>
+    function speedLimit(speed)
+    {
+        if (speed<70)
+        {
+            console.log("Good Safe Driving !");
+        }
+        if (speed>70)
+        {
+            let greater_than_70 = speed-70;
+            let penelty = greater_than_70/5;
+            if(penelty<=10)
+            {
+                console.log("Speed limit crossed by Penelty Point :"+penelty);
+            }
+            else
+            {
+                console.log("License Suspended");
+            }
+        }
+        
+
+    }
+    speedLimit(60);
+    speedLimit(75);
+    speedLimit(80);
+    speedLimit(130);
+</script>

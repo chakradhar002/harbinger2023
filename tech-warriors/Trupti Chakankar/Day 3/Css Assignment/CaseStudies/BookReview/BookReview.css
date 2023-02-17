@@ -1,0 +1,317 @@
+<<<<<<< HEAD
+body{
+    margin: 0%;
+    padding: 0%;
+    background: linear-gradient(to bottom, #567788 0%,#121f25 100%) no-repeat center center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+.site-navigation{
+    background: #eff4f7;
+    margin: 40px;
+    position: relative;
+    z-index: 5;
+    height: 80px;
+}
+
+.site-navigation ul {
+    padding: 20px 20px 0 20px;
+    float: right;
+  }
+  .site-navigation ul li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 20px;
+    padding-bottom: 23px;
+  }
+  .site-navigation a {
+    text-decoration: none;
+    color: #a4a8a9;
+  }
+  a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #70e9ff;
+    color: #333333;
+  }
+  
+  section.logo {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 750px;
+    background-color: #eac1c5;
+    width: 190px;
+    height: 190px;
+    padding: 20px;
+  }
+  
+  h1.brand-name{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    color: #ffffff;
+    margin-top: 72px;
+  }
+main {
+    background-color: #cbd0d9;
+    width: 80%;
+    margin: 200px auto;
+    text-align: center;
+  }
+h1.title {
+    position: relative;
+    z-index: 10;
+    color: #121f25;
+    font-size: 54px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+h5.genre {
+    position: relative;
+    z-index: 3;
+    top: -80px;
+    text-transform: uppercase;
+    left: 80px;
+    color: #6dffb8;
+    font-size: 120px;
+    margin: 0;
+  }
+  section.logo {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 750px;
+    background-color: #f53f55;
+    width: 190px;
+    height: 190px;
+    padding: 20px;
+  }
+.section{
+    position: relative;
+    margin: 0 auto;
+    z-index: 3;
+    text-align: center;
+    color: #ffffff;
+    width: 300px;
+    padding: 40px;
+    background: linear-gradient(to bottom, #cd8c95 0%, #e6135c 100%) no-repeat center center;
+}
+.section img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+  }
+.section p.stars {
+    font-size: 25px;
+    margin: 10px;
+  
+  }
+  .section p.content::after,
+.section p.content::before {
+  content: '"';
+  color: #e45874;
+  font-size: 30px;
+  font-weight: 800;
+}
+.section button {
+    background: none;
+    border: 3px solid #70ecff;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px 25px;
+  }
+.section button:hover {
+    background: #70ecff;
+    border-color: #70ecff;
+    color: #348098;
+  }
+  .stars-rating{
+    color: #121f25;
+  }
+=======
+
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,800");
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient( #567788 0%, #121f25 100%) no-repeat;
+            font: 'open sans', sans-serif;
+            size: 14px;
+            color: #3333;
+            background: #567788;
+        }
+
+        .nav {
+            background: #eff4f7;
+            margin: 40px;
+            position: relative;
+            z-index: 5;
+            height: 80px;
+        }
+
+        a {
+            color: #a4a8a9;
+        }
+
+        .ul {
+            padding: 20px 20px 0 20px;
+            float: right;
+        }
+
+        .aa {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+            padding-bottom: 23px;
+        }
+
+        a:hover {
+            cursor: pointer;
+            border-bottom: #70e9ff;
+            color: #333;
+        }
+
+        .logo {
+            position: absolute;
+            z-index: 0;
+            top: 20px;
+            left: 550px;
+            background: #ea3d51;
+            width: 90px;
+            height: 90px;
+        }
+
+        .titleh1 {
+            text-transform: uppercase;
+            text-align: center;
+            size: 50px;
+            font-weight: 900;
+            letter-spacing: 10px;
+            color: #fff;
+            margin-top: 72px;
+        }
+
+        section {
+            background: #cbd0d9;
+            width: 80%;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .book-title {
+            position: relative;
+            z-index: 10;
+            color: #121f25;
+            size: 54px;
+            margin: 0;
+            text-align: center;
+        }
+
+        .book-genre {
+            position: relative;
+            z-index: 3;
+            top: -80px;
+            left: 80px;
+            color: #6dffb8;
+            size: 80px;
+            margin: 0;
+            text-align: center;
+            font-size: 80px;
+        }
+
+        .storyAndphoto {
+            position: relative;
+            z-index: 8;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            padding: 40px;
+            background: linear-gradient( #eb3c53 0%, #e6135c 100%) no-repeat, center;
+        }
+
+        .storyimage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            max-width: 30%;
+            border-radius: 50%;
+        }
+
+        .checked {
+            color: white;
+        }
+
+        .star {
+            size: 25px;
+            margin: 10px;
+        }
+
+        .paragraphInStoryImg {
+            content: ' " ';
+            color: #af213d;
+            size: 30px;
+            font-weight: 800px;
+        }
+
+        .donate {
+            background: none;
+            border: 3px solid #70ecff;
+            text-transform: uppercase;
+            size: 12px;
+            color: #fff;
+            padding: 10px 25px;
+        }
+
+            .donate:hover {
+                background: #70ecff;
+                border-color: #70ecff;
+                color: #348098;
+            }
+
+        .chapterAndPara {
+            position: relative;
+            z-index: 4;
+            top: -250px;
+            background: #fff;
+            margin: 50px;
+            padding: 250px 35px 35px 35px;
+        }
+
+        .chapter1 {
+            color: #46ee97;
+            size: 42px;
+        }
+
+        .paraChapter1 {
+            width: 70%;
+            color: #121f25;
+        }
+
+        .readTheBox {
+            background: none;
+            border: 3px solid #628291;
+            text-transform: uppercase;
+            size: 12px;
+            color: #333;
+            padding: 10px 25px;
+        }
+
+            .readTheBox:hover {
+                background: #628291;
+                cursor: pointer;
+                color: #6dffb8;
+            }
+    
+>>>>>>> 70122f57c8a2a45d8c7a657644ad23c76e1099fa

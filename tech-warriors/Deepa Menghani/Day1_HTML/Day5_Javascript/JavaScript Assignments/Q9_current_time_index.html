@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <input type="text" id="time">
+        <script>
+            let time = document.getElementById("time")
+            setInterval(()=>{
+                let date = new Date()
+                time.value=`${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`
+            },1000)
+        </script>
+    </body>
+</html>

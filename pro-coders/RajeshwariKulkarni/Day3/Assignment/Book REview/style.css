@@ -1,0 +1,124 @@
+body{
+Margin: 0px; 
+Padding: 0px; 
+Background: linear-gradient(to bottom, #567788 0%,#121f25 100%) no-repeat center center; 
+font-family: 'Open Sans', sans-serif; 
+font-size:  14px; 
+color: #333333; 
+}
+.container nav{
+background-color: #eff4f7; 
+margin: 40px; 
+position: Relative; 
+z-index: 5; 
+height: 60px;
+}
+nav ul{
+Padding: 20px 20px 0 20px; 
+float: Right; 
+display: inline-flex;
+}
+nav ul li{
+    display: inline-flex;
+    justify-content: space-between;
+    padding-bottom: 23px;
+    padding-left: 23px;
+    margin-right: 20px;
+    margin-top: -12px;
+}
+nav ul li a{
+    color: #a4a8a9;
+    text-decoration: #a4a8a9;
+   
+}
+a:hover{
+    cursor: pointer;
+    border-bottom-color:1px solid #70e9ff;
+    color: #333;
+}
+section .logo{
+    position:absolute;
+    z-index:1;
+    top:20px;
+    left:750px;
+    background-color: #ea3d51;
+    width:190px;
+    height:190px;
+    padding:20px;
+}
+h1 .brand{
+    text-transform:uppercase;
+    text-align:center;
+    letter-spacing:10px;
+    color:#ffffff;
+    margin-top:72px;
+    font-size:50px;
+    font-weight:900;
+}
+.section{
+    position:relative;
+    margin:0 auto;
+    z-index:3;
+    text-align:center;
+    width:300px;
+    padding:40px;
+    background:linear-gradient(to bottom,#eb3c53 0%,#e6135c 100%) no-repeat center center;
+}
+main{
+    background-color: #cbd0d9;
+    width:80%;
+    margin:200px auto;
+    text-align:center;
+}
+h1 .title{
+    position:relative;
+    z-index: 10;
+    color: #121f25;
+    font-size:54px;
+    text-transform: uppercase;
+    margin: 0;
+}
+h1 .genre{
+    position: relative;
+    z-index: 3;
+    top: -80px;
+    text-transform: uppercase;
+    left: 80px;
+    color: #6dffb8;
+    font-size: 120px;
+    margin: 0;
+}
+.section img{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+section p.content::after,
+.section p.content::before {
+  content: '"';
+  color: #af213d;
+  font-size: 30px;
+  font-weight: 800;
+}
+.section p.stars {
+    font-size: 25px;
+    margin: 10px;
+  }
+  .section button {
+    background: none;
+    border: 3px solid #70ecff;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 10px 25px;
+  }
+  
+  .section button:hover {
+    background: #70ecff;
+    border-color: #70ecff;
+    color: #348098;
+  }
+  

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Limit</title>
+</head>
+<body>
+    <h2>Speed Limit Program</h2>
+    <script>
+        function checkSpeed(speed) {
+            if(speed <= 60) {
+                console.log('Good driving speed!')
+            }
+            else if(speed > 150){
+                alert("License Suspended")
+            }
+        }
+        checkSpeed(80);
+        checkSpeed(50);
+    </script>
+</body>
+</html>

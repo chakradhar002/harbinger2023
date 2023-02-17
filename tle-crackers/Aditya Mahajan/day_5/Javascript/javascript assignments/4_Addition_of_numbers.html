@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of two numbers</title>
+</head>
+
+<body>
+    <h2>4_Addition of two numbers</h2>
+    <form name="myForm">
+        <label>Input 1</label>
+        <input type="text" name="input_1"><br><br>
+        <label>Input 2</label>
+        <input type="text" name="input_2"><br><br>
+        <input type="button" name="btn" value="add" onclick="add()">
+    </form>
+</body>
+<script>
+    function add() {
+        let input_1 = parseInt(document.myForm.input_1.value);
+        let input_2 = parseInt(document.myForm.input_2.value);
+        let sum = input_1 + input_2;
+        alert("sum of two numbers is => "+ sum);
+    }
+</script>
+
+</html>

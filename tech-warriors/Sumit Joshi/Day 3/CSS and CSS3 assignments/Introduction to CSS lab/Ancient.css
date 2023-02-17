@@ -1,0 +1,38 @@
+body{
+    background-color: orange;
+    padding: 30px;
+}
+.nav{
+    text-align: center;
+    
+}
+a{
+    margin: 5px;
+    
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+#nav{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+#blog1,#blog2,#blog3{
+    height: 200px;
+    width: 350px;
+}
+.blog{
+    display: flex;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+p::first-letter{
+    color: #ff0000;
+    font-size: xx-large;
+}
+.blog1,.blog2,.blog3{
+    padding: 5px;
+}

@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(212, 199, 182);
+}
+.header{
+    background-color: antiquewhite;
+    width: 33%;
+    margin-left: 32%;
+}
+.header h1{
+    font-family: cursive;
+    margin-left: 23%;
+    
+}
+nav{
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 7%;
+    background-color: white;
+}
+ul{
+    display: flex;
+    margin-top: 5%;
+    flex-direction: row;
+    margin-right: 5%;
+}
+li{
+    list-style: none;
+    padding: 20px 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-decoration: solid;
+    text-size-adjust: 30px;
+}
+li:hover{
+    color: red;
+}
+.list1{
+    width: 25%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: aliceblue;
+    text-align: center;
+}
+img {
+    margin-top: 4%;
+    width: 90%;
+    margin-left: 2%;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18_Exclude element from array</title>
+</head>
+
+<body>
+    <h2>Exclude element from array</h2>
+</body>
+<script>
+    console.log("18-exclude-element-from-the-array");
+    function excludes(element) {
+        let array_given = [1, 2, 3,3,4, 5, 6, 7, 8];
+        console.log(array_given);
+        var removed = array_given.splice(element,1);
+        console.log(`Element excluded ${removed}`);
+        console.log(`After exclusion ${array_given}`);
+    }
+    excludes(2);
+</script>
+
+</html>

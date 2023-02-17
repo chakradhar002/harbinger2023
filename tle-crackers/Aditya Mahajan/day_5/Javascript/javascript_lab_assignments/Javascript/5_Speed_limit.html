@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-speed-limits</title>
+</head>
+
+<body>
+    <h2>5 speed limit</h2>
+</body>
+<script>
+    console.log("5-speed-limits");
+    function checkSpeed(input_speed) {
+        if (input_speed <= 70) {
+            console.log("Good Safe Driving ! ");
+        }
+        else {
+            let overspeed_points = (input_speed - 70) / 5;
+            if (overspeed_points <= 10) {
+                console.log(`Overspeed Points => ${overspeed_points}`);
+            }
+            else {
+                console.log("License Suspended");
+            }
+        }
+    }
+    checkSpeed(70);     // safe speed
+    checkSpeed(65);     // safe speed
+    checkSpeed(75);     // overspeed
+    checkSpeed(95);     // overspeed
+    checkSpeed(140);    // License suspending speed
+</script>
+
+</html>

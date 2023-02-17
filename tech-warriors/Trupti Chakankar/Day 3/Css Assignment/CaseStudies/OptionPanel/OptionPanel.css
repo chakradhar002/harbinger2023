@@ -1,0 +1,45 @@
+body {
+    background-color: gray;
+}
+
+.navbar {
+    background-color: white;
+    padding: 25px;
+    margin: 10px;
+    margin-top: 30px;
+    word-spacing: 20px;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+img{
+    height: 280px;
+    width: 280px;
+    border-bottom: 2px solid white;
+
+}
+
+.course {
+    display: flex;
+    margin: 3px;
+}
+
+.course1{
+    border: solid rgb(77, 74, 74);
+    border-collapse: collapse;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.info{
+    background-color: white;
+}
+.image1{
+    width: 300px;
+}
+.image3{
+    width: 326px;
+}

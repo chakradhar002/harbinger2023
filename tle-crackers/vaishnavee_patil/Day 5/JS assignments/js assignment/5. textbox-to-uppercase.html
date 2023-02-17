@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function transformToUppercase() {
+        let txt = document.getElementById("inputTxt").value;
+        document.getElementById("inputTxt").value = txt.toUpperCase();
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" id="inputTxt" onblur="transformToUppercase()">
+  </body>
+</html>

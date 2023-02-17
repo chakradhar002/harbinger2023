@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping Numbers</title>
+</head>
+<body>
+    <h1>Swapping Two Numbers in Node</h1>
+    <hr/>
+    <form action="swapNo.js" method="POST">
+        <label for="number1">Enter Number</label>
+        <input type="text" id="number1" placeholder="Enter Number"><br/><br/>
+        <label for="number2">Enter Number</label>
+        <input type="text" id="number2" placeholder="Enter Number"><br/><br/>
+        <button id="btn">Swap Numbers</button>
+        <hr/>
+    </form>
+
+    <!-- Javascript -->
+    <script>
+        document.getElementById("btn").addEventListener("click",(e)=>{
+            e.preventDefault();
+            const number1 = document.getElementById("number1").value;
+            const number2 = document.getElementById("number2").value;
+
+            fetch('/',{
+                method : 'POST',
+                headers:{
+                    Authorization: 'abc',
+                    'Content-Type':'application/json',
+                },
+                body:JSON.stringify({
+                    number1,
+                    number2,
+                }),
+            })
+            .then((res)=>{
+                return res.json();
+            })
+            .then((data)=> console.log(data));
+        });
+    </script>
+</body>
+</html>

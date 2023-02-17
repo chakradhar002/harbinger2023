@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Bingo Generator</title>
+</head>
+
+<body>
+    <h2>Random Bingo Cards</h2>
+</body>
+<script>
+    // 1-d array
+    let bingo = new Array(5);
+
+    document.write("Random Bingo Card Generated below =>  <br>");
+
+    // converting 1d to 2d array
+    for (let i = 0; i < bingo.length; i++) {
+        bingo[i] = new Array(5);
+    }
+
+    // initilize elements
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+            bingo[i][j] = Math.floor(Math.random() * 75);;
+        }
+    }
+
+    // display elements
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+            document.write(bingo[i][j] + " ");
+        }
+        document.write("<br>");
+    }
+
+</script>
+
+</html>

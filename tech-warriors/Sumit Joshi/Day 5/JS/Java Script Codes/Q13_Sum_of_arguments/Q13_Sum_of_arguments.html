@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Sum of arguments</h1>
+        <script>
+
+            function addition(...args){
+                console.log("Current items/values to add :", args.length);
+
+                //reduce() will reduce the array(arguments) to a value, specified by the callback.
+                // In this case, it will basically sum the elements of the array
+                var sum = args.reduce(function (a, b) {
+                return a + b
+            })
+            console.log("Sum of arguments: ", sum);
+            }
+            addition(2,45,6,77,69,80)
+        </script>
+    </body>
+</html>

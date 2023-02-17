@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Max Number</title>
+</head>
+<body>
+    <script>
+      var numbers=new Array(677,89,90,44)
+     
+      numbers.sort((a , b)=>{
+        if(a == b){
+            return 0
+        }else if (a <= b){
+            return -1
+        }else {
+            return 1
+        }
+      })
+      var n=numbers.length;
+      console.log(numbers[n-1])
+    </script>
+    
+</body>
+</html>

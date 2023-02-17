@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Specific String</title>
+</head>
+
+<body>
+    <h1>Remove Specific String</h1>
+    <form action="">
+        <label for="" style="margin-left: 4.6%;">Enter String</label>
+        <input type="text" id="text1"><br /><br />
+        <label for="">Enter number to trim</label>
+        <input type="text" id="num"> <br /><br />
+        <button id="btn" style="margin-left: 11%;">
+            Trim Text
+        </button>
+    </form>
+    <!-- javascript -->
+    <script>
+        document.getElementById("btn").addEventListener("click", (e) => {
+
+            var text1 = document.getElementById("text1").value;
+            var num = document.getElementById("num").value;
+
+            console.log(text1.slice(4))
+            document.write(text1.slice(4))
+        })
+
+    </script>
+</body>
+
+</html>

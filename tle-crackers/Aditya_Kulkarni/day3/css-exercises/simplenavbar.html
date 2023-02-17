@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5 | Simple Nav Bar</title>
+    <style>
+        .navbar_container{
+            width: 100%;
+            background-color: bisque;
+        }
+
+        .navbar{
+            display: flex;
+            flex-direction: row;
+        }
+
+        li{
+            list-style: none;
+            padding: 20px 20px;
+        }
+
+        li.active{
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar_container">
+        <ul class="navbar">
+            <li class="active">Home</li>
+            <li>Services</li>
+            <li>Products</li>
+            <li>About us</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

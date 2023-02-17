@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color change</title>
+</head>
+<body style="background-color: grey;">
+    <h1>Background color change</h1>
+
+    <label for=""><a href="#" id="red">Red</a></label><br/><br/>
+    <label for=""><a href="#" id="white">White</a></label><br/><br/>
+    <label for=""><a href="#" id="pink">Pink</a></label><br/><br/>
+    <label for=""><a href="#" id="blue">Blue</a></label><br/><br/>
+
+    <!-- Javascript -->
+    <script>
+        document.getElementById("red").addEventListener("click",(e)=>{
+            document.getElementById("red").style.background = "red";
+        })
+        document.getElementById("white").addEventListener("click",(e)=>{
+            document.getElementById("white").style.background = "white";
+        })
+        document.getElementById("pink").addEventListener("click",(e)=>{
+            document.getElementById("pink").style.background = "pink";
+        })
+        document.getElementById("blue").addEventListener("click",(e)=>{
+            document.getElementById("blue").style.background = "blue";
+        })
+    </script>
+</body>
+</html>

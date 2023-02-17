@@ -1,0 +1,41 @@
+1. Write a SQL statement to create a table named jobs including columns job_id, job_title, min_salary, max_salary and check whether the max_salary amount exceeding the upper limit 25000. 
+
+2. Write a SQL statement to create a table named jobs including columns job_id, job_title, min_salary and max_salary, and make sure that, the default value for job_title is blank and min_salary is 8000 and max_salary is NULL will be entered automatically at the time of insertion if no value assigned for the specified columns.
+
+--> create table jobs(
+    job_id varchar(20) primary key , 
+    job_title varchar(20) not null default '', 
+    min_salary numeric(6,0) default 8000 , 
+    max_salary numeric(6,0) default NULL, 
+    check(max_salary > '25000')
+    );
+
+3. Write a SQL statement to create a table named countries including columns country_id, country_name and region_id and make sure that no countries except Italy, India and China will be entered in the table.
+
+4. Write a SQL statement to create a table named countries including columns country_id,country_name and region_id and make sure that no duplicate data against column country_id will be allowed at the time of insertion.
+	 
+5. Write a SQL statement to create a table named countries including columns country_id, country_name and region_id and make sure that the country_id column will be a key field which will not contain any duplicate data at the time of insertion.
+	 
+     
+6. Write a SQL statement to create a table named countries including columns country_id, country_name and region_id and make sure that the column country_id will be unique and store an auto-incremented value.
+	 
+     
+7. Write a SQL statement to create a table named countries including columns country_id, country_name and region_id and make sure that the combination of columns country_id and region_id will be unique.
+
+-> create table countries (
+    country_id SERIAL primary key,
+    country_name varchar(20),
+    region_id varchar(20) ,
+    check (country_name in('Italy', 'India','China')), 
+    unique(country_id , region_id)
+);
+
+8. Write a SQL statement to create a table named job_history including columns employee_id, start_date, end_date, job_id and department_id and make sure that, the employee_id column does not contain any duplicate value at the time of insertion and the foreign key column job_id contain only those values which exist in the jobs table.
+
+create table job_history (
+    employee_id int primary key , 
+    start_date date , 
+    end_date date , 
+    department_id int , 
+    job_id varchar(20) references jobs(job_id)
+);

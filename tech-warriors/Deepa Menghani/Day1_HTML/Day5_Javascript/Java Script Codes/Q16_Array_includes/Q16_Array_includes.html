@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Searching element in array</h1>
+    <script>
+        //This function will take an argument as one array and element to search
+        //it will search the elemet in array and return true
+        function searchArray(array, searchEle) {
+            console.log('arrayToSearch :', array);
+            console.log('Element To Search in array :', searchEle);
+            for (let ele of array) {
+                if (ele === searchEle) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        var array1 = [1, 2, 3, 4, 5, 6, 7]
+        var array2 = [10, 120, 34, 68, 29]
+
+        console.log(searchArray(array1, 7))
+        console.log(searchArray(array2, 20))
+    </script>
+</body>
+
+</html>

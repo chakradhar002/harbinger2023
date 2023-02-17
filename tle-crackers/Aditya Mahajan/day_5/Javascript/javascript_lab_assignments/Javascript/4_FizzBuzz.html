@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-fizz-buzz-algorithms</title>
+</head>
+
+<body>
+    <h2>4 fizzbuzz algorithm</h2>
+</body>
+<script>
+    console.log("4-fizz-buzz algorithms");
+    function fizzBuzz(num) {
+        if (num % 3 === 0 && num % 5 === 0) {
+            console.log("FIZZBUZZ");
+        }
+        else if (num % 3 !== 0 && num % 5 !== 0) {
+            console.log("given input number/ value");
+        }
+        else if (num % 3 === 0) {
+            console.log("FIZZ");
+        }
+        else if (num % 5 === 0) {
+            console.log("BUZZ");
+        }
+        else if (isNaN(num)) {
+            console.log("not a number");
+        }
+    }
+    fizzBuzz("1");  // nan input
+    fizzBuzz("A");  // nan input
+    fizzBuzz(6);    // divisible by 3
+    fizzBuzz(10);   // divisible by 5
+    fizzBuzz(60);   // divisible by 3 and 5
+</script>
+
+</html>

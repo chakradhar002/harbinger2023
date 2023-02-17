@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+         function search(array, searchEle) {
+            console.log('arrayToSearch :', array);
+            console.log('Element To Search in array :', searchEle);
+            for (let ele of array) {
+                if (ele === searchEle) {
+                    return true;
+                }
+            }
+            return false;
+        }
+        var arr1 = [11, 22,33, 44, 55, 66, 77]
+        var arr2 = [100, 121, 345, 688, 299]
+
+        console.log(search(arr1, 7))
+        console.log(search(arr2, 20))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+observable
+promiss,
+callback
+event handling 
+eventhandling
+
+
+
+
+
+learn 
+is a has a relationship java
+associations of sequelize. in nodejs

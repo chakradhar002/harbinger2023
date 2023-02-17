@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .news1,.news2,.news3{
+            display: flex;
+            margin:40px;
+        }
+        #img1,#img2,#img3{
+            height: 200px;
+            width: 300px;
+            border: 2px solid black;
+        }
+        .heading{
+            font-size: larger;
+            color: slategray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .date{
+           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-style: italic;
+        }
+        .inner{
+            display: flex;
+            flex-direction: column;
+            margin-left: 40px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>NEWS REPORTING</h1>
+        <div class="container">
+            <div class="news1">
+                <img src="n1.jpg" id="img1">
+                <div class="inner">
+                    <h4 class="heading">Share market update: Most active stocks on D-Street today in terms of volume</h4>
+                    <span class="date">27/8/2020</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum id repellendus in harum quod debitis sit veniam facilis laudantium, saepe rerum, a corporis sed quis, ullam accusamus tempore incidunt quas?</p>
+                    <a href="Read More">Read More</a>
+                </div>
+            </div>
+            <div class="news2">
+                <img src="n2.jpg" id="img2">
+                <div class="inner">
+                    <h4 class="heading">IT Minister Rajeev Chandrasekhar supports moonlighting by employees, says 'This is the future of work'</h4>
+                    <span class="date">07/8/2020</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum id repellendus in harum quod debitis sit veniam facilis laudantium, saepe rerum, a corporis sed quis, ullam accusamus tempore incidunt quas?</p>
+                    <a href="Read More">Read More</a>
+                </div>
+            </div>
+            <div class="news3">
+                <img src="n3.jpg" id="img3">
+                <div class="inner">
+                    <h4 class="heading">Days are long gone when employees signed up with big tech majors and spent their lives on the job', he says.</h4>
+                    <span class="date">03/9/2020</span>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum id repellendus in harum quod debitis sit veniam facilis laudantium, saepe rerum, a corporis sed quis, ullam accusamus tempore incidunt quas?</p>
+                    <a href="Read More">Read More</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

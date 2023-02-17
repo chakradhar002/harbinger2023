@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="common.css">
+        <title>Schedule Page</title>
+        <style>
+          .main {
+            display: grid;
+            padding: 100px 20px;
+            border:2px solid orangered;
+          }
+          .box {
+            display: grid;
+            grid-template-columns: 50% 50%;
+          }
+          .subbox {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+            justify-content: center;
+          }
+          .text-center {
+            display: flex;
+            align-items: center;
+          }
+          body {
+            background-color: #55555a;
+            color: #ffffff;
+            padding: 50px 250px; 
+          }
+          .heading{
+            width: 500px;
+            font-weight: 700;
+            font-size: 20px;
+          }
+          .orange-icon {
+            background-color: #aa5737;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            Schedule: Grab some coffee & donuts and take a seat
+        </div>
+        <br>
+        <div class="main">
+            <div class="box">
+                <div class="subbox">
+                    <div class="orange-icon">
+                        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">09:00 - 10:00 AM</div>
+                    <div class="text-center">Registration</div>
+                </div>
+                <div class="subbox">
+                    <div class="orange-icon">
+                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">13:00 - 14:00 AM</div>
+                    <div class="text-center">Registration</div>
+                </div>
+                <div class="subbox">
+                    <div class="orange-icon">
+                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">11:00 - 12:00 AM</div>
+                    <div class="text-center">Registration</div>
+                </div>
+                <div class="subbox">
+                    <div class="orange-icon">
+                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">14:00 - 15:00 AM</div>
+                    <div class="text-center">Registration</div>
+                </div>
+                <div class="subbox">
+                    <div class="orange-icon">
+                        <i class="fa fa-cutlery" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">12:00 - 13:00 AM</div>
+                    <div class="text-center">Registration</div>
+                </div>
+                <div class="subbox">
+                    <div class="orange-icon">
+                        <i class="fa fa-microphone" aria-hidden="true"></i>
+                    </div>
+                    <div class="text-center">15:00 - 16:00 AM</div>
+                    <div class="text-center">Registration</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

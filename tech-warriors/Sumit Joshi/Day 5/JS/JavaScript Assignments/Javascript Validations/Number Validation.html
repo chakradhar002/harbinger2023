@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+    <input type="text" id="number">
+    <button id="btn">Submit</button>
+    </form>
+    <script>
+
+        let form = document.getElementById("form")
+        //This part is for validation of number 
+        //Field should not be null
+        //Number length must be 10
+        //If string entered it will give alert it must be a number
+        form.onsubmit=function(e){
+            var num = document.getElementById("number").value
+            if(num===""){
+                alert(" Number Must be entered")
+            }
+            if(num.length!=10){
+                alert("Must contain 10 numbers")
+            }
+            if(parseInt(num) === NaN){
+                alert("Must be a number")
+            }
+            alert(`Entered number is ${num}`)
+        }
+    </script>
+</body>
+</html>

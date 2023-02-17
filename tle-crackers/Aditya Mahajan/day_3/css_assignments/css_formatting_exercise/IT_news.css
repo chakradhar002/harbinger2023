@@ -1,0 +1,54 @@
+.inner_class1 {
+
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.inner_para1 {
+    padding-left: 22px;
+    color: green;
+}
+
+.news {
+    display: flex;
+    margin: 50px;
+}
+
+.heading {
+    font-size: xx-large;
+    color: rgb(7, 99, 99);
+}
+
+body {
+    margin: 30px;
+}
+
+img {
+    height: 250px;
+    width: 300px;
+    border: 1px solid rgb(129, 122, 122);
+    margin-right: 5px;
+}
+
+p {
+    padding-left: 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 10px;
+}
