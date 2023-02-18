@@ -1,0 +1,87 @@
+<!-- Write a JavaScript program which will
+a. give an alert message of today’s date.
+b. prompt the user to give their name and gives an alert message
+‘Hello’ and username.
+c. prompt the user to give 2 numbers and alerts the sum of those 2
+numbers. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>Day 5 | Basic Assignment 7</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h4 class="text-primary text-center my-5">
+            Day 5 | Basic Assignment 7
+          </h4>
+
+          <div class="nav justify-content-center">
+            <button type="button" id="currentDate" class="btn btn-primary">
+              Current Date
+            </button>
+
+            <button type="button" id="greeting" class="btn btn-warning ms-5">
+              Greeting
+            </button>
+
+            <button type="button" id="sum" class="btn btn-success ms-5">
+              Addition
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <script type="text/javascript">
+    let currentDate = document.getElementById("currentDate");
+
+    let greeting = document.getElementById("greeting");
+
+    let sum = document.getElementById("sum");
+
+    currentDate.addEventListener("click", () => {
+      let date = new Date();
+
+      alert("Current Date : " + date);
+    });
+
+    greeting.addEventListener("click", () => {
+      const name = prompt("Enter your name : ");
+
+      alert(`Hello ${name}`);
+    });
+
+    sum.addEventListener("click", () => {
+      let first = prompt("Enter first number : ");
+      let second = prompt("Enter second number : ");
+
+      first = Number(first);
+      second = Number(second);
+
+      alert(`Sum of ${first} and ${second} = ${first + second} `);
+    });
+  </script>
+</html>

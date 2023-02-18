@@ -1,0 +1,9 @@
+input.transparent-input{
+    background-color:rgba(248, 247, 247, 0) !important;
+    border: solid 1px;
+    border-color: aliceblue;
+}
+.transparent-input::placeholder {
+    color: rgb(243, 233, 233) !important;
+    opacity: 1;
+ }

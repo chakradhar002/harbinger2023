@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Numbers</title>
+</head>
+<body>
+</body>
+<script>
+    let first_number = prompt("Enter First Number:");
+    let second_number = prompt("Enter Second Number:");
+    document.write("\nBefore Swapping \n First Number:", first_number);
+    document.write("<br>Second Number:", second_number);
+    [first_number, second_number] = [second_number, first_number];
+    document.write("<br>After Swapping:\nFirst Number:", first_number);
+    document.write("<br>Second Number:", second_number);
+</script>
+</html>

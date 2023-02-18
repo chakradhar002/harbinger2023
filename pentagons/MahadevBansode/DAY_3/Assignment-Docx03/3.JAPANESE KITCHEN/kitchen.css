@@ -1,0 +1,25 @@
+.second-container {
+  border-top: 2px solid rgb(2, 72, 100);
+  border-bottom: 2px solid rgb(3, 85, 121);
+}
+
+.navigation img {
+  width: 80px;
+}
+
+.nav-link {
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: rgb(240, 138, 21);
+}
+
+.aside h4 {
+  color: rgb(240, 138, 21);
+}
+
+.aside p {
+  color: rgb(240, 138, 21);
+}

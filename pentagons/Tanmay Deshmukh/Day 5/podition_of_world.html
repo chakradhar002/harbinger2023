@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .form-group{
+            
+    margin-right: 501px;
+    margin-left: 501px;
+    text-align: center;
+    margin-top: 118px;
+
+        }
+    </style>
+</head>
+<body>
+
+        <div class="form-group">
+          <label for="formGroupExampleInput">ENTER TEXT</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" >
+          <button style="margin: 5px;" type="button" class="btn btn-primary" id ="butt1">Find Position</button>
+          <p id="para1"></p>
+        </div>
+        
+    <script>
+        const text1 = document.getElementById("formGroupExampleInput")
+        const butt = document.getElementById("butt1")
+        const para  =document.getElementById("para1")
+
+        function findtext(){
+        
+        var txt = text1.value;
+        if(txt.includes("world")){
+            var ind = txt.indexOf("world");
+        para.innerHTML = "AT INDEX " + ind;
+            
+        }
+        else{
+            para.innerHTML = "WORLD doesn't exits in this text";
+        }
+        }
+        butt.addEventListener('click',findtext);
+    </script>
+</body>
+</html>

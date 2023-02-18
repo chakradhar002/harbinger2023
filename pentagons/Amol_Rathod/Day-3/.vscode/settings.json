@@ -1,0 +1,19 @@
+{
+  "powermode.enabled": false,
+  "powermode.combo.counterEnabled": "hide",
+  "powermode.combo.timeout": 5,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line",
+  "terminal.integrated.cursorStyle": "line",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "C_Cpp.autocompleteAddParentheses": true,
+  "editor.cursorSmoothCaretAnimation": false,
+  "editor.formatOnSave": true,
+  "editor.padding.top": 1,
+  "terminal.integrated.fontFamily": "",
+  "editor.fontFamily": "Operator Mono Light",
+  "editor.codeLensFontFamily": "Operator Mono Light",
+  "notebook.outputFontFamily": "Gabriola",
+  "editor.inlayHints.fontFamily": "Operator Mono Light"
+}

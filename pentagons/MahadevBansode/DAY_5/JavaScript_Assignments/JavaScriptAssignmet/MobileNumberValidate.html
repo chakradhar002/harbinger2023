@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>  
+    function phonenumber()
+    {
+        let mob = document.getElementById("mobile").value;
+        let phoneno = "/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/";
+        if(mob.match(phoneno))
+        {
+            return true;
+        }
+        else
+        {
+            alert("message");
+            return false;
+        }
+    }
+
+</script>  
+<body>  
+<form name="myform" method="post" action="" >  
+Mobile Number: <input type="text" id="mobile" name="mobile"><br/>  
+Password: <input type="password" id="pass" name="password"><br/>  
+<input type="submit" value="register" onclick="phonenumber()">  
+</form>  
+</body>
+</html>
+
+ 

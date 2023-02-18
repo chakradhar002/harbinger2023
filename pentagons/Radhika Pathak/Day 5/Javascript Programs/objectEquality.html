@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Eqality</title>
+    
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    const Student1 = {
+        name: 'Radhika',
+        age: 21,
+        city: 'Pune'
+    };
+  
+    const Student2 = {
+        name: 'Radhika',
+        age: 21,
+        city: 'Pune'
+    };
+    function displayObjectDetails(obj) {
+            for (let key in obj) {
+                document.write('<br>',key, ' : ', obj[key]);
+            }
+        }
+        //display objects
+        displayObjectDetails(Student1);
+        displayObjectDetails(Student2);
+    const haveSameData = function (obj1, obj2) {
+        const Student1_length = Object.keys(Student1).length;
+        const Student2_length = Object.keys(Student2).length;
+  
+        if (Student1_length === Student2_length) {
+            return Object.keys(Student1).every(
+                key => Student2.hasOwnProperty(key)
+                    && Student2[key] === Student1[key]);
+        }
+        return false;
+    }
+    function isEqual(Student1,Student2){
+                return Student1.name === Student2.name &&
+                Student1.age === Student2.age &&
+                Student1.club === Student2.club
+            }
+
+            function isSame(Student1,Student2){
+                return Student1 === Student2
+            }
+    document.write(haveSameData(Student1, Student2));
+    document.write("<br>isEqual:"+isEqual(Student1,Student2));
+    document.write("<br>isSame:"+isSame(Student1,Student2));
+</script>
+</html>

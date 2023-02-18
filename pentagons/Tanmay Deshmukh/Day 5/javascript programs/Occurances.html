@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>QUESTION 13</title>
+
+    <style>
+        .form-group{
+            
+    margin-right: 501px;
+    margin-left: 501px;
+    text-align: center;
+    margin-top: 118px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-group">
+        <label for="formGroupExampleInput">Enter Numbers Using ,</label>
+        <input type="text" class="form-control" id="no1" >
+        <label for="formGroupExampleInput">Enter number to Find its Occurance</label>
+        <input type="text" class="form-control" id="no2" >
+        <button style="margin: 5px;" type="button" class="btn btn-primary" id ="butt1" onclick="calculate()">FIND</button>
+        <p id="para1" style="background-color: aqua;"></p>
+      </div>
+    <script>
+        const num1 = document.getElementById("no1")
+        const num2 = document.getElementById("no2")
+        const butt = document.getElementById("butt1")
+        const para  =document.getElementById("para1")
+
+        function calculate(){
+       
+                    var numbers  = num1.value
+                    var number_find = num2.value
+                    let arr = numbers.split(",")
+                    var count =0;
+                    for (let index = 0; index < arr.length; index++) {
+                        if (arr[index] == number_find){
+                            count +=1
+                        }
+                    }
+
+                    para.innerHTML = number_find + " OCCURED " + count + " TIMES"
+            
+            }
+
+        
+
+
+    </script>
+</body>
+</html>

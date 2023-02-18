@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q16 |Array Excludes Value To New Array </title>
+    </head>
+    <body>
+        <script>
+            const arraytoexclude = (arrayToExclude , array) => {
+        let result = []
+        //el will be the elements to be excludes
+        for (let el of arrayToExclude){
+            if(array.includes(el)){
+            while(array.includes(el)){
+                let index = array.lastIndexOf(el)
+                delete array[index]
+            }
+
+            result.push(el)
+            }
+
+        }
+
+    return result
+}
+
+console.log(arraytoexclude([2 , 3] , [1 ,2, 3 , 5 ,7]))
+        </script>
+    </body>
+</html>

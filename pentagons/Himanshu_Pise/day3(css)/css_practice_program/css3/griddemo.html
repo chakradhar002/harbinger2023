@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+.grid-container {
+  display: grid;
+  grid: 150px / auto auto auto;
+  grid-gap: 10px;
+  background-color: #1468ad;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(72, 39, 39, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>The grid Property</h1>
+        <p>The grid is a shorthand property for all grid container properties.</p>
+        <p>This grid layout has three columns, and the first row is 150px high:</p>
+        <div class="grid-container">
+            <div class="item1">1</div>
+            <div class="item2">2</div>
+            <div class="item3">3</div>
+            <div class="item4">4</div>
+            <div class="item5">5</div>
+            <div class="item6">6</div>
+        </div>
+    </body>
+</html>

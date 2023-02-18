@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3Phone_NO.</title>
+</head>
+<body>
+    <form action="success.html" onsubmit="return main()">
+        <div>
+          <label for="exampleInputEmail1">Phone number</label><br>
+          <input type="text" class="form-control" id="memberid" aria-describedby="emailHelp" placeholder="Phone Number">
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <script>
+        let memid = document.getElementById("memberid")
+        function main(){
+            var len =  memid.value
+            var lis = [" ",".","-"]
+            if(len.length == 0){
+                alert("ENTER PHONE NUMBER")
+                return false
+            }
+            else{
+            }
+            if(Number(len.length == 12)){
+            }
+            else{
+                alert("Write phone no in this format XXX-XXX-XXXX")
+                return false
+            }
+            if (len[3] == len[7]){
+            if(len[3] == " " || len[3] == "." || len[3] =="-"){
+
+            }
+            else{
+                alert("Write phone no in this format XXX.XXX.XXXX")
+                return false
+            }
+        }
+        else{
+            alert("Write phone no in this format XXX XXX XXXX")
+            return false
+        }
+        return true
+        }
+      </script>
+</body>
+</html>

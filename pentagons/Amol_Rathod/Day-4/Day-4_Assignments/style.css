@@ -1,0 +1,13 @@
+.form-title-dropdown{
+    padding-right: 50%;
+    text-decoration: none;
+}
+
+.contact-infomation input::placeholder{
+    color: white;
+}
+
+body{
+    background-color: pink;
+}
+

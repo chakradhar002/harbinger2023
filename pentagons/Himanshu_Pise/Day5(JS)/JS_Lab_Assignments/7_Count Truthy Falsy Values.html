@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q7|Count Truthy Falsy Values</title>
+    </head>
+    <body>
+        <script>
+          function arrayCount(arr) {
+            let count = 0;
+            for(let element of arr) if(element==true && element==1) count++;
+            return count;
+        }
+        console.log(arrayCount([false,true,null,0,undefined , null , "" , NaN , 1, "string"]))
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+.logo {
+  background-color: rgb(18, 2, 2);
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-link {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: deeppink;
+}
+
+.first-section {
+  background-image: url(/bg-1.jpg);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-section img {
+  width: 500px;
+  height: 250px;
+  margin: auto;
+}

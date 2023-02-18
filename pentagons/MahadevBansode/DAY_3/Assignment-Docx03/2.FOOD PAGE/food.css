@@ -1,0 +1,9 @@
+.blog {
+  background: url("4.jpg");
+  background-position: left;
+  background-size: cover;
+}
+
+p {
+  text-align: justify;
+}

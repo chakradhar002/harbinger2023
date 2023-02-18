@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border:1px solid black;
+          width: 300px;
+          text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <table id = "table1" style="position: relative; top: 111px;
+    left: 450px;">
+        <tr>
+          <th>B</th>
+          <th>I</th>
+          <th>N</th>
+          <th>G</th>
+          <th>O</th>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>14</td>
+          <td>10</td>
+          <td>14</td>
+          <td>10</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+            <td>14</td>
+            <td>10</td>
+          </tr>
+      </table>
+      <button style="margin: 5px;position: relative;bottom: 76px;left: 570px;" type="button" class="btn btn-primary" id ="butt1" onclick="calculate()">Draw</button>
+
+      <script>
+        const butt = document.getElementById("butt1")
+        tab = document.getElementById("table1")
+
+        function del(){
+            for (let a = 5; a > 0; a--) {
+            document.getElementById("table1").deleteRow(a);
+            
+        }
+        }
+        
+        function calculate(){
+        
+            del()
+        
+
+        for (let index = 1; index < 6; index++) {
+                var row = tab.insertRow(index);
+                for (let i = 0; i < 5; i++) {
+                    var num =Math.floor(Math.random() * 100);
+                    var cell1 = row.insertCell(i);
+                    cell1.innerHTML = num
+                    
+
+                    
+                }
+            
+        }
+    }
+
+      </script>
+</body>
+</html>

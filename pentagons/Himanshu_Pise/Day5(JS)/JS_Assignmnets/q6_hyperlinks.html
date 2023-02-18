@@ -1,0 +1,47 @@
+<!-- Create a HTML page with 4 hyperlinks named white, red, blue and
+pink. The background colour of the HTML page will change based on the
+link which is clicked.
+Write a javascript function to implement it. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q6</title>
+    </head>
+    <body>
+        <p>
+            <a href="#" id="link1">Red</a>
+        </p>
+        <p>
+            <a href="#" id="link2">Blue</a>
+        </p>
+        <p>
+            <a href="#" id="link3">Orange</a>
+        </p>
+        <p>
+            <a href="#" id="link4">Yellow</a>
+        </p>
+        <script>
+      "use-strict"
+      let body = document.getElementsByTagName("body")[0]
+      let link1 = document.getElementById("Link1")
+      let link2 = document.getElementById("Link2")
+      let link3 = document.getElementById("Link3")
+      let link4 = document.getElementById("Link4")
+      link1.addEventListener("click", (e) => {
+        body.style.backgroundColor = "red"
+      })
+      link2.addEventListener("click", (e) => {
+        body.style.backgroundColor = "blue"
+      })
+      link3.addEventListener("click", (e) => {
+        body.style.backgroundColor = "orange"
+      })
+      link4.addEventListener("click", (e) => {
+        body.style.backgroundColor = "yellow"
+      })
+        </script>
+    </body>
+</html>
