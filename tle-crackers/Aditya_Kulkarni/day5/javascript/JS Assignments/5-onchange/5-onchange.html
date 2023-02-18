@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Assignment 5</title>
+</head>
+
+<body>
+    <form>
+        <input type="text" id="textbox" />
+    </form>
+    <script>
+
+
+        let tb = document.getElementById("textbox")
+        tb.addEventListener("blur", (e) => {
+            console.log("Hello")
+            tb.value = toUpperCaseEvent(e.target.value)
+        })
+
+        function toUpperCaseEvent(str) {
+            console.log(str)
+            return str.toUpperCase();
+        } 
+    </script>
+</body>
+
+</html>

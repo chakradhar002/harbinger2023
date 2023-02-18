@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-sum-of-grades</title>
+</head>
+
+<body>
+<h2>Sum of marks and displaying grades</h2>
+</body>
+<script>
+    console.log("11-sum-of-grades");
+    function calculate_grades() {
+        const marks = [95, 95, 100, 75, 80];
+        let sum = 0;
+        for (const i in marks) {
+            sum += marks[i];
+        }
+        console.log(`Sum of marks of 5 subjects => ${sum}`);
+        let average = sum / 5;
+        console.log(`Average of 5 subjects => ${average}`);
+        if (average >= 91 && average <= 100) {
+            console.log(`A Grade`);
+        }
+        else if (average >= 81 && average <= 89) {
+            console.log(`B Grade`);
+        }
+        else if (average >= 71 && average <= 79) {
+            console.log("C Grade");
+        }
+        else if (average >= 0 && average <= 70) {
+            console.log("D Grade");
+        }
+    }
+    calculate_grades();
+</script>
+
+</html>

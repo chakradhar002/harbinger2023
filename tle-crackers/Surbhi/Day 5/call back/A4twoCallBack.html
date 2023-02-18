@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Callbacks</title>
+</head>
+<body>
+    <h1>CallBack</h1>
+    <script>
+        function sum(num){
+            return num+3;
+        }
+        function multiply(num){
+            return num*2
+        }
+        function callBack(num,callBack1,callBack2){
+           
+           document.write(callBack2(callBack1(num)))
+        }
+        callBack(4,sum,multiply)
+    </script>
+</body>
+</html>

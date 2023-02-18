@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22_student_address-object proporties</title>
+</head>
+
+<body>
+    <h2>22_student_address-object proporties</h2>
+</body>
+<script>
+    console.log("22_student_address-object proporties");
+    const Students = {
+        name: 'Aditya',
+        age: 22,
+        rank: 2,
+        country: 'India',
+    }
+
+    const Address = {
+        street: 'Buldhana road',
+        city: 'Malkapur',
+        pinCode: 443102,
+        state: 'MH',
+        country: 'India',
+    }
+
+    function show_objectDetails(obj){
+        for(let i in obj){
+            console.log(i,' => ',obj[i]);
+        }
+    }
+
+    show_objectDetails(Students);
+    console.log("========================");
+    show_objectDetails(Address);
+
+</script>
+
+</html>

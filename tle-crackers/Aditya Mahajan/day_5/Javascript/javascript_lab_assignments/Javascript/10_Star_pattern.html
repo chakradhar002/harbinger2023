@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-nested-loop-star-pattern</title>
+</head>
+
+<body>
+    <h2>10 nested loop star pattern *</h2>
+</body>
+<script>
+    console.log("10-nested-loop-star-pattern");
+    function pyramid(pyramid_floors) {
+        let string = "";
+        for (let i = 0; i < pyramid_floors; i++) {
+            for (let j = 0; j <= i; j++) {
+                string += "*";
+            }
+            string += "\n";
+        }
+        console.log(`${string}`);
+    }
+    pyramid(5);
+</script>
+
+</html>
