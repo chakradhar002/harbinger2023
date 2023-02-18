@@ -1,0 +1,87 @@
+<<<<<<< HEAD
+db.restaurant.insert(
+{
+   "address": {
+      "building": "1010",
+      "coord": [ -47.856077, 69.848447 ],
+      "street": "Pimpri",
+      "zipcode": "10465"
+   },
+   "borough": "Chinese",
+   "cuisine": "Chinese",
+   "grades": [
+      { "date": { "$date": 1393804800000 }, "grade": "C", "score": 16 },
+      { "date": { "$date": 1378857600000 }, "grade": "B", "score": 19 },
+      { "date": { "$date": 1358985600000 }, "grade": "A", "score": 17 },
+      { "date": { "$date": 1322006400000 }, "grade": "B", "score": 23 },
+      { "date": { "$date": 1299715200000 }, "grade": "C", "score": 20 }
+   ],
+   "name": "Chinese shop",
+   "restaurant_id": "30075448"
+ })
+=======
+
+
+db.restaurant.insertMany(
+{
+  "address": {
+     "building": "1008",
+     "coord": [ -53.989898, 90.765890 ],
+     "street": "Jordan Restaurant",
+     "zipcode": "12932"
+  },
+  "borough": "Cheese",
+  "cuisine": "Bakery",
+  "grades": [
+     { "date": { "$date": 1423804800000 }, "grade": "A", "score": 20 },
+     { "date": { "$date": 1527857600000 }, "grade": "A", "score": 60 },
+     { "date": { "$date": 1567985600000 }, "grade": "B", "score": 10 },
+     { "date": { "$date": 1589006400000 }, "grade": "A", "score": 9 },
+     { "date": { "$date": 1623715200000 }, "grade": "B", "score": 14 }
+  ],
+  "name": "Jordan Cheese Shop",
+  "restaurant_id": "34980934"
+},
+
+{
+  "address": {
+     "building": "1009",
+     "coord": [ -23.989898, 20.765890 ],
+     "street": "Chris Restaurant",
+     "zipcode": "23452"
+  },
+  "borough": "Pizza",
+  "cuisine": "",
+  "grades": [
+     { "date": { "$date": 1523804800000 }, "grade": "A", "score": 20 },
+     { "date": { "$date": 1627857600000 }, "grade": "A", "score": 60 },
+     { "date": { "$date": 1667985600000 }, "grade": "B", "score": 10 },
+     { "date": { "$date": 1789006400000 }, "grade": "A", "score": 9 },
+     { "date": { "$date": 1723715200000 }, "grade": "A", "score": 90 }
+  ],
+  "name": "Pizza Shop",
+  "restaurant_id": "89980934"
+},
+
+{
+  "address": {
+     "building": "1010",
+     "coord": [ -95.754168, 20.765890 ],
+     "street": "Chris Restaurant",
+     "zipcode": "23452"
+  },
+  "borough": "",
+  "cuisine": "Fast Food",
+  "grades": [
+     { "date": { "$date": 1523804800000 }, "grade": "A", "score": 20 },
+     { "date": { "$date": 1627857600000 }, "grade": "A", "score": 60 },
+     { "date": { "$date": 1667985600000 }, "grade": "B", "score": 10 },
+     { "date": { "$date": 1789006400000 }, "grade": "A", "score": 9 },
+     { "date": { "$date": 1723715200000 }, "grade": "A", "score": 90 }
+  ],
+  "name": "Pizza Shop",
+  "restaurant_id": "89980934"
+}
+
+)
+>>>>>>> 4022040c232d44317b20cc308f91884f4db9d52b
