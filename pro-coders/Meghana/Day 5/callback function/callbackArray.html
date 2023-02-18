@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //a
+arr = [1,4,5,6];
+
+function dollerformat(num) {
+   return ('$' + num);
+}
+
+function eachElement(array, callback) {
+   for (let i = 0; i < array.length; i++) {
+      console.log(callback(array[i]));
+   };
+};
+eachElement(arr, dollerformat)
+//b.
+arr1 = [1,2,34]
+
+function logEachElement(num) {
+   return num;
+};
+eachElement(arr1, logEachElement);
+
+//C
+let arr2 = [1, 'Hi', true, {
+   color: 'green'
+}];
+
+function logArrayTypes(array) {
+   return `${array} is a ${typeof(array)}`;
+};
+eachElement(arr2, logArrayTypes);
+        </script>
+</body>
+</html>

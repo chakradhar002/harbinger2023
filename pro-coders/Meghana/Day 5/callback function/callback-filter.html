@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //A condition
+let arr = [1,4,6,7,-3];
+
+function myFilter(array,callback){
+    return array.filter(callback);
+};
+
+function arrFilter(num){
+    return num < 5;
+};
+
+console.log(myFilter(arr,arrFilter));
+
+//B condition
+let arr1 = [1,2,3,4,5,6,7,8,9];
+
+function removeEvenNumber(num){
+    if(num % 2 !== 0){
+        return num;
+    }
+};
+console.log(myFilter(arr1,removeEvenNumber));
+
+//C condition
+let arr2 = ["Javascript","is","a","high-level","interpreted","programming","language","that","conforms",
+"to","the","ECMAscript","specification"];
+
+function removeShortWords(arr){
+    if(arr.length > 4){
+        return arr;
+    }
+}
+console.log(myFilter(arr2,removeEvenNumber))
+    </script>
+    
+</body>
+</html>

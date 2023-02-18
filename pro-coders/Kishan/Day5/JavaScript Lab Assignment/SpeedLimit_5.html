@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Speed Limit Q5</title>
+   </head>
+   <body>
+      <input type="number" id="myNumber" >
+      <button onclick="speedLimit()">Check</button>
+      <script>
+         function speedLimit(){
+          var speed = document.getElementById("myNumber").value;
+          const speedLimit = 70
+          if(speed < speedLimit){
+         console.log( `Good Safe Driving`)
+         }
+         else {
+             let difference = speed - speedLimit 
+             let points = Math.floor(difference / 5)
+         
+          if(points < 10){
+             console.log( `Speed Limit Crossed By Penalty Point ${points}`)
+          }
+         else {
+             console.log(`Licence Suspended`)
+         }
+         }
+         }
+      </script>
+   </body>
+</html>

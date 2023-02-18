@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Add two number using text box as input using javascript</h1>
+            </div>
+            Enter First Number:<br>
+            <input typt="text" id="Text1" name="TextBox1"><br>
+            Enter Second Number:<br>
+            <input typt="text" id="Text2" name="TextBox2"><br>
+            Result:<br>
+            <input typt="text" id="Text3" name="TextBox3"><br>
+            <input type="button" name="clickbtn" value="Display Result" onclick="add_number()"><br>
+            <script type="text/javascript">
+                function add_number(){
+                    var first_number=parseInt(document.getElementById("Text1").value);
+                    var second_number=parseInt(document.getElementById("Text2").value);
+                    var result=first_number+second_number;
+                    document.getElementById("txtresult").innerHTML=result;
+                }
+
+    </script>
+</body>
+</html>

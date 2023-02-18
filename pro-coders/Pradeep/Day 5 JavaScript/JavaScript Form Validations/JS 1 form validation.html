@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function submit_function()
+        {
+            
+            var member_num = document.getElementById("mem_num").value;
+            var member_pass = document.getElementById("pass").value;
+            //alert(member_num);
+            //member_num = Number(member_num);
+            if(member_num == "")
+            {
+                alert("Error in first field");
+            }
+            else if(member_pass.length < 4)
+            {
+                alert("password must be at least 4 charactor long ");
+            }
+            
+        }
+        
+
+    </script>
+</head>
+
+<body>
+
+    <form onsubmit="submit_function();">
+        <label for="member_number"> Enter Member Number</label>
+        <input type="number" name="member_number" id="mem_num">
+        <br>
+        <label for="password"> Enter Password </label>
+        <input type="password" name="password" id="pass">
+        <br>
+        <input type="submit" value="Submit Form">
+    </form>
+   
+</body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+<body>
+    <script>
+        function myFilter(array , callback ){
+            let result = []
+            for (let element of array){
+                if(callback(element)){
+                    result.push(element)
+                }
+            }
+
+            return result
+        }
+
+        function removeEvenNumbers(array){
+            return myFilter(array , e => e % 2)
+        }
+
+        function removeShortCharacters(array){
+            return myFilter(array , e => e.length > 4)
+        }
+
+        console.log(myFilter([1,  2, -3 ] , e => e > 0))
+        console.log(removeEvenNumbers([1,  2, -3 ]))
+        console.log(removeShortCharacters(["JavaScript", "is", "a", "high-level,", "interpreted", "programming", "language", "that", "conforms", "to", "the", "ECMAScript", "specification"]))
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function start_clock()
+        {
+           var date = new Date();
+           var Current_time = document.getElementById("timer_box");
+           Current_time.value = date.toLocaleTimeString();
+           setTimeout(function(){start_clock()}, 1000);
+        }
+        
+
+    </script>
+</head>
+
+<body onload="start_clock()"> 
+    <h2> Current time in text box :- </h2>
+   <input type="text" id="timer_box">
+    
+   
+</body>

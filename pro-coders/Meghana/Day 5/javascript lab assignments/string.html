@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log('8-object-string-properties-key');
+
+    function showStringProperties(curObj) {
+      for(let key in curObj) {
+        // console.log('key/prop:', key);
+        if(typeof(curObj[key]) === 'string') {
+          console.log(key,':', curObj[key]);
+        }
+      }
+    }
+    
+    const Person = {
+      name: 'Dinanath',
+      country: 'India',
+      designation: 'UI Developer'
+    }
+    
+    showStringProperties(Person);
+    console.log('----------');
+    
+    const Technology = {
+      name: 'JavaScipt',
+      purpose: 'Scripting language for Web',
+      developer: 'Netscape Corporation'
+    }
+    
+    showStringProperties(Technology);
+    console.log('----------'); 
+    </script>
+</body>
+</html>

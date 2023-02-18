@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Grade criteria/mechanism is:
+  <ul>
+    <li>0% to 70% => D Grade</li>
+    <li>71% to 79% => C Grade</li>
+    <li>81% to 89% => B Grade</li>
+    <li>91% to 100% => A Grade</li>
+  </ul>
+    <script>
+        const MARKSARRAY = [55, 85, 55, 65];
+
+function calculateAverage(currentArray) {
+  let total = 0;
+  for (let curValue of currentArray) {
+    total += curValue;
+  }
+  // console.log('total:', total);
+  return (total/currentArray.length);
+}
+
+// console.log(calculateAverage(MARKSARRAY));
+
+function calculateGrades(_currentArray) { 
+  const average = calculateAverage(_currentArray);
+  // console.log('average:', average);
+
+  if(average < 70) return grade = 'D'; 
+  if(average < 80) return grade = 'C';
+  if(average < 90) return grade = 'B';
+  if(average <= 100) return grade = 'A';
+}
+
+console.log('Grade:',calculateGrades(MARKSARRAY));
+    </script>
+</body>
+</html>
