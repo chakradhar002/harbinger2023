@@ -1,4 +1,7 @@
 var http=require("http");
+/**
+ * @description create server at port number 4200
+ */
 http.createServer(function(req,res){
     res.writeHead(200,{'Content-Type':'text/plain'});
     res.end('hii how you?');

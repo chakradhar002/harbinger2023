@@ -24,11 +24,14 @@ const userSchema=new mongoose.Schema({
 
 const User=mongoose.model('User',userSchema);
 
+/**
+ * @description find user name by id 
+ */
 User.find({ _id: '63e60e3e5cd1719d7685a5dc'}, function (err, docs) {
     if (err){
         console.log(err);
     }
     else{
-        console.log("First function call : ", docs[0].name);
+        console.log("First function call : ", docs[0].name);//return name
     }
 });

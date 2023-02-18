@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
-
-
+/**
+ * @description connecting mongoDB 
+ */
 mongoose.connect(
     'mongodb://localhost:27017/Mangodb', 
     { useUnifiedTopology : true, useNewUrlParser : true , }
@@ -9,6 +10,9 @@ mongoose.connect(
         console.log("Connection successfull");
     }).catch((e) => console.log("No connection"))
 
+/**
+ * @description creating Schema  
+ */
 const userSchema=new mongoose.Schema({
                     name:String,
                     age:Number
@@ -16,7 +20,9 @@ const userSchema=new mongoose.Schema({
 
 const User=mongoose.model('User',userSchema);
 
-// Function call
+/**
+ * @description inserting many data by using inserMany() function
+ */
 User.insertMany([
     { name: 'Gourav', age: 20},
     { name: 'Kartik', age: 20},
