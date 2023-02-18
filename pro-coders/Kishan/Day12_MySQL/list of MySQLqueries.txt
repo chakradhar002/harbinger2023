@@ -213,7 +213,7 @@ Ans:
 
 8b. How would you display the view that you created in 8a?
 Ans: 
-	SELECT * FROM genre_revenue
+	SELECT * FROM genre_revenue;
 
 8c. You find that you no longer need the view top_five_genres. Write a query to delete it.
 Ans:
