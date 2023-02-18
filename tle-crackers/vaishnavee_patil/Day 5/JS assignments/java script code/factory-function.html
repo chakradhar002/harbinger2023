@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function Student(name, age, street, city, state, zip) {
+            return {
+                name,
+                age,
+                address: {
+                street,
+                city,
+                state,
+                zip
+                }
+            };
+            }
+            let student1 = Student("ishaa", 22, "123 nigdi", "pune", "maharastra", "12345");
+            let student2 = Student("raj", 25, "456 akurdi", "panji", "goa", "67890");
+            console.log(student1.name); 
+            console.log(student1.address.street);
+            console.log(student2.name); 
+            console.log(student2.address.city);
+            console.log(student2.address.state);
+        </script>
+    </body>
+</html>

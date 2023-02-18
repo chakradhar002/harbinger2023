@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <title>Form</title>
+<head>
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+    }
+    body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+    .body{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    justify-content: space-between;
+    }
+    .left,.right{
+    width: 50%;
+    }
+    .right img{
+    width: 50%;
+    }
+    .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    img{
+        height:432px;
+        width:450px;
+    }
+    button{
+    padding: 9px 34px;
+    background-color: rgb(91, 89, 246);
+    border: 1px solid black;
+    margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="left">
+        <h1>Sign Up</h1>
+        <br>
+        <label>
+            <i class="fa-solid fa-user align-self-center pe-4"></i>
+            <input type="text" name="name" placeholder="Your Name">
+        </label>    
+        <br>
+        <br>
+        <label>
+            <i class="fa-solid fa-envelope align-self-center pe-4"></i>
+            <input type="email" name="name" placeholder="Your Email">
+        </label>
+        <br>
+        <br>
+        <label>
+            <i class="fa-solid fa-lock align-self-center pe-4"></i>
+            <input type="password" name="name" placeholder="Password">
+        </label>
+        <br>
+        <br>
+        <label>
+            <i class="fa-solid fa-key align-self-center pe-4"></i>
+            <input type="password" name="name" placeholder="Repeat your password">
+        </label>
+        <br>
+        <br>
+        <div>
+            <input type="checkbox" id="check">
+            <label for="check">
+            I agree all statements in terms of service
+        </div>
+        </label>
+            <button type="submit">Register</button>
+        </div>
+        <div class="right">
+            <img src="croods.png" alt="crood">
+        </div>
+</div>
+</body>
+</html>

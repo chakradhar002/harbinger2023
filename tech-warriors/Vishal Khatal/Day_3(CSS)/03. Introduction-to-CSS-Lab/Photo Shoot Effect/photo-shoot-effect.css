@@ -1,0 +1,63 @@
+body{ Width: 960px; align-items: center;font-family: Arial, sans-serif; Color: #fcfcfc; Background-color: #355664; 
+}
+h1{
+    size: 50px; Padding: 10px 0 0;
+}
+h2{
+    size: 40px; letter-spacing: 15px;text-align: center;border-bottom: 3px solid #416371;padding-bottom: 20px;
+}
+h3{
+    text-align:right; size:30px;font-weight:normal;margin: 0 0 10px; 
+}
+p{
+    height:20px;padding-bottom: 5px; color: #94c258;
+}
+img{
+    width: 500px; height: 300px; border: none;
+}
+.article-content{    margin: 15px 30px; 
+}
+.Navigation {
+    background-color: #355664; padding-right: 5px;padding-left: 5px;padding-top: 0; padding-right: 0px;
+}
+#a1{
+    color:#ffffff;
+    margin:5px 2px; Padding: 7px 10px 4px; Size: 30px; 
+}
+#a2{
+    color:#7CB3E9;
+    margin:5px 2px; Padding: 7px 10px 4px; Size: 30px; 
+}
+#a3{
+    Color: #8EC45B; 
+    margin:5px 2px; Padding: 7px 10px 4px; Size: 30px; 
+}
+.article{
+    height: 390px;background-color: #213e4a;Padding: 20px; Margin: 0 0 10px; 
+}
+.Figure 
+{
+    Border: 3px solid #142830; Float: right; Height: 300px; Width: 500px; Margin-left: 15px; 
+}
+.Footer 
+{Border-top: 3px solid #142830; Padding-Top: 15px; Margin-Bottom: 30px;size:20px;size: 20px; 
+}
+hr{
+    color: grey;height: 2px;
+}
+
+
+
+Hints 
+
+Use: 
+
+Reset the CSS file; 
+
+text-transform: uppercase; 
+
+text-transform: none; 
+
+text-transform: lowercase; 
+
+border-radius: 10px; 

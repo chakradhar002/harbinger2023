@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function txtposition() // A1 Q1
+        {
+            var txt = "Hello! you are my World";
+            var pos = txt.indexOf("World");
+            console.log("string : " + txt)
+            console.log("The first occurrence of 'World' is at position : " + pos);
+        }
+        
+        function TextToUpperCase() // A! Q2
+        {
+            var txt = "hello! its Pradeep!!!";
+            console.log(txt.toUpperCase());
+        }
+
+        function removeChar()
+        {
+            var str = "Harbinger Grpup";
+            var n = 3;
+            console.log("string : " + str);
+            console.log("sub string : " + str.substring(n) );
+        }
+        
+        
+    </script>
+</head>
+<body>
+    <h3> click on buttons to run all assignment qustions. Check console to see output. </h3> <br>
+    <button onclick="txtposition();"> A1 Q1</button> "world" position :-   <br>
+    <button onclick="TextToUpperCase();"> A1 Q2</button> text to UPPER case :-<br>
+    <button onclick="removeChar();"> A1 Q3</button> remove specified number of charactor from string 
+
+</body>

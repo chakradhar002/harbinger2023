@@ -1,0 +1,53 @@
+body {
+    background-color: antiquewhite;
+}
+
+
+
+nav {
+
+    margin-top: 2%;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 7%;
+}
+
+ul {
+    margin-top: 5%;
+    flex-direction: row;
+    display: flex;
+    margin-right: 5.5%;
+}
+
+li {
+    list-style: none;
+}
+.li:hover {
+
+color: red;
+}
+
+.li {
+    padding: 20px 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    list-style: none;
+    text-decoration: solid;
+    text-size-adjust: 30px;
+
+}
+
+.li1 {
+    width: 25%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+img {
+    margin-top: 4%;
+    width: 90%;
+    margin-left: 2%;
+
+}

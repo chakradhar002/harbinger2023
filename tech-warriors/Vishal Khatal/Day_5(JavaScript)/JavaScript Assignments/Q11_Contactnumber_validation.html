@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phonenumber validation</title>
+</head>
+
+<body>
+    <h2>Phone number validation</h2>
+    <form name="myForm" action="#" onsubmit="phonenumber()">
+        <label>Phone Number </label>
+        <input type="text" name="pnumber"><br><br>
+        <input type="submit" value="click">
+    </form>
+</body>
+<script>
+    function phonenumber() {
+        let pnumber = document.myForm.pnumber.value;
+        var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if (pnumber.match(phoneno)) {
+            alert("correct match");
+            return true;
+        }
+        else {
+            alert("Please enter valid format like(XXX OR XXX- OR XXX.)");
+            return false;
+        }
+    }
+
+</script>
+
+</html>

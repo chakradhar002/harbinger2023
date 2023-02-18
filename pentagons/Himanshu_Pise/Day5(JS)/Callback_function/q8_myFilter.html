@@ -1,0 +1,38 @@
+<!--
+a. Write a function called myFilter that takes in an array and a callback as arguments. The callback should take in an value and return a boolean. myFilter should return a new array with only values that return true when passed into the callback.
+b. Write a function called removeEvenNumbers that takes in an array and returns an array with all the even numbers removed.
+c. Write a function called removeShortWords that takes in an array and returns an array with all strings containing fewer than 4 characters removed. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8</title>
+</head>
+<body>
+    <script>
+        const myFilter = (array , callback ) =>{
+    let result = []
+    for (let value of array){
+        if(callback(value)){
+            result.push(value)
+        }
+    }
+    return result
+}
+    //remove even number
+    const removeEvenNumbers = (array) => {
+        return myFilter(array , e => e % 2)
+    }
+    //remove short characters
+    const removeShortCharacters = (array) =>{
+        return myFilter(array , e => e.length > 4)
+    }
+console.log(myFilter([1,4,6,7, -3 ] , e => e < 5))
+console.log(removeEvenNumbers([1,  2, 4, 6, -3 ]))
+console.log(removeShortCharacters(["JavaScript", "is", "a", "high-level,", "interpreted", "programming", "language", "that", "conforms", "to", "the", "ECMAScript", "specification"]))
+    </script>
+</body>
+</html>

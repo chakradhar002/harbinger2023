@@ -1,0 +1,123 @@
+.container{
+    width:80%;
+    border:1px solid black;
+    margin-left: 120px;
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    margin-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-top : 1.5px solid rgb(57, 6, 6);
+    border-bottom: 3.5px solid rgb(57, 6, 6);
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 24px;
+  text-decoration: none;
+  float: left;
+
+}
+
+li a:hover {
+  color:black;
+}
+
+.header{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQHqbMGA6vM4i6fbXSm_KaPQe_1YuJjA2M8w&usqp=CAU);
+    background-size: cover;
+	height: 156px;
+}
+
+.page_heading{
+    text-align: right;
+    padding-top: 35px;
+    padding-right: 20px;
+    font-size: 23px;
+}
+.article{
+    display: flex;
+	justify-content: start;
+    
+}
+.article{
+    margin-top: 35px;
+}
+.article_container{
+    margin-top:35px;
+    margin-left:30px;
+    
+}
+.inner_page{
+        display: flex;
+	justify-content: start;
+}
+.article_container{
+    border-right: 1px solid black;
+    padding-right: 50px;
+    width:58%
+}
+
+img{
+    width: 300px;
+    display: block;
+}
+.img_name{
+    margin-top: 10px;
+}
+.inner_part1{
+    border : 1px solid rgb(226 218 207);
+    padding : 5px;
+
+}
+.article_heading{padding-top:20px; margin-left:20px;}
+.article_subheading,.article_para{
+    padding-top: 13px;
+    margin-left: 20px;
+}
+.article_para{
+    text-align: justify;
+}
+.article_subheading{
+    color: rgb(202 177 0);
+}
+
+.article_container2{
+    width:20%;
+    padding-left: 30px;
+    margin-top:35px;
+}
+.recipe{
+    border-bottom: 2px solid rgb(255, 0, 140);
+    margin-bottom: 20px;
+}
+.name{
+    color: rgb(255, 0, 140);
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+.popular_recipies{
+    color: rgb(255, 0, 140);
+    margin-top:20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+footer{
+    text-align: center;
+    background-color: silver;
+}

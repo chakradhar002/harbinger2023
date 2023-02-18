@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #00ddff;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+        }
+
+        .left_side,
+        .right_side {
+            width: 40%;
+            height: 500px;
+
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .left_side{
+            background-color: #f9f9ff;
+        }
+        .right_side{
+            background-color: #7c00dc;
+        }
+        .right{
+            border: 1px solid white;
+            background-color: #7c00dc;
+            
+        }
+        h4,.l1{
+            padding-bottom: 10px;
+            color: white;
+        }
+        .right::placeholder {
+            color: white;
+        }
+
+        .btn{
+            background-color: gainsboro;
+            color: black;
+            border: none;
+        }
+        .left_heading{
+            color: #7c00dc;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <div class="left_side">
+                <div class="heading">
+                    <h4 class="left_heading">Genral Information</h4>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+
+                        <select class="form-control">
+                            <option selected>Title</option>
+                            <option>Mr</option>
+                            <option>Mrs</option>
+                            
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control " placeholder="Firstname">
+                    </div>
+                    <div class="form-group col-md-5">
+                        <input type="text" class="form-control" placeholder="Lastname">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+
+                        <select class="form-control">
+                            <option selected>Position</option>
+                            <option>One</option>
+                            <option>two</option>
+                            <option>three</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-10">
+                        <input type="text" class="form-control" placeholder="Position">
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-5">
+
+                        <input type="text" class="form-control" placeholder="Business Arena">
+                    </div>
+                    <div class="form-group col-md-5">
+
+                        <select class="form-control">
+                            <option selected>Employee</option>
+                            <option>One</option>
+                            <option>two</option>
+                            <option>three</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="right_side">
+            <div class="heading">
+                <h4>Contact Details</h4>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <input type="text" class="form-control right" placeholder="Street + Nr">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <input type="text" class="form-control right" placeholder="Additional Information">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <input type="text" class="form-control right" placeholder="Zip Code">
+                </div>
+                <div class="form-group col-md-5">
+                    <input type="text" class="form-control right" placeholder="Place">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <input type="text" class="form-control right" placeholder="Country">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <input type="text" class="form-control right" placeholder="Code + ">
+                </div>
+                <div class="form-group col-md-5">
+                    <input type="text" class="form-control right" placeholder="Phone Number">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-10">
+                    <input type="email" class="form-control right" placeholder="Your Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label l1" for="gridCheck">
+                        I do accept Terms and Conditions of your Website
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+
+        </div>
+        </div>
+    </form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Write a function which Calculates the sum of marks provided in an array , average it and also show Grades</h1>
+</body>
+</html>
+<script>
+    function Grades()
+    {
+        console.log("Write a function which Calculates the sum of marks provided in an array , average it and also show Grades");
+        const marks = [65,78,91,89,84,87];
+        let sum = 0;
+        for (let i = 0; i < marks.length; i++) {
+        sum += marks[i];
+        }
+        let avg = sum/marks.length;
+        console.log(avg);
+        if(avg<70)
+        {
+            console.log("Grade : D ");
+        }
+        if(avg>71 && avg<80)
+        {
+            console.log("Grade : C ");
+        }
+        if(avg>81 && avg<90)
+        {
+            console.log("Grade : B ");
+        }
+        if(avg>91 && avg<=100)
+        {
+            console.log("Grade : A ");
+        }
+    }
+    Grades();
+</script>

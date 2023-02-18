@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Object-string-values-only</title>
+</head>
+
+<body>
+    <h2>8 object string values only</h2>
+</body>
+<script>
+    console.log("8-Object-string-values-only");
+    function return_stringObjects() {
+        const bike = {
+            brand: "Yamaha",
+            model: "MT 15",
+            colour: "Mat Grey",
+            cc: 155,
+            mileage: "50 kmpl"
+        };
+
+        for (const i in bike) {
+            if (typeof bike[i] === "string") {
+                console.log(`${i} =>  ${bike[i]}`);
+            }
+        }
+        console.log("----------------------");
+    }
+    return_stringObjects(); // calling function
+
+</script>
+
+</html>

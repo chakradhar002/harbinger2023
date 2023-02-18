@@ -1,0 +1,34 @@
+.column {
+  float: left;
+  width: 50%;
+  height: 50px;
+  margin-top: -20px;
+  margin-bottom: -22px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.one,
+.two,
+.three {
+  /*float: left;*/
+  text-align: center;
+}
+.container {
+  margin-top: -22px;
+}
+
+.one {
+  background-color: rgba(227, 255, 71, 0.929);
+}
+#two {
+  background-color: rgb(227, 12, 180);
+}
+#three {
+  background-color: rgb(49, 182, 235);
+}

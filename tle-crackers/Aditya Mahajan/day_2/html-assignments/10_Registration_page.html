@@ -1,0 +1,124 @@
+<html>
+<head>
+<title></title>
+<style>
+
+ form{
+            max-width: 50%;
+            margin: 0 auto;
+        }
+
+ .form-row{
+            min-width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-self: center;
+			
+        }
+.form-group{
+            display: flex;
+            flex-direction: column;
+        }	
+.btn{
+  padding: 8px 18px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  
+  background-color: blue; 
+  color: #ffffff; 
+  border: 1px solid blue;
+  border-radius:5px;
+  
+  margin-top:35px;
+  box-shadow: 1px 1px 1px 1px #0063ff;
+}
+.btn:hover{
+ background-color: black;
+  color: white;
+}
+
+ .col-md-6{
+            width: 50%;
+        }		
+.col-md-4{
+	width: 30%;
+}
+
+.col-md-2{
+	width: 20%;
+}
+
+label{
+      margin-top: 10px;
+	  font-family: "Times New Roman", Times, serif;
+	  font-size: 16px;
+	  
+	  }
+select,input{
+        max-width: 100%;
+        margin-top: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+		margin-right:10px;
+        }
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>J & K</option>
+		<option>Punjab</option>
+		<option>Rajasthan</option>
+		<option>Jharkhand</option>
+		<option>Bihar</option>
+		<option>Maharashtra</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+</div>
+</body>
+</html>

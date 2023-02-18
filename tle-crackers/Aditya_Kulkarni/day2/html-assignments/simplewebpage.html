@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7 | Web Page</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .hero {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        text-align: center;
+        background-color: rgb(19, 105, 105);
+        height: 30vh;
+      }
+
+      .hero_heading {
+        color: aqua;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+
+      .hero_body {
+        color: aliceblue;
+        font-size: 2rem;
+      }
+
+      .hero_button {
+        margin-top: 30px;
+        padding: 20px 40px;
+        background-color: transparent;
+        border: 1px solid aliceblue;
+        color: aliceblue;
+        font-size: 1rem;
+      }
+
+      .body {
+        max-width: 100vw;
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+      }
+
+      .card {
+        background-color: white;
+        width: 30%;
+        box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.2), -5px -5px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin: 10px 20px;
+        font-size: 25px;
+        color: darkcyan;
+      }
+
+      button:hover {
+        cursor: copy;
+      }
+
+      .card_heading {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+      }
+
+      .cardbody_description,
+      .cardbody_title {
+        padding: 20px 10px;
+        color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <p class="hero_heading">Dedicated to the craft of Building the Websites</p>
+      <p class="hero_body">Every year the brightest designs and frontend designers descend in August to discuss the technologies. Join us in the August</p>
+      <button class="hero_button">Register Now</button>
+    </div>
+    <div class="body">
+      <div class="card">
+        <div class="card_heading">Speaker</div>
+        <img class="card_image" src="./images/speakers.jpg" />
+        <p class="cardbody_title">World Class Speakers</p>
+        <p class="cardbody_description">Joining us from all over the world are over twenty fantastic speakers here to share their stories</p>
+      </div>
+      <div class="card">
+        <div class="card_heading">Schedule</div>
+        <img class="card_image" src="./images/schedule.jpg" />
+        <p class="cardbody_title">Three Inspiring Days </p>
+        <p class="cardbody_description">Enjoy three inspiring action packed days of talks gatherings and all round good times</p>
+      </div>
+      <div class="card">
+        <div class="card_heading">Venue</div>
+        <img class="card_image" src="./images/venue.jpg" />
+        <p class="cardbody_title"> The Chicago Theater</p>
+        <p class="cardbody_description">Joining us from all over the world are over twenty fantastic speakers here to share their stories</p>
+      </div>
+    </div>
+  </body>
+</html>

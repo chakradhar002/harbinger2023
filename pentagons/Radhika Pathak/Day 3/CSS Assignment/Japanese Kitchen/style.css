@@ -1,0 +1,30 @@
+.navigation img {
+    width: 80px;
+  }
+  
+  .nav-link {
+    color: white;
+    transition: all 0.3s ease-in-out;
+  }
+h6{
+    color: rgb(61, 43, 42);
+  }
+  .nav-link:hover {
+    color: rgb(21, 240, 240);
+  }
+  
+  .menuitems h4 {
+    color: rgb(230, 19, 37);
+  }
+  
+  .menuitems p {
+    color: rgb(230, 19, 37);
+  }
+  .second-container {
+    border-top: 2px solid rgb(123, 125, 126);
+    border-bottom: 2px solid rgb(123, 125, 126);
+  }
+  .backgroundcolor
+  {
+    background-color: #889091;
+  }

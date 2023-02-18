@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Validation Phone Number</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <style>
+        .form-style {
+            margin-top: 10%;
+            margin-left: 30%;
+            margin-right: 50%;
+            width: 30%;
+            height: 30%;
+        }
+
+        body {
+            font-family: Calibri;
+        }
+
+        form {
+            text-align: center;
+            font-family: Calibri;
+            font-size: 20px;
+            border: 3px solid black;
+            width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-style">
+        <form>
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <label for="EnterPhno">Enter Phone Number</label>
+                <input type="number" class="form-control" id="num" aria-describedby=""
+                    placeholder="Enter Phone Number:">
+            </div>
+            <button class="btn btn-outline-info" id="submit" onclick="validate()">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+    var phoneNo = document.getElementById("num");
+    function validate() {
+        if (phoneNo.value.length <= 0) {
+            alert("Phone no is required.Enter a Number");
+        }
+        else if(phoneNo.length>0)
+        {
+            if (phoneNo.length<10) {
+            alert("Must be 10 numbers only.")
+        }
+        else {
+            alert("Enter  correctly")
+        }
+         }
+    }
+
+</script>
+
+</html>

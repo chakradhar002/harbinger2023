@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <style>
+            .pass{
+                margin-left: 605px;
+                margin-top: -45px;
+            }
+            #email,#password{
+            width: 550;
+            height: 30;
+            
+
+            }
+            #address,#address2{
+                width: 94%;
+                height: 30;
+            }
+            #city{
+                width: 40%;
+                height: 30;
+            }
+            .State{
+                margin-left: 43%;
+                margin-top: -48px;
+                
+                
+            }
+            #state{
+               width: 300;
+               height: 30;
+            }
+            .zip{
+                margin-left: 70%;
+                margin-top: -47px;
+                height: 50;
+            }
+            #Zip{
+                height: 30;
+            }
+            .but{
+                background-color: aqua;
+                border-radius: 5px;
+                font-size: 25px;
+            }
+            form{
+                border:  black;
+                border-collapse: collapse;
+                margin-right: 20px;
+            }
+            .details{
+                margin-left: 10px;
+            }
+            #check{
+                height: 20px;
+                width: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div class="details">
+            <label for="Email" >Email</label><br>
+            <input type="email" id="email" placeholder="Email">
+            <div class="pass">
+            <label for="password" >Password</label><br>
+            <input type="password" id="password" placeholder="Password">
+            </div><br>
+            <div class="address">
+                <label for="address" >Address</label><br>
+
+                <input type="text" id="address" placeholder="1234 Main St">
+
+            </div><br>
+            <div class="address2">
+                <label for="address" >Address2</label><br>
+
+                <input type="text" id="address2" placeholder="Apartment,studio or floor">
+
+            </div><br>
+                <label for="City" >City</label><br>
+                <input type="text" id="city" >
+            <div class="State">
+                <label for="State" >State</label><br>
+
+                <select name="choose" id="state">
+                    <option value="choose">Choose...</option>
+                    <option value="UP">UP</option>
+                    <option value="MP">MP</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Maharashtra">Maharashtra</option>
+
+                </select>
+            </div>
+            <div class="zip">
+                <label for="Zip" >Zip</label><br>
+                <input type="text" id="Zip" size="39">
+            </div><br>
+            <input type="checkbox" id="check"> Check me out
+            <br>
+            <br><div class="button">
+                <button class="but">Sign in</button><br>
+            </div><br>
+            </div>
+        </form>
+    </body>
+</html>

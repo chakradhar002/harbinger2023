@@ -1,0 +1,81 @@
+body {
+         font-family: Roboto, sans-serif;
+         background: #e2d7aa;
+         color: #000;
+         size: 16px;
+         width: 1180px;
+         margin: auto;
+         align-items: center;
+         }
+         .mainImage {
+         width: 1100px;
+         height: 450px;
+         margin: 65px;
+         /* float: center; */
+         object-position: center top;
+         }
+         h1 {
+         size: 60px;
+         text-align: center;
+         margin-top: 65px;
+         font-family: 'Indie flower', cursive;
+         }
+         .nav {
+         margin-left: 30px;
+         text-align: center;
+         }
+         .aa {
+         word-spacing: 15px;
+         }
+         a {
+         text-decoration: none;
+         }
+         a:hover {
+         color: #b38575;
+         }
+         .Home,
+         .Contact {
+         font-weight: bold;
+         color: black;
+         }
+         .img1 {
+         width: 350px;
+         height: 200px;
+         /* margin-bottom: 1px; */
+         }
+         /* .para::first-letter {
+         text-size-adjust: 40px;
+         font-family: EucrosiaUPC, sans-serif;
+         /* text-size: 40px; 
+         } */
+         .para::first-letter {
+         text-size-adjust: 40px;
+         font-style: bold;
+         font-family: EucrosiaUPC, sans-serif;
+         }
+         .column {
+         float: left;
+         width: 30%;
+         padding: 10px;
+         height: 300px;
+         /* Should be removed. Only for demonstration */
+         }
+         /* Clear floats after the columns */
+         .row:after {
+         content: "";
+         display: table;
+         clear: both;
+         }
+         button {
+         background-color: chocolate;
+         color: white;
+         }
+         footer {
+         /* margin: 5px; */
+         padding: 10px 0 10px 0;
+         text-align: center;
+         /* margin-bottom: 1px; */
+         }
+         .span {
+         margin-top: 50px;
+         }

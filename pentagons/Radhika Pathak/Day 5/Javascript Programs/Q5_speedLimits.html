@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Limit</title>
+    <style>
+        .input-form
+        {
+            text-align: center;
+            margin-top: 120px;
+            margin-right: 200px;
+            margin-left: 200px;
+        }
+        .btnsubmit
+        {
+            margin-top: 50px;
+            border: 5px solid;
+            color: rgb(255, 72, 0);
+            background-color: aliceblue;
+            
+        }
+        .btnsubmit :hover
+        {
+            color: rgb(181, 107, 9);
+        }
+        p{
+            color: rgb(104, 13, 194);
+        }
+    </style>
+</head>
+<body>
+    <div class="input-form">
+        <label for="formGroupExampleInput">What is your Driving Speed?</label>
+        <input type="text" class="form-control" id="speed">
+        <br>
+        <button  type="button" class="btn btn-info btnsubmit" id ="Submit" onclick="validateSpeed()">Submit
+        </button>
+        <p id="result"></p>
+    </div>
+</body>
+<script type="text/javascript">
+    var speed = document.getElementById("speed");
+    var Submit = document.getElementById("Submit");
+    var result  =document.getElementById("result");
+    var penalty_point=0;
+    function validateSpeed()
+    {
+        if(speed.value<=70)
+        {
+            alert("Good Safe Driving");
+            result.innerHTML="Good Safe Driving";
+        }
+        else
+        {
+            penalty_point++;
+            if(penalty_point>5)
+            {
+                alert("Speed limit crossed by penalty point:",penalty_point);
+            }
+            else{
+                alert("License Suspended");
+                result.innerHTML="License Suspended";
+            }
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Write a function which prints * for the number of times and rows provided</h1>
+</body>
+</html>
+<script>
+    {
+        function StarPattern(n)
+        {
+            
+            let string = "";
+                for(let i=1;i<=n;i++)
+                {
+                    for(let j=0;j<i;j++)
+                    {
+                        string += "*";
+                    }
+                 string += "\n";
+                }
+            console.log(string);
+        }
+        StarPattern(5);
+    }
+</script>

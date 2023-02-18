@@ -1,0 +1,8 @@
+{
+  "terminal.integrated.tabs.defaultColor": "terminal.ansiCyan",
+  "terminal.integrated.tabs.defaultIcon": "heart-filled",
+  "editor.defaultFormatter": "vscode.html-language-features",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

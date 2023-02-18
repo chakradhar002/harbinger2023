@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Q21 | Object Create Students and Address Object</title>
+    </head>
+    <body>
+        <script>
+        const generateStudent = (name , age , rank , country) => new Object({name , age , rank , country})
+
+        const generateAddress = (street , city , state , pinCode , country) => new Object({street , city , state , pinCode , country})
+
+        console.log(generateAddress("Varco Pinacle" , "Mumbai" , 481209 , "MH" , "India"))
+
+        console.log(generateStudent("Ash" , 23 , 1, "India"))
+        </script>
+    </body>
+</html>

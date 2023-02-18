@@ -1,0 +1,53 @@
+.img {
+    background-image: url(".\\Images\\Car.jpg");
+    height: 700px;
+}
+
+h1 {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 80px 0 0 20px;
+    font-size: 80px;
+    color: #3e3d3df2;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+}
+
+.nav a {
+    float: right;
+    color: #8c9e06;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: rgb(186, 47, 47);
+    color: black;
+}
+
+nav {
+    overflow: hidden;
+}
+
+img {
+    height: 300;
+    width: 300;
+
+}
+
+.para {
+    display: flex;
+
+}
+
+p::first-letter {
+    font-size: 30;
+    color: red;
+}
+
+p {
+    padding: 15px;
+}

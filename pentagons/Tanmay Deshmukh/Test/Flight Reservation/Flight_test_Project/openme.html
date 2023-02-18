@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+
+</head>
+<body>
+    <h1 style="text-align: center;">Turn On The Server</h1>
+
+    <p style="text-align: center;">ALL THE API</p>
+    <ul>
+        <li><a href="localhost:1234/signup">/signup </a>   ( USE TO CREATE NEW USER ) <p>
+
+            Test Data For Postman :-
+            {
+                "first_name":"Tanmay",
+                "last_name":"Deshmukh",
+                "gender":"M",
+                "dob":"03/08/2000",
+                "email":"tanmay@gmail.com",
+                "password":"tanmay"
+            
+            }
+            </p></li>
+        <li><a href="localhost:1234/getflightdetails">/getflightdetails</a>( USE TO GET  FLIGHT DETAILS  ) 
+        <p>
+            Test Data For Postman :-
+            {
+            "source":"Mumbai",
+            "destination":"Banglore",
+            "date":"2022-09-12"
+        
+        }</p>
+        </li>
+        <li><a href="localhost:1234/putfooddetails">/putfooddetails</a>(  TO ADD CUSTOMERS CHOICE FOOD  ) <p>
+            Test Data For Postman :-
+            {
+                "food":"sandwich"
+                "email":"tanmay@gmail.com"
+            
+            }
+        </p></li>
+        <li><a href="localhost:1234/checkseat">/checkseat</a>(  CHECK SEAT AVAILABILITY  ) <p>
+            Test Data For Postman :-
+            {
+
+                "seatnum":6
+           }
+        </p></li>
+        <li><a href="localhost:1234/makereservation">/makereservation</a>(  CREATES A NEW RESERVATION  ) <p>
+            Test Data For Postman :-
+            {
+                "fid":1,
+                "email":"tanmay@gmail.com",
+                "seat_no":5,
+                "ticiket_type":"H1",
+                "booking_date":"2022-08-12"
+            }
+        </p></li>
+        <li><a href="localhost:1234/modifyreservation">/modifyreservation</a>(  MODIFIES RESERVATION DATE  ) <p>
+            Test Data For Postman :-
+            {
+                "email":"tanmay@gmail.com",
+                "date":"2022-09-12"
+            }
+        </p></li>
+        <li><a href="localhost:1234/deletereservation">/deletereservation</a>(  DELETES RESERVATION  ) <p>
+            Test Data For Postman :-
+            {
+                "email":"tanmay@gmail.com"
+            }
+        </p></li>
+    </ul>
+</body>
+</html>

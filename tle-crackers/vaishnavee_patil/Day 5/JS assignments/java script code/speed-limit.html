@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function checkSpeed(speed, limit) {
+            const speedInfo = {
+                type: "",
+                fine: 0
+            };
+            const infractionFines = {
+                60: {
+                    15: 85,
+                    20: 115
+                },
+                120: {
+                    15: 70,
+                    20: 100
+                }
+            };
+            const excessSpeed = speed - limit;
+            if (excessSpeed <= 0) {
+                return speedInfo;
+            }
+            if (excessSpeed > 20) {
+                speedInfo.type = "Unit";
+                return speedInfo;
+            }
+            if (excessSpeed > 0) {
+                speedInfo.type = "Infraction";
+            }
+            if (excessSpeed <= 20) {
+                speedInfo.fine = infractionFines[limit][20];
+            }
+            if (excessSpeed <= 15) {
+                speedInfo.fine = infractionFines[limit][15];
+            }
+            return speedInfo;
+        }
+        console.log(checkSpeed(67,60))
+        console.log(checkSpeed(87,90))
+        console.log(checkSpeed(40,30))
+        console.log(checkSpeed(120,130))
+    </script>
+</body>
+</html>

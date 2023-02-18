@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function max_numbers()
+        {
+            var number1 = document.getElementById("num1").value;
+            var number2 = document.getElementById("num2").value;
+            var max;
+
+            console.log("number 1 : " + number1);
+            console.log("number 2 : " + number2);
+
+            if(number1 > number2)
+            {
+                max = number1;
+            }
+            else
+            {
+                max = number2;
+            }
+            
+            console.log(" Max number : " + max);
+        }
+       
+    </script>
+</head>
+
+<body>
+
+    <p> Enter two numbers :- </p>
+    number 1 :    <input type="number" id="num1">
+    <br>
+    number 2 :    <input type="number" id="num2">
+
+    <button onclick="max_numbers()"> Max </button>
+   
+   
+</body>

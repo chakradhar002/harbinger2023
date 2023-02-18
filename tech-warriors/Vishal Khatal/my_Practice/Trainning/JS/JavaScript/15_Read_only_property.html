@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>read_only_area_property</title>
+</head>
+
+<body>
+    <h2>read only area property</h2>
+</body>
+<script>  console.log("read only property of area");
+    let circle = {
+        area: 3.12345
+    };
+    Object.defineProperty(circle, "area", {
+        value: 3.12345,
+        writable: false,
+        enumerable: true
+    })
+    console.log("CIRCLE.area = " + circle.area);</script>
+
+</html>

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body{
+font-family: 'Lato', sans-serif;
+font-size: 14px;
+color: #979090;
+margin: 0px;
+padding: 0px;
+}
+.main-container{
+height: 100vh;
+background: url('backgroungimage.jpeg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.nav-link{
+color: rgb(237, 17, 9);
+font-weight: 900;
+transition: all 0.3s ease-in-out;
+}
+.nav-link:hover{
+color: rgb(155, 6, 31);
+}
+.header-first h1{
+font-size: 60px;
+font-weight: 900;
+padding: 40px 0 0 20px;
+margin: 0;
+font-family: 'Lato', sans-serif;
+color: rgb(239, 12, 12);
+}
+h1{
+text-transform: uppercase;
+text-shadow: 30px;
+font-size: 30px;
+font-weight: 900;
+color: rgb(136, 3, 25);
+font-style: oblique;
+font-family: 'Courier New', Courier, monospace;
+font: bold;
+}
+.info-section p::first-letter{
+color: rgb(255, 7, 7);
+font-weight: bold;
+font-size: large;
+}

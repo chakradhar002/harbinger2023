@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+    function clickbtn()
+    {
+        var num=document.getElementById("num").value;
+
+        var answer=document.getElementById("answer");
+        console.log(num);
+        for(i=0;i<=num;i++){
+            if(i%2==0){
+                answer.innerHTML="Even Number";
+                console.log("Even number")
+            }else{
+                answer.innerHTML="Odd Number";
+                console.log(i+"Odd Number")
+            }
+        }
+    }
+   </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Odd-even Loop
+    </title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-6">
+            <label for="no">Enter Number</label>
+            <input type="text" id="num">
+        </div><br/>
+        
+    </div><br/>
+    <button onclick="clickbtn()">Display</button><br/><br/>
+    <label id="answer"></label><br/><br>
+
+</body>
+</html>

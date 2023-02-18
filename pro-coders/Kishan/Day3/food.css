@@ -1,0 +1,61 @@
+body{
+    font-family: 'Lato, Sans-serif';
+}
+h1{
+    text-align: center;
+    background-image: url("./image/spices.jpg");
+    height:130px;
+    margin-bottom:10px;
+    background-size: cover;
+    
+}
+
+.header p{
+    color: white;
+    line-height: 130px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.maincontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.container2{
+    display:flex;
+    flex-direction: column;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+}
+
+#burgerOne{
+    width:700px;
+}
+.burger img{
+    height: 400px;
+    width: 700px;
+    
+}
+.recentFood img{
+    height: 200px;
+    width: 300px;
+}
+
+.container2 h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container3 h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container2 .btn{
+    border-radius:30px;
+}

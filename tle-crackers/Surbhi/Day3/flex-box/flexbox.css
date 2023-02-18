@@ -1,0 +1,45 @@
+body {
+    Display: flex;
+    Flex-Flow: row wrap;
+    Font-Weight: bold;
+    Padding: 0px;
+}
+body>*{
+    padding: 10px;
+    Flex: 1 100%; 
+}
+.header{
+    background: tomato;
+}
+.footer{
+    background: lightgreen;
+}
+.main-article{
+    text-align: center;
+    background: darkslateblue;
+   
+}
+.aside1{
+    background: gold;    
+}
+.aside2{
+    background: hotpink;
+}
+
+
+@media screen and (min-width:600px){
+    .container{
+        display: flex;
+    }
+    .aside1{
+        order: 1;
+    }
+    .main-article{
+        order: 2;
+    }
+    .aside2{
+        order: 3;
+    }
+
+    
+}

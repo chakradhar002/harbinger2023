@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><a href="#" id="white">White</a></p>
+    <p><a href="#" id="red">red</a></p>
+    <p><a href="#" id="blue">blue</a></p>
+    <p><a href="#" id="pink">pink</a></p>
+
+    <script>
+      
+      let body = document.getElementsByTagName("body")[0]
+      let white = document.getElementById("white")
+      let red = document.getElementById("red")
+      let blue = document.getElementById("blue")
+      let pink = document.getElementById("pink")
+
+      white.addEventListener("click", (e) => {
+        body.style.backgroundColor = "white"
+      })
+
+      red.addEventListener("click", (e) => {
+        body.style.backgroundColor = "red"
+      })
+
+      blue.addEventListener("click", (e) => {
+        body.style.backgroundColor = "blue"
+      })
+
+      pink.addEventListener("click", (e) => {
+        body.style.backgroundColor = "pink"
+      })
+    </script>
+  </body>
+</html>

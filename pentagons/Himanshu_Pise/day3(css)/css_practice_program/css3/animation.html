@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <style type="text/css">
+         h1 {
+            -moz-animation-duration: 10s;
+            -webkit-animation-duration: 10s;
+            -moz-animation-name: slideup;
+            -webkit-animation-name: slideup;
+         }
+         @-moz-keyframes slideup {
+            from {
+               margin-bottom:100%;
+               width:300%
+            }
+            to {
+               margin-bottom:0%;
+               width:100%;
+            }
+         }
+         @-webkit-keyframes slideup {
+            from {
+               margin-bottom:100%;
+               width:300%
+            }
+            to {
+               margin-bottom:0%;
+               width:100%;
+            }
+         }
+        </style>
+    </head>
+    <body>
+        <h1>Tutorials Point</h1>
+        <p>this is an example of moving from bottom to  animation .</p>
+        <button onclick="myFunction()">Reload page</button>
+        <script>
+         function myFunction() {
+            location.reload();
+         }
+        </script>
+    </body>
+</html>
