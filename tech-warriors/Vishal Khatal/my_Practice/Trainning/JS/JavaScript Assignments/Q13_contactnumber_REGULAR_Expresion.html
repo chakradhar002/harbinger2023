@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Write validation functions and modify the onSubmit event Handler
+    in the form code to validate the following form fields:
+    1. Phone Number
+    • Must be entered
+    • Must be in below format
+     XXX-XXX-XXXX
+     XXX.XXX.XXXX
+     XXX XXX XXXX -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+</head>
+<body>
+    <form action="#" id="f1" onsubmit="fun()">
+    Enter number :
+    <input type="text" id="n1" placeholder="XXX XXX XXXX" onblur="fun()"> <br>
+    <input type="submit">
+</form>
+</body>
+</html>
+<script>
+    function fun()
+    {
+        let n1 = document.forms["f1"]["n1"].value;
+        let m =  /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        if(n1==="")
+        {
+            alert("Enter a number");
+        }
+        else
+        {
+        if(n1.match(m))
+        {
+            alert("valid Match");
+        }
+        else
+        {
+            alert("invalid");
+        } 
+         }
+    }
+</script>

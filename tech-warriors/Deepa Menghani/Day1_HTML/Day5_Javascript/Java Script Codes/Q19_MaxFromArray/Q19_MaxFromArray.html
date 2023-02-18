@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Maximum From Array</h1>
+        <script>
+            //This function will return the maximum number in array 
+            function maxFromArray(array){
+                if(array.length === 0){
+                    return "Array is empty"
+                }
+                else{
+                return Math.max(...array)
+            }
+        }
+            var array1 = [100,305,173,259,419]
+            console.log("Max number from array: ",maxFromArray(array1))
+        </script>
+    </body>
+</html>

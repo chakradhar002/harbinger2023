@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function display_c(){
+            var refresh = 1000;
+            mytime = setTimeout('display()',refresh) 
+        }
+
+        function display(){
+            var time = document.getElementById("ct")
+            var x = new Date();
+            time.value = x.getHours()+":"+x.getMinutes()+":"+x.getSeconds();
+            document.getElementById('ct').innerHTML = time.value;
+            display_c();
+        }
+        
+    </script>
+</head>
+<body onload="display();">
+   <input type="text" id="ct">
+   
+</body>
+</html>

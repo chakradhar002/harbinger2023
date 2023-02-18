@@ -1,0 +1,282 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="billing.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <title>Biiling Assignment</title>
+   </head>
+   <body>
+      <form action="">
+         <div class="container">
+            <label for="#">
+               <h3>Billing address</h3>
+            </label>
+            <div class="form-row">
+               <div class="col-sm-7">
+                  <div class="form-group">
+                     <div class="form-row">
+                        <div class="col-md-6">
+                           <label for="#">First Name</label>
+                           <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                           <label for="#">Last Name</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="#">Username</label>
+                     <input type="text" class="form-control" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                     <label for="#">Email(Optional)</label>
+                     <input type="text" class="form-control" placeholder="you@example.com">
+                  </div>
+                  <div class="form-group">
+                     <label for="#">Address</label>
+                     <input type="text" class="form-control" placeholder="1234 Main St">
+                  </div>
+                  <div class="form-group">
+                     <label for="#">Address 2(Optional)</label>
+                     <input type="text" class="form-control" placeholder="Apartment or suit">
+                  </div>
+                  <div class="form-row">
+                     <div class="col-md-4">
+                        <label for="#">Country</label>
+                        <select name="country" id="country" class="form-control">
+                           <option value="india">India</option>
+                           <option value="USA">USA</option>
+                        </select>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="#">State</label>
+                        <select id="state" class="form-control" name="state">
+                           <option value="AN">Choose......</option>
+                           <option value="AN">Andaman&Nicobar</option>
+                           <option value="AP">Andhra Pradesh</option>
+                           <option value="AR">ArunachalPradesh</option>
+                           <option value="AS">Assam</option>
+                           <option value="BR">Bihar</option>
+                           <option value="CH">Chandigarh</option>
+                           <option value="CT">Chhattisgarh</option>
+                           <option value="DN">Dadra Haveli</option>
+                           <option value="DD">Daman and Diu</option>
+                           <option value="DL">Delhi</option>
+                           <option value="GA">Goa</option>
+                           <option value="GJ">Gujarat</option>
+                           <option value="HR">Haryana</option>
+                           <option value="HP">HimachalPradesh</option>
+                           <option value="JK">Jammu Kashmir</option>
+                           <option value="JH">Jharkhand</option>
+                           <option value="KA">Karnataka</option>
+                           <option value="KL">Kerala</option>
+                           <option value="LA">Ladakh</option>
+                           <option value="LD">Lakshadweep</option>
+                           <option value="MP">MadhyaPradesh</option>
+                           <option value="MH">Maharashtra</option>
+                           <option value="MN">Manipur</option>
+                           <option value="ML">Meghalaya</option>
+                           <option value="MZ">Mizoram</option>
+                           <option value="NL">Nagaland</option>
+                           <option value="OR">Odisha</option>
+                           <option value="PY">Puducherry</option>
+                           <option value="PB">Punjab</option>
+                           <option value="RJ">Rajasthan</option>
+                           <option value="SK">Sikkim</option>
+                           <option value="TN">Tamil Nadu</option>
+                           <option value="TG">Telangana</option>
+                           <option value="TR">Tripura</option>
+                           <option value="UP">UttarPradesh</option>
+                           <option value="UT">Uttarakhand</option>
+                           <option value="WB">West Bengal</option>
+                           <option value="AL">Alabama</option>
+                           <option value="AK">Alaska</option>
+                           <option value="AZ">Arizona</option>
+                           <option value="AR">Arkansas</option>
+                           <option value="CA">California</option>
+                           <option value="CO">Colorado</option>
+                           <option value="CT">Connecticut</option>
+                           <option value="DE">Delaware</option>
+                           <option value="DC">District Of Columbia</option>
+                           <option value="FL">Florida</option>
+                           <option value="GA">Georgia</option>
+                           <option value="HI">Hawaii</option>
+                           <option value="ID">Idaho</option>
+                           <option value="IL">Illinois</option>
+                           <option value="IN">Indiana</option>
+                           <option value="IA">Iowa</option>
+                           <option value="KS">Kansas</option>
+                           <option value="KY">Kentucky</option>
+                           <option value="LA">Louisiana</option>
+                           <option value="ME">Maine</option>
+                           <option value="MD">Maryland</option>
+                           <option value="MA">Massachusetts</option>
+                           <option value="MI">Michigan</option>
+                           <option value="MN">Minnesota</option>
+                           <option value="MS">Mississippi</option>
+                           <option value="MO">Missouri</option>
+                           <option value="MT">Montana</option>
+                           <option value="NE">Nebraska</option>
+                           <option value="NV">Nevada</option>
+                           <option value="NH">New Hampshire</option>
+                           <option value="NJ">New Jersey</option>
+                           <option value="NM">New Mexico</option>
+                           <option value="NY">New York</option>
+                           <option value="NC">North Carolina</option>
+                           <option value="ND">North Dakota</option>
+                           <option value="OH">Ohio</option>
+                           <option value="OK">Oklahoma</option>
+                           <option value="OR">Oregon</option>
+                           <option value="PA">Pennsylvania</option>
+                           <option value="RI">Rhode Island</option>
+                           <option value="SC">South Carolina</option>
+                           <option value="SD">South Dakota</option>
+                           <option value="TN">Tennessee</option>
+                           <option value="TX">Texas</option>
+                           <option value="UT">Utah</option>
+                           <option value="VT">Vermont</option>
+                           <option value="VA">Virginia</option>
+                           <option value="WA">Washington</option>
+                           <option value="WV">West Virginia</option>
+                           <option value="WI">Wisconsin</option>
+                           <option value="WY">Wyoming</option>
+                        </select>
+                     </div>
+                     <div class="col-md-4">
+                        <label for="#">Zip</label>
+                        <input type="text" class="form-control">
+                     </div>
+                  </div>
+                  <hr/>
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input">
+                     <label for="#">Shipping address is the same as my billing address</label>
+                  </div>
+                  <div class="form-check">
+                     <input type="checkbox" class="form-check-input">
+                     <label for="#">Save this information for next time</label>
+                  </div>
+                  <hr/>
+                  <label>
+                     <h3>Payment</h3>
+                  </label>
+                  <div class="form-check">
+                     <input type="radio" name="a" class="form-check-input" checked>
+                     <label for="#">Credit card</label>
+                  </div>
+                  <div class="form-check">
+                     <input type="radio" name="a" class="form-check-input" >
+                     <label for="#">Debit card</label>
+                  </div>
+                  <div class="form-check">
+                     <input type="radio" name="a" class="form-check-input" >
+                     <label for="#">Cash</label>
+                  </div>
+                  <div class="form-group">
+                     <div class="form-row">
+                        <div class="col-md-6">
+                           <label for="#">Name on card</label>
+                           <input type="text" class="form-control">
+                           <label style="font-size: small;">Full name as displayed on card</label>
+                        </div>
+                        <div class="col-md-6">
+                           <label for="#">Credit card Number</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <div class="form-row">
+                        <div class="col-md-4">
+                           <label for="#">Expiration</label>
+                           <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-4">
+                           <label for="#">CVV</label>
+                           <input type="text" class="form-control">
+                        </div>
+                     </div>
+                  </div>
+                  <hr/>
+                  <div class="button">
+                     <button class="btn btn-primary">Continue to cart</button>
+                  </div>
+               </div>
+               <div class="col-sm-4" style="padding-left: 6%;">
+                  <div class="form-row">
+                     <div class="col">
+                        <div class="container-right">
+                           <label for="#">
+                              <h3 style="color: gray;">Your cart</h3>
+                           </label>
+                           <span class="badge bg-primary rounded-pill" style="padding: 9px; background-color: grey!important; margin-left: 140px;">3</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="small-container">
+                     <div class="form-row" style="border: 1px solid grey;">
+                        <div class="col-md-7">
+                           <label for="#">Product name</label><br/>
+                           <label for="#"style="font-size:small;">item des</label>
+                        </div>
+                        <div class="col-md-4">
+                           <label for="#">$12</label>
+                        </div>
+                     </div>
+                     <div class="form-row" style="border: 1px solid grey;">
+                        <div class="col-md-7">
+                           <label for="#">Second Product name</label>
+                           <label for="#"style="font-size:small;">item des</label>
+                        </div>
+                        <div class="col-md-4">
+                           <label for="#">$12</label>
+                        </div>
+                     </div>
+                     <div class="form-row" style="border: 1px solid grey;">
+                        <div class="col-md-7">
+                           <label for="#">Third Product name</label>
+                           <label for="#"style="font-size:small;">item des</label>
+                        </div>
+                        <div class="col-md-4">
+                           <label for="#">$12</label>
+                        </div>
+                     </div>
+                     <div class="form-row" style="border: 1px solid grey;">
+                        <div class="col-md-7">
+                           <label for="#" style="color:rgba(36, 200, 36, 0.92);">Promo Code</label><br/>
+                           <label for="#" style="color:rgba(36, 200, 36, 0.92);">item des</label>
+                        </div>
+                        <div class="col-md-4">
+                           <label for="#" style="color:rgba(36, 200, 36, 0.92);">-$0</label>
+                        </div>
+                     </div>
+                     <div class="form-row" style="border: 1px solid grey;">
+                        <div class="col-md-7">
+                           <label for="#">Total(USD)</label>
+                           <label for="#"style="font-size:small;">item des</label>
+                        </div>
+                        <div class="col-md-4">
+                           <label for="#">$36</label>
+                        </div>
+                     </div>
+                     <div class="promo-container">
+                        <div class="form-row">
+                           <div class="col-sm-8 d-flex">
+                              <input type="text" class="form-control">
+                           </div>
+                           <button class="btn btn-primary ">Reedem</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>

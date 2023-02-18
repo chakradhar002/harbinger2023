@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone number regex</title>
+</head>
+<body>
+    <form id="phoneNumberForm">
+        <input type="tel" id="phone"/>
+        <input type="submit">
+    </form>
+    <script>
+        let form = document.getElementById("phoneNumberForm")
+        let phoneElement = document.getElementById("phone")
+        form.addEventListener("submit" , e=>{
+            e.preventDefault()
+            let phone = phoneElement.value
+            let phonePattern = /^\(?([0-9]{4})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{3})$/ 
+            if(!phone.match(phonePattern)){
+                alert("Please enter valid phone number")
+                return
+            }
+            alert("Valid Phone number")
+        })
+    </script>
+</body>
+</html>

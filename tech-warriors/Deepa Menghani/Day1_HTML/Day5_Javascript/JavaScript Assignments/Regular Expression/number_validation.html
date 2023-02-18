@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <input type="text" id="number">
+        <button id="btn">Submit</button>
+        </form>
+        <script>
+    
+            let form = document.getElementById("form")
+            
+            form.onsubmit=function(e){
+                var num = document.getElementById("number").value
+                let valid = /[0-9]/
+
+                if(!valid.test(num)){
+                    alert("Enter only numbers")
+                    return
+                }
+                alert("Valid number")
+                
+            }
+        </script>
+</body>
+</html>

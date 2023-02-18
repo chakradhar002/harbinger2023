@@ -1,0 +1,42 @@
+.flex-container{
+    margin-top: 40px; 
+    width: 800px;
+    margin-left: 230px;
+}
+.flex-right {
+    background-color: orange;
+    text-align: center;
+    width: 800px;
+    height: 50px;
+    
+}
+
+.flex-left {
+    background-color: blueviolet;
+    text-align: center;
+    width: 800px;
+    height: 80px;
+}
+
+@media (min-width:600px) {
+
+    .flex-right,
+    .flex-left {
+        flex: 100%;
+    }
+}
+
+.row{
+    display: flex;
+}
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.Footer{
+    background-color: rgb(225, 122, 122);
+    text-align: center;
+    width: 800px;
+    height: 50px;
+}

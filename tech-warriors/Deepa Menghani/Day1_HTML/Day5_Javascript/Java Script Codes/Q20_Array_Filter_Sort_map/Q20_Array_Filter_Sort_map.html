@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Student Highest Ranking</h1>
+    <script>
+        const Array = [
+            { name: "Sumit", ranking: 3 },
+            { name: "Sangram", ranking: 2 },
+            { name: "Roshni", ranking: 1 },
+            { name: "Gaurav", ranking: 4 },
+            { name: "Tanay", ranking: 5 },
+        ]
+        //here first filter function will filter the student whose ranking is less than 4
+        //Then sort function  will sort those filtered ranikings in ascending order
+        //
+        console.log('Highest rank holders :', Array
+            .filter(student => student.ranking < 4)
+            .sort((r1, r2) => r1.ranking - r2.ranking)
+            .map(student => student.name));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>23-object-create-students-and-address-object!</h1>
+
+  <h3>Create an Object for Students and Address with various Properties and Methods </h3>
+</body>
+</html>
+<script>
+    console.log("object-create-students-and-address-object");
+    const Student = {
+        name:'vishal',
+        age:23,
+        country:'India',
+    }
+    const Address = {
+        location:'katraj',
+        city:'pune',
+        pin_code:411046,
+        state:'MH',
+        country:'India',
+    }
+    function objects(obj)
+    {
+        for(let i  in obj )
+        {
+            console.log(i,':',obj[i]);
+        }
+    }
+    objects(Student);
+    objects(Address);
+</script>

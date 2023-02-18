@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+     <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Assignment10</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #f3c737, #d699ef);
+}
+.container{
+  max-width: 700px;
+  width: 50%;
+  height: 5;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 40px;
+  border-radius: 5px;
+  /* background: linear-gradient(135deg, #f3c737, #d699ef); */
+}
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: left;
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+form .address-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg,#f3c737, #d699ef);
+ }
+
+
+     </style>
+   </head>
+   
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details"><i class="fa-regular fa-user"></i> Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details"><i class="fa-solid fa-user"></i> Username</span>
+            
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details"><i class="fa-solid fa-message"></i> Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details"><i class="fa-sharp fa-solid fa-location-dot"></i> Address</span>
+            <input type="text" placeholder="Enter your current address" required>
+          </div>
+          <div class="input-box">
+            <span class="details"><i class="fa-sharp fa-solid fa-location-dot"></i> Address</span>
+            <input type="text" placeholder="Enter your permanent address" required>
+          </div>
+          <div class="input-box">
+            <span class="details"><i class="fa-sharp fa-solid fa-mobile-retro"></i> Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+             <span class="details"><i class="fa-solid fa-lock"></i> Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details"><i class="fa-solid fa-lock"></i> Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title"><i class="fa-solid fa-venus-double"></i> Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+

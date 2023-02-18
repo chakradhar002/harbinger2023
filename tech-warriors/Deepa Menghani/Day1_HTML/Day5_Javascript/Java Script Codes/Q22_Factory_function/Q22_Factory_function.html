@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Object Creation with Factory function</h1>
+        <script>
+            //factory function will create objects and returns it.It is similar to the constuctor/class function
+            function CreatePerson(fname,lname,age,club){
+                return{
+                    fname:fname,
+                    lname:lname,
+                    age:age,
+                    club:club,
+                    getDetails(){
+                        return 'Name: '+fname +' ' + lname +' age: '+ age +' ClubName: '+ club
+                    }
+                }
+            }
+            let person1 = CreatePerson("Leo","Messi",34,"PSG")
+            let person2 = CreatePerson("Cristiano","Ronaldo",37,"Al-nassar")
+
+            console.log('Details of person :',person1.getDetails());
+            console.log('Details of Person :',person2.getDetails());
+        </script>
+    </body>
+</html>

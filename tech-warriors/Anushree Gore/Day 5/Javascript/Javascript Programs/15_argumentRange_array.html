@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument Range</title>
+</head>
+<body>
+    <h2>Argument range Program</h2>
+    <script>
+        function createArray(start_point, end_point) {
+            let arr = [];
+            for (let i = start_point; i < end_point; i++) {
+                i=i++;
+                arr.push(i);
+            }
+            console.log(arr);
+        }
+        createArray(10,30);
+    </script>
+</body>
+</html>
